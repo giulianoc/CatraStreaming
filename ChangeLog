@@ -1,0 +1,134 @@
+2006-03-17  Giuliano Catrambone  <giuliano.catrambone@catrasoftware.it>
+
+	* Added more information inside the documentation
+
+2006-03-16  Giuliano Catrambone  <giuliano.catrambone@catrasoftware.it>
+
+	* Fixed a bug in order to have the live also in case of ISMA standard (it means using an ISMA SDP file)
+
+2006-03-16  Giuliano Catrambone  <giuliano.catrambone@catrasoftware.it>
+
+	* In SDP library, added SDPForRTSP::getMediaInfoFromSDPFile method
+
+2006-03-16  Giuliano Catrambone  <giuliano.catrambone@catrasoftware.it>
+
+	* All the timeouts for the isReadyToWrite in all the write in catraStreamingServer are changed from 1000 microsecs to 1 seconds.
+
+2006-03-15  Giuliano Catrambone  <giuliano.catrambone@catrasoftware.it>
+
+	* catrastreaming v1.7 released
+
+2006-01-29  Giuliano Catrambone  <giuliano.catrambone@catrasoftware.it>
+
+	* No CORBA is used. Added an HTTP interface (HttpStrteamingServer class).
+	Added the 'service' functionality in order to use the server as service on both
+	Windows and Linux.
+
+2006-01-29  Giuliano Catrambone  <giuliano.catrambone@catrasoftware.it>
+
+	* Update to the new catralibraries (1.5)
+
+2005-06-29  Giuliano Catrambone  <giuliano.catrambone@catrasoftware.it>
+
+ * catrastreaming v1.6 released
+
+2005-06-28  Giuliano Catrambone  <giuliano.catrambone@catrasoftware.it>
+
+ * Fixed a bug for the streaming of the AMR track and the creation of the hint track of AMR track
+
+2005-06-20  Giuliano Catrambone  <giuliano.catrambone@catrasoftware.it>
+
+ * Fixed a bug in RTPUtility:: getSampleRangeSize. The lock was not unlocked.
+
+2005-06-10  Giuliano Catrambone  <giuliano.catrambone@catrasoftware.it>
+
+ * In MP4File:
+  MP4StringProperty changed in MP4StringNullTerminatedProperty
+   to represent the string terminating with the '\0' character.
+  Added MP4StringLastProperty to represent a string as last property
+   of an atom.
+  The SDP field is now a MP4StringLastProperty
+
+
+2005-06-07  Giuliano Catrambone  <giuliano.catrambone@catrasoftware.it>
+
+ * Changed the MaxPayloadRTPPacketSize configuration parameter from 1470 to 1472
+
+2005-06-07  Giuliano Catrambone  <giuliano.catrambone@catrasoftware.it>
+
+ * Added the DEFAULTMAXPAYLOADSIZE define initialized to 1472 to generate the hint tracks.
+
+2005-06-01  Giuliano Catrambone  <giuliano.catrambone@catrasoftware.it>
+
+ * The SDP is now centralized also for the Hint track generation.
+
+2005-06-01  Giuliano Catrambone  <giuliano.catrambone@catrasoftware.it>
+
+ * Changed many things (bug fix) in order to generate and stream also hint tracks.
+
+2005-05-19  Giuliano Catrambone  <giuliano.catrambone@catrasoftware.it>
+
+ * Update the documentation
+
+2005-05-19  Giuliano Catrambone  <giuliano.catrambone@catrasoftware.it>
+
+ * Added the Standard parameter to the configuration file.
+
+2005-05-18  Giuliano Catrambone  <giuliano.catrambone@catrasoftware.it>
+
+ * catrastreaming v1.5 released
+
+2005-05-18  Giuliano Catrambone  <giuliano.catrambone@catrasoftware.it>
+
+ * Added the framesize information for video tracks into the SDP
+
+2005-05-17  Giuliano Catrambone  <giuliano.catrambone@catrasoftware.it>
+
+ * Changed the WEB documentation to add an interoperability chapter
+
+2005-05-16  Giuliano Catrambone  <giuliano.catrambone@catrasoftware.it>
+
+ * Fixed some bugs in catraMP4TracksInfo and changed some output help.
+
+2005-05-16  Giuliano Catrambone  <giuliano.catrambone@catrasoftware.it>
+
+ * mp4TracksInfo.cpp: the parameters to initialize the MP4File class were ex-changed.
+
+2005-05-16  Giuliano Catrambone  <giuliano.catrambone@catrasoftware.it>
+
+ * In catraMP4FileDump, mp4CreateHintTracks, mp4TracksInfo added lTraceFilePeriodInSecs in Tracer::init.
+
+2005-05-16  Giuliano Catrambone  <giuliano.catrambone@catrasoftware.it>
+
+ * In many places replaced HintTimeScale with RTPTimeScale.
+
+2005-05-14  Giuliano Catrambone  <giuliano.catrambone@catrasoftware.it>
+
+ * RTSPSession: deleted the _bIsHintTrack variable because retrieved from
+  _pmtiTrakInfo.
+
+2005-05-13  Giuliano Catrambone  <giuliano.catrambone@catrasoftware.it>
+
+ * Update the WEB document adding the new job position available
+
+2005-05-12  Giuliano Catrambone  <giuliano.catrambone@catrasoftware.it>
+
+ * Fixed the bug: Run-Time Check Failure #3 - The variable 'ulObjectTypeIndication' is being used without being defined
+  we get on Windows platform. Fixed on RTSPUtility.cpp.
+
+2005-05-11  Giuliano Catrambone  <giuliano.catrambone@catrasoftware.it>
+
+ * Added the b:AS=... global field into the SDP. Fixed some little bugs
+
+2005-05-10  Giuliano Catrambone  <giuliano.catrambone@catrasoftware.it>
+
+ * Fixed some CORBA compilation errors
+
+2005-05-09  Giuliano Catrambone  <giuliano.catrambone@catrasoftware.it>
+
+ * The directories for the traces now are created automatically in case they do not exist.
+
+2005-05-09  Giuliano Catrambone  <giuliano.catrambone@catrasoftware.it>
+
+ * fixes a bug that blocked the starting of the server
+

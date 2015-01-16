@@ -1,0 +1,235 @@
+/*
+ Copyright (C) Giuliano Catrambone (giuliano.catrambone@catrasoftware.it)
+
+ This program is free software; you can redistribute it and/or 
+ modify it under the terms of the GNU General Public License 
+ as published by the Free Software Foundation; either 
+ version 2 of the License, or (at your option) any later 
+ version.
+
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+
+ You should have received a copy of the GNU General Public License
+ along with this program; if not, write to the Free Software
+ Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+
+ Commercial use other than under the terms of the GNU General Public
+ License is allowed only after express negotiation of conditions
+ with the authors.
+*/
+
+
+#ifndef StreamingServer_h
+	#define StreamingServer_h
+
+	#include "StreamingServerErrors.h"
+	#include "ConfigurationFile.h"
+	#include "Tracer.h"
+	#include "RTSPSession.h"
+	#include "StreamingServerEventsSet.h"
+	#include "Scheduler.h"
+	#include "CheckServerSocketTimes.h"
+	#include "CheckSocketsPoolTimes.h"
+	#include "StreamingServerSocketsPool.h"
+	#include "StreamingServerProcessor.h"
+	#ifdef HAVE_CORBA_H
+		#include "StreamingIDL.h"
+	#endif
+	#include <vector>
+
+
+	#define SS_MAXLONGLENGTH					512 + 1
+	#define SS_MAXCONTENTROOTPATHLENGTH			512 + 1
+	#define SS_MAXSTREAMINGNAMELENGTH			256 + 1
+	#define SS_MAXREQUESTLOGFORMATLENGTH		1024
+
+	#define SS_MAXCONFIGURATIONITEMS			1000
+	#define SS_MAXSECTIONNAMELENGTH				512 + 1
+	#define SS_MAXITEMCOMMENTLENGTH				1024 * 5
+	#define SS_MAXITEMNAMELENGTH				512 + 1
+	#define SS_MAXITEMVALUELENGTH				1024 * 2
+
+	#define SS_MAXFILES							10000
+	#define SS_MAXDIRECTORIES					1000
+
+	#define SS_MAXHOSTNAMELENGTH				512 + 1
+	#define SS_MAXNICS							100
+
+	#define SS_MAXSERVLETPATHNAMELENGTH			512 + 1
+
+
+	#ifdef HAVE_CORBA_H
+		class StreamingServer:
+			virtual public POA_StreamingIDL:: StreamingServer
+	#else
+		class StreamingServer
+	#endif
+	{
+		private:
+			ConfigurationFile_p			_pcfConfiguration;
+			Tracer_p					_ptSystemTracer;
+			Tracer_p					_ptSubscriberTracer;
+			time_t						_tServerStartTime;
+			std:: vector<SocketImpl:: IPAddress_t> _vIPAddresses;
+			char						_pHostName [SS_MAXHOSTNAMELENGTH];
+			char						_pContentRootPath [
+				SS_MAXCONTENTROOTPATHLENGTH];
+
+			StreamingServerProcessor_p	_pspStreamingServerProcessor;
+			unsigned long				_ulStreamingServerProcessorsNumber;
+
+			#ifdef HAVE_CORBA_H
+				CORBA:: ORB_ptr				_porb;
+				PortableServer::POA_var		_poa;
+				PortableServer::POAManager_var _pmgr;
+				PortableServer:: ObjectId	*_poid;
+				CORBA:: Object_var			_pref;
+			#endif
+			char						_pStreamingName [
+				SS_MAXSTREAMINGNAMELENGTH];
+
+			MP4Atom:: Standard_t    	_sStandard;
+
+			MP4FileFactory_t			_mp4fMP4FileFactory;
+			RTSPSession_p				_prsRTSPSessions;
+			unsigned long				_ulMaxRTSPServerSessions;
+			char						_pLocalIPAddressForRTSP [
+				SCK_MAXIPADDRESSLENGTH];
+			unsigned long				_ulRTSPRequestsPort;
+			unsigned long				_ulFileCacheSizeInBytes;
+			std:: vector<RTSPSession_p>	_vFreeRTSPSessions;
+			PMutex_t					_mtFreeRTSPSessions;
+
+			unsigned long				_ulCheckServerSocketPeriodInMilliSecs;
+			unsigned long				_ulCheckSocketsPoolPeriodInMilliSecs;
+			unsigned long				_ulSchedulerSleepTimeInMilliSecs;
+
+			StreamingServerEventsSet_t	_esEventsSet;
+			StreamingServerSocketsPool_t	_spStreamingServerSocketsPool;
+			Scheduler_t					_scScheduler;
+			ServerSocket_t				_ssServerSocket;
+
+			CheckServerSocketTimes_t	_cssCheckServerSocketTimes;
+			CheckSocketsPoolTimes_t		_cspCheckSocketsPoolTimes;
+
+			#ifdef WIN32
+				__int64					_ullTotalBytesServed;
+				__int64					_ullTotalLostPacketsNumber;
+				__int64					_ullTotalSentPacketsNumber;
+			#else
+				unsigned long long		_ullTotalBytesServed;
+				unsigned long long		_ullTotalLostPacketsNumber;
+				unsigned long long		_ullTotalSentPacketsNumber;
+			#endif
+
+			PMutex_t					_mtStreamingServerStatistics;
+			PMutex_t					_mtLiveSources;
+			LiveSource_p				_plsLiveSources;
+
+
+			Error initNICs (
+				std:: vector<SocketImpl:: IPAddress_t> *pvIPAddresses);
+
+			Error finishNICs (
+				std:: vector<SocketImpl:: IPAddress_t> *pvIPAddresses);
+
+			#ifdef HAVE_CORBA_H
+				Error registerToNamingService (
+					const char *pStreamingServerName);
+
+				Error deRegisterToNamingService (
+					const char *pStreamingServerName);
+			#endif
+
+		public:
+			StreamingServer (void);
+
+			~StreamingServer (void);
+
+			Error init (
+				int iArgc, char **pArgv,
+				ConfigurationFile_p pcfConfiguration,
+				Tracer_p ptSystemTracer,
+				Tracer_p ptSubscriberTracer);
+
+			Error finish ();
+
+			Error start (void);
+
+			#ifdef HAVE_CORBA_H
+				virtual CORBA:: Long activate ();
+			#else
+				long activate ();
+			#endif
+
+			#ifdef HAVE_CORBA_H
+				virtual CORBA:: Long deactivate ();
+			#else
+				long deactivate ();
+			#endif
+
+			#ifdef HAVE_CORBA_H
+				virtual CORBA:: Long prova ();
+
+				virtual CORBA:: Long shutdown ();
+
+				virtual CORBA::Long isRequestInCache (
+					const char *pAssetPath,
+					CORBA:: ULong_out bIsInCache,
+					CORBA:: ULong_out ulConnectedUsers,
+					CORBA:: ULong_out ulBandWidthUsageInbps);
+
+				virtual CORBA:: Long setChangedConfiguration (
+					const ::StreamingIDL:: ConfigurationItemsList &
+					cilConfigurationItemsList);
+
+				virtual CORBA:: Long getConfiguration (
+					::StreamingIDL:: ConfigurationItemsWithInfoList_out
+					cilConfigurationItemsWithInfoList);
+
+				virtual CORBA:: Long getHostName (CORBA:: String_out pHostName);
+
+// 			virtual CORBA:: Long getNICs (
+//				::StreamingIDL:: StringsList_out lsNICs);
+//				throw (::StreamingIDL:: StreamingExc);
+
+				virtual CORBA:: Long getContents (const char *pDirectory,
+					::StreamingIDL:: StringsList_out lsFileNames,
+					::StreamingIDL:: StringsList_out lsDirectories);
+
+				virtual CORBA:: Long addDirectory (const char *pDirectoryName);
+
+				virtual CORBA:: Long deleteDirectory (
+					const char *pDirectoryName);
+
+				virtual CORBA:: Long addContent (
+					const char *pContentName,
+					const ::StreamingIDL:: BytesList &blContent);
+
+				virtual CORBA:: Long deleteContent (const char *pContentName);
+
+				virtual CORBA:: Long dumpContent (const char *pContentName,
+					CORBA:: String_out pDump);
+
+				virtual CORBA:: Long getTracksInfo (const char *pContentName,
+					CORBA:: String_out pTracksInfo);
+
+
+				virtual CORBA:: Long getServerConnectedUsers (
+					::StreamingIDL:: ServerConnectedUsersList_out
+					scuServerConnectedUsersList);
+
+				virtual CORBA:: Long getServerInfo (
+					::StreamingIDL:: ServerInfo_out siServerInfo);
+			#endif
+
+	} ;
+
+	typedef class StreamingServer
+		StreamingServer_t, *StreamingServer_p;
+
+#endif
+

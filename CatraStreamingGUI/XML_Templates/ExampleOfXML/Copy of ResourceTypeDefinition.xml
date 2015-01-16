@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ResourceType Label="Resource Type" Icon="open.gif" DisabledFunctionalitiesList="DestroyResourceType,DestroyResourceAttributeType" DisabledFunctionalitiesListSeparator=",">
+	<CreateResourceTypeFunctionality Identifier="CreateResourceType" Label="Create resource type..." Icon="new.gif" ToBeShownInTheToolbar="yes">
+	</CreateResourceTypeFunctionality>
+	<DestroyResourceTypeFunctionality Identifier="DestroyResourceType" Label="Destroy resource type..." Icon="cut.gif" ToBeShownInTheToolbar="yes">
+	</DestroyResourceTypeFunctionality>
+	<CreateResourceAttributeTypeFunctionality Identifier="CreateResourceAttributeType" Label="Create resource attribute type..." Icon="new.gif" ToBeShownInTheToolbar="yes">
+	</CreateResourceAttributeTypeFunctionality>
+	<DestroyResourceAttributeTypeFunctionality Identifier="DestroyResourceAttributeType" Label="Destroy resource attribute type..." Icon="cut.gif" ToBeShownInTheToolbar="yes">
+	</DestroyResourceAttributeTypeFunctionality>
+	<EditResourceAttributeTypeFunctionality Identifier="EditResourceAttributeType" Label="Edit resource attribute type..." Icon="new.gif" ToBeShownInTheToolbar="yes">
+	</EditResourceAttributeTypeFunctionality>
+	<SaveXMLFunctionality Identifier="SaveXML" Label="Save XML..." Icon="save.gif" ToBeShownInTheToolbar="yes">
+	</SaveXMLFunctionality>
+	<ResourceAttributeType Identifier="State" Label="State" Icon="Attribute.gif" Type="String" DefaultValue="" EnumerationValues="" EnumerationValuesSeparator="" Mandatory="Yes" DisabledFunctionalitiesList="CreateResourceType,DestroyResourceType,CreateResourceAttributeType" DisabledFunctionalitiesListSeparator=",">
+	</ResourceAttributeType>
+	<ResourceAttributeType Identifier="Identifier" Label="Identifier" Icon="Attribute.gif" Type="String" DefaultValue="" EnumerationValues="" EnumerationValuesSeparator="" Mandatory="Yes" DisabledFunctionalitiesList="CreateResourceType,DestroyResourceType,CreateResourceAttributeType" DisabledFunctionalitiesListSeparator=",">
+	</ResourceAttributeType>
+	<ResourceType Identifier="Sede" Label="Sede" Icon="sede.gif" DisabledFunctionalitiesList="DestroyResourceAttributeType" DisabledFunctionalitiesListSeparator=",">
+		<ResourceAttributeType Identifier="Via" Label="Via" Icon="Attribute.gif" Type="String" DefaultValue="" EnumerationValues="" EnumerationValuesSeparator="" Mandatory="Yes" DisabledFunctionalitiesList="CreateResourceType,DestroyResourceType,CreateResourceAttributeType" DisabledFunctionalitiesListSeparator=",">
+		</ResourceAttributeType>
+	</ResourceType>
+	<ResourceType Identifier="Router" Label="Router" Icon="router.gif" DisabledFunctionalitiesList="DestroyResourceAttributeType" DisabledFunctionalitiesListSeparator=",">
+		<ResourceAttributeType Identifier="Marca" Label="Marca" Icon="Attribute.gif" Type="String" DefaultValue="CISCO" EnumerationValues="" EnumerationValuesSeparator="" Mandatory="Yes" DisabledFunctionalitiesList="CreateResourceType,DestroyResourceType,CreateResourceAttributeType" DisabledFunctionalitiesListSeparator=",">
+		</ResourceAttributeType>
+	</ResourceType>
+	<ResourceType Identifier="MailServer" Label="Mail server" Icon="mailserver.gif" DisabledFunctionalitiesList="DestroyResourceAttributeType" DisabledFunctionalitiesListSeparator=",">
+		<ResourceAttributeType Identifier="Versione" Label="Versione" Icon="Attribute.gif" Type="Enumeration" DefaultValue="1" EnumerationValues="1.1,1.2,1.3,1.4,1.5" EnumerationValuesSeparator="," Mandatory="no" DisabledFunctionalitiesList="CreateResourceType,DestroyResourceType,CreateResourceAttributeType" DisabledFunctionalitiesListSeparator=",">
+		</ResourceAttributeType>
+	</ResourceType>
+	<ResourceType Identifier="mail" Label="Mail" Icon="mail.gif" DisabledFunctionalitiesList="DestroyResourceAttributeType" DisabledFunctionalitiesListSeparator=",">
+		<ResourceAttributeType Identifier="address" Label="Address" Icon="Attribute.gif" Type="String" DefaultValue="aaa@pride.it" EnumerationValues="" EnumerationValuesSeparator="" Mandatory="Yes" DisabledFunctionalitiesList="CreateResourceType,DestroyResourceType,CreateResourceAttributeType" DisabledFunctionalitiesListSeparator=",">
+		</ResourceAttributeType>
+	</ResourceType>
+	<ResourceType Identifier="CDN" Label="CDN" Icon="cdn.gif" DisabledFunctionalitiesList="DestroyResourceAttributeType" DisabledFunctionalitiesListSeparator=",">
+		<ResourceAttributeType Identifier="identificativo" Label="Identificativo" Icon="Attribute.gif" Type="String" DefaultValue="11111" EnumerationValues="" EnumerationValuesSeparator="" Mandatory="Yes" DisabledFunctionalitiesList="CreateResourceType,DestroyResourceType,CreateResourceAttributeType" DisabledFunctionalitiesListSeparator=",">
+		</ResourceAttributeType>
+	</ResourceType>
+</ResourceType>

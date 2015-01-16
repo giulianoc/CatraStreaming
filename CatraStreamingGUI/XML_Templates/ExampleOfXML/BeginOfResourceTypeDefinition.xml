@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ResourceType Label="Resource Type" Icon="open.gif" DisabledFunctionalitiesList="DestroyResourceType,DestroyResourceAttributeType" DisabledFunctionalitiesListSeparator=",">
+	<CreateResourceTypeFunctionality Identifier="CreateResourceType" Label="Create resource type..." Icon="new.gif" ToBeShownInTheToolbar="yes">
+	</CreateResourceTypeFunctionality>
+	<DestroyResourceTypeFunctionality Identifier="DestroyResourceType" Label="Destroy resource type..." Icon="cut.gif" ToBeShownInTheToolbar="yes">
+	</DestroyResourceTypeFunctionality>
+	<CreateResourceAttributeTypeFunctionality Identifier="CreateResourceAttributeType" Label="Create resource attribute type..." Icon="new.gif" ToBeShownInTheToolbar="yes">
+	</CreateResourceAttributeTypeFunctionality>
+	<DestroyResourceAttributeTypeFunctionality Identifier="DestroyResourceAttributeType" Label="Destroy resource attribute type..." Icon="cut.gif" ToBeShownInTheToolbar="yes">
+	</DestroyResourceAttributeTypeFunctionality>
+	<EditResourceAttributeTypeFunctionality Identifier="EditResourceAttributeType" Label="Edit resource attribute type..." Icon="new.gif" ToBeShownInTheToolbar="yes">
+	</EditResourceAttributeTypeFunctionality>
+	<SaveXMLFunctionality Identifier="SaveXML" Label="Save XML..." Icon="save.gif" ToBeShownInTheToolbar="yes">
+	</SaveXMLFunctionality>
+</ResourceType>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--JBuilder XML Project-->
+<project>
+  <property category="debug.0" name="SmartStepRedefineClasses" value="0"/>
+  <property category="debug.0" name="SmartStepSkipStaticInitializers" value="0"/>
+  <property category="debug.0" name="SmartStepSkipSynthetics" value="0"/>
+  <property category="generalFormatting" name="continuationIndent" value="2"/>
+  <property category="generalFormatting" name="tabSize" value="4"/>
+  <property category="generalFormatting" name="useTabChar" value="1"/>
+  <property category="idl" name="ProcessIDL" value="false"/>
+  <property category="javaFormatting" name="EventMatch" value="0"/>
+  <property category="runtime.0" name="BuildTargetOnRun" value="com.borland.jbuilder.build.ProjectBuilder$ProjectBuildAction;make"/>
+  <property category="runtime.0" name="ConfigurationName" value="StreamingGUI"/>
+  <property category="runtime.0" name="RunnableType" value="com.borland.jbuilder.runtime.AppletRunner"/>
+  <property category="runtime.0" name="applet.class" value="StreamingGUI.StreamingGUI"/>
+  <property category="runtime.0" name="applet.height" value="550"/>
+  <property category="runtime.0" name="applet.html" value="classes/StreamingGUI.html"/>
+  <property category="runtime.0" name="applet.parameters.1" value="XMLForConfigurationFileName"/>
+  <property category="runtime.0" name="applet.parameters.2" value="XMLForContentsFileName"/>
+  <property category="runtime.0" name="applet.parameters.3" value="XMLForMonitorFileName"/>
+  <property category="runtime.0" name="applet.parameters.4" value="ORBInitRef"/>
+  <property category="runtime.0" name="applet.values.1" value="XML/GUIConfiguration.xml"/>
+  <property category="runtime.0" name="applet.values.2" value="XML/GUIContent.xml"/>
+  <property category="runtime.0" name="applet.values.3" value="XML/GUIMonitor.xml"/>
+  <property category="runtime.0" name="applet.values.4" value="NameService=corbaloc::127.0.0.1:12456/NameService"/>
+  <property category="runtime.0" name="applet.width" value="1100"/>
+  <property category="runtime.0" name="application.class" value="StreamingGUI.StreamingGUI"/>
+  <property category="runtime.0" name="appserver.ejbJarsSaved" value="1"/>
+  <property category="runtime.0" name="appserver.parameters" value="-jts -jns -jss -jdb"/>
+  <property category="runtime.0" name="appserver.servername" value="standard"/>
+  <property category="runtime.0" name="appserver.vmparameters" value="-Dvbroker.agent.port=14000 -Djava.library.path=/BorlandEnterpriseServer/lib;/BorlandEnterpriseServer/bin -Dborland.enterprise.licenseDir=/BorlandEnterpriseServer/var/servers/CATRAMBONE/adm -Dejb.module_preload=true"/>
+  <property category="runtime.0" name="jsprunner.launchuri" value="/"/>
+  <property category="runtime.0" name="test.harness" value="junit.textui.TestRunner"/>
+  <property category="serverservices" name="disabled.services" value=""/>
+  <property category="sys" name="AuthorLabel" value="@author"/>
+  <property category="sys" name="BackupPath" value="bak"/>
+  <property category="sys" name="CheckStable" value="1"/>
+  <property category="sys" name="Company" value=""/>
+  <property category="sys" name="CompanyLabel" value="Company:"/>
+  <property category="sys" name="Copyright" value="Copyright (c) 2002"/>
+  <property category="sys" name="CopyrightLabel" value="Copyright:"/>
+  <property category="sys" name="DefaultPath" value="src"/>
+  <property category="sys" name="Description" value=""/>
+  <property category="sys" name="DescriptionLabel" value="Description:"/>
+  <property category="sys" name="DocPath" value="doc"/>
+  <property category="sys" name="ExcludeClassEnabled" value="0"/>
+  <property category="sys" name="IncludeTestPath" value="1"/>
+  <property category="sys" name="JDK" value="java version 1.4.1-b21"/>
+  <property category="sys" name="LastTag" value="0"/>
+  <property category="sys" name="Libraries" value="xml4j;xml_swing11;XMLTree;JacORB;StreamingIDL_v_1_3"/>
+  <property category="sys" name="MakeStable" value="0"/>
+  <property category="sys" name="OutPath" value="classes"/>
+  <property category="sys" name="SourcePath" value="src;test"/>
+  <property category="sys" name="TestPath" value="test"/>
+  <property category="sys" name="Title" value=""/>
+  <property category="sys" name="TitleLabel" value="Title:"/>
+  <property category="sys" name="Version" value="1.0"/>
+  <property category="sys" name="VersionLabel" value="@version"/>
+  <property category="sys" name="WorkingDirectory" value="."/>
+  <file path="src/StreamingGUI/ActivateServer.java"/>
+  <file path="src/StreamingGUI/ActivateServerConfiguration.java"/>
+  <file path="src/StreamingGUI/AddContent.java"/>
+  <file path="src/StreamingGUI/AddDirectory.java"/>
+  <file path="src/StreamingGUI/AddHintTrack.java"/>
+  <file path="src/StreamingGUI/AddHintTracks.java"/>
+  <file path="src/StreamingGUI/AddServers.java"/>
+  <file path="src/StreamingGUI/AddSite.java"/>
+  <file path="src/StreamingGUI/ChangeInEveryServer.java"/>
+  <file path="src/StreamingGUI/ChangeInEverySiteServer.java"/>
+  <file path="src/StreamingGUI/ConfigurationTransaction.java"/>
+  <file path="src/StreamingGUI/DBMSImplementation.java"/>
+  <file path="src/StreamingGUI/DeactivateServer.java"/>
+  <file path="src/StreamingGUI/DeleteContent.java"/>
+  <file path="src/StreamingGUI/DeleteDirectory.java"/>
+  <file path="src/StreamingGUI/DeleteServer.java"/>
+  <file path="src/StreamingGUI/DeleteSite.java"/>
+  <file path="src/StreamingGUI/DeleteTrack.java"/>
+  <file path="src/StreamingGUI/DumpContent.java"/>
+  <file path="src/StreamingGUI/DuplicateContent.java"/>
+  <file path="src/StreamingGUI/GetTracksInfo.java"/>
+  <file path="src/StreamingGUI/GlobalConnectedUsersMonitoringTableModel.java"/>
+  <file path="src/StreamingGUI/LoginDialog.java"/>
+  <file path="src/StreamingGUI/MonitoringRefreshThread.java"/>
+  <file path="src/StreamingGUI/PropagationRules.java"/>
+  <file path="src/StreamingGUI/Refresh.java"/>
+  <file path="src/StreamingGUI/SaveContentLocally.java"/>
+  <file path="src/StreamingGUI/ServerConnectedUsersMonitoringTableModel.java"/>
+  <file path="src/StreamingGUI/ServerMonitoringTableModel.java"/>
+  <file path="src/StreamingGUI/ShutdownServer.java"/>
+  <file path="src/StreamingGUI/SiteConnectedUsersMonitoringTableModel.java"/>
+  <file path="src/StreamingGUI/SqlResultsSetImplementation.java"/>
+  <file path="StreamingGUI.html"/>
+  <file path="src/StreamingGUI/StreamingGUI.java"/>
+  <file path="src/StreamingGUI/TreeVisitToFindConfigurationChanges.java"/>
+  <file path="src/StreamingGUI/TreeVisitToGetConfigurationFile.java"/>
+  <file path="src/StreamingGUI/XMLTreeForConfiguration.java"/>
+  <file path="src/StreamingGUI/XMLTreeForContents.java"/>
+  <file path="src/StreamingGUI/XMLTreeForMonitor.java"/>
+</project>

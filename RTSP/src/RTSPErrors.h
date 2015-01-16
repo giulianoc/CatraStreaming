@@ -1,0 +1,88 @@
+/*
+ Copyright (C) Giuliano Catrambone (giuliano.catrambone@catrasoftware.it)
+
+ This program is free software; you can redistribute it and/or 
+ modify it under the terms of the GNU General Public License 
+ as published by the Free Software Foundation; either 
+ version 2 of the License, or (at your option) any later 
+ version.
+
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+
+ You should have received a copy of the GNU General Public License
+ along with this program; if not, write to the Free Software
+ Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+
+ Commercial use other than under the terms of the GNU General Public
+ License is allowed only after express negotiation of conditions
+ with the authors.
+*/
+
+
+#ifndef RTSPErrors_h
+	#define RTSPErrors_h
+
+	#include "Error.h"
+	#include <iostream>
+
+	enum RTSPErrorsCodes {
+
+		// RTSPUtility
+		RTSP_RTSPUTILITY_GETDESCRIBEREQUEST_FAILED,
+		RTSP_RTSPUTILITY_PARSEDESCRIBEREQUEST_FAILED,
+		RTSP_RTSPUTILITY_GETSDPFROMMEDIAINFO_FAILED,
+		RTSP_RTSPUTILITY_GETMEDIAINFOFROMSDPFILE_FAILED,
+		RTSP_RTSPUTILITY_GETDESCRIBERESPONSE_FAILED,
+		RTSP_RTSPUTILITY_PARSEDESCRIBERESPONSE_FAILED,
+		RTSP_RTSPUTILITY_GETSETUPREQUEST_FAILED,
+		RTSP_RTSPUTILITY_PARSESETUPREQUEST_FAILED,
+		RTSP_RTSPUTILITY_GETSETUPRESPONSE_FAILED,
+		RTSP_RTSPUTILITY_PARSESETUPRESPONSE_FAILED,
+		RTSP_RTSPUTILITY_GETPLAYREQUEST_FAILED,
+		RTSP_RTSPUTILITY_PARSEPLAYREQUEST_FAILED,
+		RTSP_RTSPUTILITY_GETPLAYRESPONSE_FAILED,
+		RTSP_RTSPUTILITY_PARSEPLAYRESPONSE_FAILED,
+		RTSP_RTSPUTILITY_PARSEPAUSEREQUEST_FAILED,
+		RTSP_RTSPUTILITY_GETPAUSERESPONSE_FAILED,
+		RTSP_RTSPUTILITY_PARSETEARDOWNREQUEST_FAILED,
+		RTSP_RTSPUTILITY_GETTEARDOWNRESPONSE_FAILED,
+		RTSP_RTSPUTILITY_PARSETEARDOWNRESPONSE_FAILED,
+		RTSP_RTSPUTILITY_GETOPTIONSREQUEST_FAILED,
+		RTSP_RTSPUTILITY_PARSEOPTIONSREQUEST_FAILED,
+		RTSP_RTSPUTILITY_GETOPTIONSRESPONSE_FAILED,
+		RTSP_RTSPUTILITY_GETDATESTR_FAILED,
+		RTSP_RTSPUTILITY_GETRTSPRESPONSE_FAILED,
+		RTSP_RTSPUTILITY_DESCRIBEREQUESTWRONG,
+		RTSP_RTSPUTILITY_DESCRIBERESPONSEWRONG,
+		RTSP_RTSPUTILITY_SETUPREQUESTWRONG,
+		RTSP_RTSPUTILITY_PLAYREQUESTWRONG,
+		RTSP_RTSPUTILITY_PAUSEREQUESTWRONG,
+		RTSP_RTSPUTILITY_TEARDOWNREQUESTWRONG,
+		RTSP_RTSPUTILITY_OPTIONSREQUESTWRONG,
+		RTSP_RTSPUTILITY_RTSPSTATUSCODEWRONG,
+		RTSP_RTSPUTILITY_TRANSPORTNOTCOMPLIANT,
+		RTSP_RTSPUTILITY_SETUPTRANSPORTWRONG,
+		RTSP_RTSPUTILITY_WRONGRTPINFO,
+
+		// common
+		RTSP_NEW_FAILED,
+
+		// Insert here other errors...
+
+		RTSP_MAXERRORS
+	} ;
+
+	#ifdef WIN32
+		// warning C4267: 'argument' : conversion from 'size_t' to 'long', possible loss of data
+
+		#pragma warning (disable : 4267)
+	#endif
+
+	// declaration of class error
+	dclCustomErrorClass (RTSPErrors, RTSP_MAXERRORS)
+   
+#endif
+

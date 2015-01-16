@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Designing Identifier="Designing" Label="Designing" Icon="Hammer.gif" DisabledFunctionalitiesList="DestroyServiceDesign,AddResource,DelResource" DisabledFunctionalitiesListSeparator=",">
+	<CreateServiceDesignFunctionality Identifier="CreateServiceDesign" Label="Create Service design..." Icon="left.gif" ToBeShownInTheToolbar="yes">
+	</CreateServiceDesignFunctionality>
+	<DestroyServiceDesignFunctionality Identifier="DestroyServiceDesign" Label="Destroy Service design..." Icon="left.gif" ToBeShownInTheToolbar="yes">
+	</DestroyServiceDesignFunctionality>
+	<AddResourceFunctionality Identifier="AddResource" Label="Add resource..." Icon="left.gif" ToBeShownInTheToolbar="yes">
+	</AddResourceFunctionality>
+	<DelResourceFunctionality Identifier="DelResource" Label="Del resource..." Icon="left.gif" ToBeShownInTheToolbar="yes">
+	</DelResourceFunctionality>
+	<SaveXMLFunctionality Identifier="SaveXML" Label="Save XML..." Icon="save.gif" ToBeShownInTheToolbar="yes">
+	</SaveXMLFunctionality>
+	<Entity Identifier="Integra" Label="Integra" Icon="Hammer.gif" DisabledFunctionalitiesList="CreateServiceDesign,DelResource" DisabledFunctionalitiesListSeparator=",">
+		<ResourceType Identifier="Sede" Label="Sede (id 1*st 1)" Icon="sede.gif" DisabledFunctionalitiesList="CreateServiceDesign,DestroyServiceDesign" DisabledFunctionalitiesListSeparator=",">
+			<ProvisioningChoiceFromInputTable Identifier="Sede" Label="Attributes of 'Sede'" Icon="Attributes.gif" ValueIcon="AttributeValues.gif" ValueLabel="Attributes" Rows="3" Columns="2" ColumnTitle_0="Name" ColumnTitle_1="Value" Cell_0_0_Type="Label" Cell_0_0_Value="Via" Cell_0_1_Type="TextInput" Cell_0_1_DefaultValue="" Mandatory="Yes" Cell_1_0_Type="Label" Cell_1_0_Value="State" Cell_1_1_Type="TextInput" Cell_1_1_DefaultValue="" Cell_2_0_Type="Label" Cell_2_0_Value="Identifier" Cell_2_1_Type="TextInput" Cell_2_1_DefaultValue="" DisabledFunctionalitiesList="CreateServiceDesign,DestroyServiceDesign,,AddResource,DelResource" DisabledFunctionalitiesListSeparator="," Cell_0_1_UserValue="" Cell_1_1_UserValue="st 1" Cell_2_1_UserValue="id 1">
+				<UserInput Label="Attributes" Icon="AttributeValues.gif" OutputParameter="">
+				</UserInput>
+			</ProvisioningChoiceFromInputTable>
+			<ResourceType Identifier="CDN" Label="CDN" Icon="cdn.gif" DisabledFunctionalitiesList="CreateServiceDesign,DestroyServiceDesign" DisabledFunctionalitiesListSeparator=",">
+				<ProvisioningChoiceFromInputTable Identifier="CDN" Label="Attributes of 'CDN'" Icon="Attributes.gif" ValueIcon="AttributeValues.gif" ValueLabel="Attributes" Rows="3" Columns="2" ColumnTitle_0="Name" ColumnTitle_1="Value" Cell_0_0_Type="Label" Cell_0_0_Value="Identificativo" Cell_0_1_Type="TextInput" Cell_0_1_DefaultValue="11111" Mandatory="Yes" Cell_1_0_Type="Label" Cell_1_0_Value="State" Cell_1_1_Type="TextInput" Cell_1_1_DefaultValue="" Cell_2_0_Type="Label" Cell_2_0_Value="Identifier" Cell_2_1_Type="TextInput" Cell_2_1_DefaultValue="" DisabledFunctionalitiesList="CreateServiceDesign,DestroyServiceDesign,,AddResource,DelResource" DisabledFunctionalitiesListSeparator=",">
+					<UserInput Label="<empty>" Icon="Empty.gif" OutputParameter="null">
+					</UserInput>
+				</ProvisioningChoiceFromInputTable>
+				<ResourceType Identifier="Router" Label="Router" Icon="router.gif" DisabledFunctionalitiesList="CreateServiceDesign,DestroyServiceDesign" DisabledFunctionalitiesListSeparator=",">
+					<ProvisioningChoiceFromInputTable Identifier="Router" Label="Attributes of 'Router'" Icon="Attributes.gif" ValueIcon="AttributeValues.gif" ValueLabel="Attributes" Rows="3" Columns="2" ColumnTitle_0="Name" ColumnTitle_1="Value" Cell_0_0_Type="Label" Cell_0_0_Value="Marca" Cell_0_1_Type="TextInput" Cell_0_1_DefaultValue="CISCO" Mandatory="Yes" Cell_1_0_Type="Label" Cell_1_0_Value="State" Cell_1_1_Type="TextInput" Cell_1_1_DefaultValue="" Cell_2_0_Type="Label" Cell_2_0_Value="Identifier" Cell_2_1_Type="TextInput" Cell_2_1_DefaultValue="" DisabledFunctionalitiesList="CreateServiceDesign,DestroyServiceDesign,,AddResource,DelResource" DisabledFunctionalitiesListSeparator=",">
+						<UserInput Label="<empty>" Icon="Empty.gif" OutputParameter="null">
+						</UserInput>
+					</ProvisioningChoiceFromInputTable>
+				</ResourceType>
+				<ResourceType Identifier="Router" Label="Router" Icon="router.gif" DisabledFunctionalitiesList="CreateServiceDesign,DestroyServiceDesign" DisabledFunctionalitiesListSeparator=",">
+					<ProvisioningChoiceFromInputTable Identifier="Router" Label="Attributes of 'Router'" Icon="Attributes.gif" ValueIcon="AttributeValues.gif" ValueLabel="Attributes" Rows="3" Columns="2" ColumnTitle_0="Name" ColumnTitle_1="Value" Cell_0_0_Type="Label" Cell_0_0_Value="Marca" Cell_0_1_Type="TextInput" Cell_0_1_DefaultValue="CISCO" Mandatory="Yes" Cell_1_0_Type="Label" Cell_1_0_Value="State" Cell_1_1_Type="TextInput" Cell_1_1_DefaultValue="" Cell_2_0_Type="Label" Cell_2_0_Value="Identifier" Cell_2_1_Type="TextInput" Cell_2_1_DefaultValue="" DisabledFunctionalitiesList="CreateServiceDesign,DestroyServiceDesign,,AddResource,DelResource" DisabledFunctionalitiesListSeparator=",">
+						<UserInput Label="<empty>" Icon="Empty.gif" OutputParameter="null">
+						</UserInput>
+					</ProvisioningChoiceFromInputTable>
+				</ResourceType>
+			</ResourceType>
+		</ResourceType>
+		<ResourceType Identifier="MailServer" Label="Mail server" Icon="mailserver.gif" DisabledFunctionalitiesList="CreateServiceDesign,DestroyServiceDesign" DisabledFunctionalitiesListSeparator=",">
+			<ProvisioningChoiceFromInputTable Identifier="MailServer" Label="Attributes of 'Mail server'" Icon="Attributes.gif" ValueIcon="AttributeValues.gif" ValueLabel="Attributes" Rows="3" Columns="2" ColumnTitle_0="Name" ColumnTitle_1="Value" Cell_0_0_Type="Label" Cell_0_0_Value="Versione" Cell_0_1_Type="ComboBoxInput" Cell_0_1_EnumerationValues="1.1,1.2,1.3,1.4,1.5" Cell_0_1_EnumerationValuesSeparator="," Cell_0_1_DefaultValueIndex="1" Mandatory="Yes" Cell_1_0_Type="Label" Cell_1_0_Value="State" Cell_1_1_Type="TextInput" Cell_1_1_DefaultValue="" Cell_2_0_Type="Label" Cell_2_0_Value="Identifier" Cell_2_1_Type="TextInput" Cell_2_1_DefaultValue="" DisabledFunctionalitiesList="CreateServiceDesign,DestroyServiceDesign,,AddResource,DelResource" DisabledFunctionalitiesListSeparator=",">
+				<UserInput Label="<empty>" Icon="Empty.gif" OutputParameter="null">
+				</UserInput>
+			</ProvisioningChoiceFromInputTable>
+			<ResourceType Identifier="mail" Label="Mail" Icon="mail.gif" DisabledFunctionalitiesList="CreateServiceDesign,DestroyServiceDesign" DisabledFunctionalitiesListSeparator=",">
+				<ProvisioningChoiceFromInputTable Identifier="mail" Label="Attributes of 'Mail'" Icon="Attributes.gif" ValueIcon="AttributeValues.gif" ValueLabel="Attributes" Rows="3" Columns="2" ColumnTitle_0="Name" ColumnTitle_1="Value" Cell_0_0_Type="Label" Cell_0_0_Value="Address" Cell_0_1_Type="TextInput" Cell_0_1_DefaultValue="aaa@pride.it" Mandatory="Yes" Cell_1_0_Type="Label" Cell_1_0_Value="State" Cell_1_1_Type="TextInput" Cell_1_1_DefaultValue="" Cell_2_0_Type="Label" Cell_2_0_Value="Identifier" Cell_2_1_Type="TextInput" Cell_2_1_DefaultValue="" DisabledFunctionalitiesList="CreateServiceDesign,DestroyServiceDesign,,AddResource,DelResource" DisabledFunctionalitiesListSeparator=",">
+					<UserInput Label="<empty>" Icon="Empty.gif" OutputParameter="null">
+					</UserInput>
+				</ProvisioningChoiceFromInputTable>
+			</ResourceType>
+		</ResourceType>
+	</Entity>
+</Designing>

@@ -1,0 +1,723 @@
+2006/01/16 17:54:09:812||10.214.138.3:12001-649|10.63.62.98|DEBUG|it.h3g.telecomando.StzLogic|initLoggerSessionInfo|Logger session information inited
+2006/01/16 17:54:09:813||10.214.138.3:12001-649|10.63.62.98|INFO|com.streamezzo.rsp.main$brsp|_handleIncludeRequest|Begin Scene
+2006/01/16 17:54:09:813||10.214.138.3:12001-649|10.63.62.98|DEBUG|com.streamezzo.rsp.main$brsp|_handleIncludeRequest|stzSession ID: 448FF22A41CE106F9952CE5D1AE7A4C1
+2006/01/16 17:54:09:814||10.214.138.3:12001-649|10.63.62.98|INFO|it.h3g.telecomando.LogicBusiness|getInstance|Loading LogicBusiness
+2006/01/16 17:54:09:815||10.214.138.3:12001-649|10.63.62.98|INFO|it.h3g.telecomando.LogicBusiness|getInstance|LogicBusiness already created
+2006/01/16 17:54:09:815||10.214.138.3:12001-649|10.63.62.98|DEBUG|it.h3g.telecomando.LogicBusiness|isEnabled|true
+2006/01/16 17:54:09:816||10.214.138.3:12001-649|10.63.62.98|INFO|it.h3g.telecomando.LogicBusiness|checkNetworkStatus|check Network Status
+2006/01/16 17:54:09:817||10.214.138.3:12001-649|10.63.62.98|INFO|it.h3g.telecomando.LogicBusiness|checkNetworkStatus|Network status = 3G
+2006/01/16 17:54:09:817||10.214.138.3:12001-649|10.63.62.98|INFO|it.h3g.telecomando.StzLogic|retrieveChannelList|Midlet version=1.0.1
+2006/01/16 17:54:09:818||10.214.138.3:12001-649|10.63.62.98|DEBUG|it.h3g.telecomando.LogicBusiness|getLastVersion|getting the last midlet version: 1.0.1
+2006/01/16 17:54:09:818||10.214.138.3:12001-649|10.63.62.98|INFO|it.h3g.telecomando.LogicBusiness|getPalinsesto|Retrieving channels-palinsesto
+2006/01/16 17:54:09:819||10.214.138.3:12001-649|10.63.62.98|INFO|it.h3g.telecomando.LogicBusiness|getPalinsesto|Loading Channels-palinsesto because expired!
+2006/01/16 17:54:09:820||10.214.138.3:12001-649|10.63.62.98|DEBUG|it.h3g.telecomando.LogicBusiness|retrieveChannels|retrieve channels
+2006/01/16 17:54:09:823||10.214.138.3:12001-649|10.63.62.98|DEBUG|it.h3g.telecomando.LogicBusiness|getXMLViaHttp|url=http://h3mil022.h3g.it:8081/streamezzo/palinsesto.xml
+2006/01/16 17:54:09:824||10.214.138.3:12001-649|10.63.62.98|INFO|it.h3g.telecomando.LogicBusiness|getXMLViaHttp|X-H3G-SECURITY-TOKEN=,X-H3G-REQUEST-SEQUENCE-ID=10.214.138.3:12001-649,X-H3G-CLIENT-IP=10.63.62.98,X-H3G-CC=,X-H3G-MSISDN=,X-H3G-PARTY-ID=-1,X-H3G-NC=,BARRACUDA_H3G_DEVICE_NAME=TELECOMANDO_v1.0,X-H3G-DEVICE-NAME=PC
+2006/01/16 17:54:09:837||10.214.138.3:12001-649|10.63.62.98|DEBUG|it.h3g.telecomando.LogicBusiness|getXMLViaHttp|<?xml version="1.0" encoding="UTF-8" ?> 
+ <channels>
+ <channel id="3" name="Cartoon Network" category="" isSecure="false" position="4" keyword="default" mode="text" price="0.90">
+  <online start="2005-01-01T12:33:00" end="2009-07-01T12:33:00" active="true" streaming="true" /> 
+  <link type="preview" label="Anteprima gratuita" position="01" url="rtsp://62.13.171.34/co/CartoonPreview" active="false" /> 
+  <link type="guarda" label="Guarda" position="02" url="rtsp://62.13.171.34/co/Cartoon" active="true" /> 
+  <link type="msite" label="" position="03" url="" active="true" /> 
+  <link type="help" label="Come funziona" position="04" url="http://" active="true" /> 
+  <link type="tuatv" label="La Tua TV" position="05" url="http://" active="true" /> 
+  <logo rap="rap://cartoon_bannerTV" /> 
+  <hb-logo rap="rap://cartoon_network_tv" /> 
+ <page type="warning">
+  <text-line>_</text-line> 
+  </page>
+ <page type="disable">
+  <text-line>Siamo spiacenti il servizio non e' momentaneamente disponibile.</text-line> 
+  </page>
+ <charging-metadata>
+  <data name="SupplierId">138</data> 
+  <tariff refid="CANALE12" /> 
+  </charging-metadata>
+ <channel-schedule noNamespaceSchemaLocation="palinsesto.xsd">
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-20T11:20:00" startTime="2005-07-20T11:00:00" title="Cow e Chicken" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-20T11:40:00" startTime="2005-07-20T11:20:00" title="Billy e Mandy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-20T12:05:00" startTime="2005-07-20T11:40:00" title="Foster Home for Imaginary Friends" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-20T12:30:00" startTime="2005-07-20T12:05:00" title="Courage" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-20T13:00:00" startTime="2005-07-20T12:30:00" title="Dexter Laboratory" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-20T13:25:00" startTime="2005-07-20T13:00:00" title="Johnny Bravo" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-20T14:00:00" startTime="2005-07-20T13:25:00" title="Ed Edd e Eddy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-20T14:25:00" startTime="2005-07-20T14:00:00" title="KND" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-20T15:00:00" startTime="2005-07-20T14:25:00" title="PPG" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-20T15:25:00" startTime="2005-07-20T15:00:00" title="Johnny Bravo" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-20T15:45:00" startTime="2005-07-20T15:25:00" title="Cow e Chicken" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-20T16:10:00" startTime="2005-07-20T15:45:00" title="Courage" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-20T16:40:00" startTime="2005-07-20T16:10:00" title="Dexter Laboratory" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-20T17:15:00" startTime="2005-07-20T16:40:00" title="Ed Edd e Eddy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-20T17:40:00" startTime="2005-07-20T17:15:00" title="KND" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-20T18:15:00" startTime="2005-07-20T17:40:00" title="PPG" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-20T18:35:00" startTime="2005-07-20T18:15:00" title="Cow e Chicken" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-20T18:45:00" startTime="2005-07-20T18:35:00" title="Billy e Mandy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-20T19:10:00" startTime="2005-07-20T18:45:00" title="Johnny Bravo" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-20T19:30:00" startTime="2005-07-20T19:10:00" title="Cow e Chicken" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-20T19:55:00" startTime="2005-07-20T19:30:00" title="Courage" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-20T20:25:00" startTime="2005-07-20T19:55:00" title="Dexter Laboratory" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-20T21:00:00" startTime="2005-07-20T20:25:00" title="Ed Edd e Eddy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-20T21:25:00" startTime="2005-07-20T21:00:00" title="KND" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-20T22:00:00" startTime="2005-07-20T21:25:00" title="PPG" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-20T22:20:00" startTime="2005-07-20T22:00:00" title="Cow e Chicken" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-20T22:40:00" startTime="2005-07-20T22:20:00" title="Billy e Mandy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-20T23:05:00" startTime="2005-07-20T22:40:00" title="Foster Home for Imaginary Friends" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-20T23:30:00" startTime="2005-07-20T23:05:00" title="Courage" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-21T00:00:00" startTime="2005-07-20T23:30:00" title="Dexter Laboratory" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-21T00:25:00" startTime="2005-07-21T00:00:00" title="Johnny Bravo" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-21T01:00:00" startTime="2005-07-21T00:25:00" title="Ed Edd e Eddy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-21T01:25:00" startTime="2005-07-21T01:00:00" title="KND" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-21T02:00:00" startTime="2005-07-21T01:25:00" title="PPG" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-21T02:25:00" startTime="2005-07-21T02:00:00" title="Johnny Bravo" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-21T02:45:00" startTime="2005-07-21T02:25:00" title="Cow e Chicken" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-21T03:10:00" startTime="2005-07-21T02:45:00" title="Courage" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-21T03:40:00" startTime="2005-07-21T03:10:00" title="Dexter Laboratory" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-21T04:15:00" startTime="2005-07-21T03:40:00" title="Ed Edd e Eddy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-21T04:40:00" startTime="2005-07-21T04:15:00" title="KND" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-21T05:15:00" startTime="2005-07-21T04:40:00" title="PPG" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-21T05:35:00" startTime="2005-07-21T05:15:00" title="Cow e Chicken" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-21T05:55:00" startTime="2005-07-21T05:35:00" title="Billy e Mandy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-21T06:20:00" startTime="2005-07-21T05:55:00" title="Foster Home for Imaginary Friends" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-21T06:45:00" startTime="2005-07-21T06:20:00" title="Courage" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-21T07:15:00" startTime="2005-07-21T06:45:00" title="Dexter Laboratory" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-21T07:40:00" startTime="2005-07-21T07:15:00" title="Johnny Bravo" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-21T08:15:00" startTime="2005-07-21T07:40:00" title="Ed Edd e Eddy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-21T08:40:00" startTime="2005-07-21T08:15:00" title="KND" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-21T09:15:00" startTime="2005-07-21T08:40:00" title="PPG" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-21T09:40:00" startTime="2005-07-21T09:15:00" title="Johnny Bravo" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-21T10:00:00" startTime="2005-07-21T09:40:00" title="Cow e Chicken" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-21T10:25:00" startTime="2005-07-21T10:00:00" title="Courage" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-21T10:55:00" startTime="2005-07-21T10:25:00" title="Dexter Laboratory" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-21T11:00:00" startTime="2005-07-21T10:55:00" title="Ed Edd e Eddy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-21T11:20:00" startTime="2005-07-21T11:00:00" title="Cow e Chicken" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-21T11:40:00" startTime="2005-07-21T11:20:00" title="Billy e Mandy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-21T12:05:00" startTime="2005-07-21T11:40:00" title="Foster Home for Imaginary Friends" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-21T12:30:00" startTime="2005-07-21T12:05:00" title="Courage" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-21T13:00:00" startTime="2005-07-21T12:30:00" title="Dexter Laboratory" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-21T13:25:00" startTime="2005-07-21T13:00:00" title="Johnny Bravo" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-21T14:00:00" startTime="2005-07-21T13:25:00" title="Ed Edd e Eddy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-21T14:25:00" startTime="2005-07-21T14:00:00" title="KND" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-21T15:00:00" startTime="2005-07-21T14:25:00" title="PPG" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-21T15:25:00" startTime="2005-07-21T15:00:00" title="Johnny Bravo" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-21T15:45:00" startTime="2005-07-21T15:25:00" title="Cow e Chicken" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-21T16:10:00" startTime="2005-07-21T15:45:00" title="Courage" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-21T16:40:00" startTime="2005-07-21T16:10:00" title="Dexter Laboratory" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-21T17:15:00" startTime="2005-07-21T16:40:00" title="Ed Edd e Eddy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-21T17:40:00" startTime="2005-07-21T17:15:00" title="KND" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-21T18:15:00" startTime="2005-07-21T17:40:00" title="PPG" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-21T18:35:00" startTime="2005-07-21T18:15:00" title="Cow e Chicken" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-21T18:45:00" startTime="2005-07-21T18:35:00" title="Billy e Mandy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-21T19:10:00" startTime="2005-07-21T18:45:00" title="Johnny Bravo" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-21T19:30:00" startTime="2005-07-21T19:10:00" title="Cow e Chicken" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-21T19:55:00" startTime="2005-07-21T19:30:00" title="Courage" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-21T20:25:00" startTime="2005-07-21T19:55:00" title="Dexter Laboratory" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-21T21:00:00" startTime="2005-07-21T20:25:00" title="Ed Edd e Eddy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-21T21:25:00" startTime="2005-07-21T21:00:00" title="KND" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-21T22:00:00" startTime="2005-07-21T21:25:00" title="PPG" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-21T22:20:00" startTime="2005-07-21T22:00:00" title="Cow e Chicken" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-21T22:40:00" startTime="2005-07-21T22:20:00" title="Billy e Mandy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-21T23:05:00" startTime="2005-07-21T22:40:00" title="Foster Home for Imaginary Friends" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-21T23:30:00" startTime="2005-07-21T23:05:00" title="Courage" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-22T00:00:00" startTime="2005-07-21T23:30:00" title="Dexter Laboratory" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-22T00:25:00" startTime="2005-07-22T00:00:00" title="Johnny Bravo" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-22T01:00:00" startTime="2005-07-22T00:25:00" title="Ed Edd e Eddy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-22T01:25:00" startTime="2005-07-22T01:00:00" title="KND" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-22T02:00:00" startTime="2005-07-22T01:25:00" title="PPG" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-22T02:25:00" startTime="2005-07-22T02:00:00" title="Johnny Bravo" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-22T02:45:00" startTime="2005-07-22T02:25:00" title="Cow e Chicken" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-22T03:10:00" startTime="2005-07-22T02:45:00" title="Courage" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-22T03:40:00" startTime="2005-07-22T03:10:00" title="Dexter Laboratory" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-22T04:15:00" startTime="2005-07-22T03:40:00" title="Ed Edd e Eddy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-22T04:40:00" startTime="2005-07-22T04:15:00" title="KND" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-22T05:15:00" startTime="2005-07-22T04:40:00" title="PPG" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-22T05:35:00" startTime="2005-07-22T05:15:00" title="Cow e Chicken" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-22T05:55:00" startTime="2005-07-22T05:35:00" title="Billy e Mandy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-22T06:20:00" startTime="2005-07-22T05:55:00" title="Foster Home for Imaginary Friends" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-22T06:45:00" startTime="2005-07-22T06:20:00" title="Courage" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-22T07:15:00" startTime="2005-07-22T06:45:00" title="Dexter Laboratory" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-22T07:40:00" startTime="2005-07-22T07:15:00" title="Johnny Bravo" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-22T08:15:00" startTime="2005-07-22T07:40:00" title="Ed Edd e Eddy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-22T08:40:00" startTime="2005-07-22T08:15:00" title="KND" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-22T09:15:00" startTime="2005-07-22T08:40:00" title="PPG" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-22T09:40:00" startTime="2005-07-22T09:15:00" title="Johnny Bravo" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-22T10:00:00" startTime="2005-07-22T09:40:00" title="Cow e Chicken" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-22T10:25:00" startTime="2005-07-22T10:00:00" title="Courage" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-22T10:55:00" startTime="2005-07-22T10:25:00" title="Dexter Laboratory" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-22T11:00:00" startTime="2005-07-22T10:55:00" title="Ed Edd e Eddy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-22T11:20:00" startTime="2005-07-22T11:00:00" title="Cow e Chicken" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-22T11:40:00" startTime="2005-07-22T11:20:00" title="Billy e Mandy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-22T12:05:00" startTime="2005-07-22T11:40:00" title="Foster Home for Imaginary Friends" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-22T12:30:00" startTime="2005-07-22T12:05:00" title="Courage" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-22T13:00:00" startTime="2005-07-22T12:30:00" title="Dexter Laboratory" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-22T13:25:00" startTime="2005-07-22T13:00:00" title="Johnny Bravo" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-22T14:00:00" startTime="2005-07-22T13:25:00" title="Ed Edd e Eddy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-22T14:25:00" startTime="2005-07-22T14:00:00" title="KND" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-22T15:00:00" startTime="2005-07-22T14:25:00" title="PPG" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-22T15:25:00" startTime="2005-07-22T15:00:00" title="Johnny Bravo" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-22T15:45:00" startTime="2005-07-22T15:25:00" title="Cow e Chicken" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-22T16:10:00" startTime="2005-07-22T15:45:00" title="Courage" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-22T16:40:00" startTime="2005-07-22T16:10:00" title="Dexter Laboratory" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-22T17:15:00" startTime="2005-07-22T16:40:00" title="Ed Edd e Eddy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-22T17:40:00" startTime="2005-07-22T17:15:00" title="KND" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-22T18:15:00" startTime="2005-07-22T17:40:00" title="PPG" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-22T18:35:00" startTime="2005-07-22T18:15:00" title="Cow e Chicken" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-22T18:45:00" startTime="2005-07-22T18:35:00" title="Billy e Mandy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-22T19:10:00" startTime="2005-07-22T18:45:00" title="Johnny Bravo" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-22T19:30:00" startTime="2005-07-22T19:10:00" title="Cow e Chicken" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-22T19:55:00" startTime="2005-07-22T19:30:00" title="Courage" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-22T20:25:00" startTime="2005-07-22T19:55:00" title="Dexter Laboratory" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-22T21:00:00" startTime="2005-07-22T20:25:00" title="Ed Edd e Eddy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-22T21:25:00" startTime="2005-07-22T21:00:00" title="KND" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-22T22:00:00" startTime="2005-07-22T21:25:00" title="PPG" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-22T22:20:00" startTime="2005-07-22T22:00:00" title="Cow e Chicken" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-22T22:40:00" startTime="2005-07-22T22:20:00" title="Billy e Mandy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-22T23:05:00" startTime="2005-07-22T22:40:00" title="Foster Home for Imaginary Friends" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-22T23:30:00" startTime="2005-07-22T23:05:00" title="Courage" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-23T00:00:00" startTime="2005-07-22T23:30:00" title="Dexter Laboratory" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-23T00:25:00" startTime="2005-07-23T00:00:00" title="Johnny Bravo" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-23T01:00:00" startTime="2005-07-23T00:25:00" title="Ed Edd e Eddy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-23T01:25:00" startTime="2005-07-23T01:00:00" title="KND" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-23T02:00:00" startTime="2005-07-23T01:25:00" title="PPG" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-23T02:25:00" startTime="2005-07-23T02:00:00" title="Johnny Bravo" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-23T02:45:00" startTime="2005-07-23T02:25:00" title="Cow e Chicken" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-23T03:10:00" startTime="2005-07-23T02:45:00" title="Courage" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-23T03:40:00" startTime="2005-07-23T03:10:00" title="Dexter Laboratory" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-23T04:15:00" startTime="2005-07-23T03:40:00" title="Ed Edd e Eddy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-23T04:40:00" startTime="2005-07-23T04:15:00" title="KND" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-23T05:15:00" startTime="2005-07-23T04:40:00" title="PPG" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-23T05:35:00" startTime="2005-07-23T05:15:00" title="Cow e Chicken" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-23T05:55:00" startTime="2005-07-23T05:35:00" title="Billy e Mandy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-23T06:20:00" startTime="2005-07-23T05:55:00" title="Foster Home for Imaginary Friends" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-23T06:45:00" startTime="2005-07-23T06:20:00" title="Courage" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-23T07:15:00" startTime="2005-07-23T06:45:00" title="Dexter Laboratory" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-23T07:40:00" startTime="2005-07-23T07:15:00" title="Johnny Bravo" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-23T08:15:00" startTime="2005-07-23T07:40:00" title="Ed Edd e Eddy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-23T08:40:00" startTime="2005-07-23T08:15:00" title="KND" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-23T09:15:00" startTime="2005-07-23T08:40:00" title="PPG" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-23T09:40:00" startTime="2005-07-23T09:15:00" title="Johnny Bravo" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-23T10:00:00" startTime="2005-07-23T09:40:00" title="Cow e Chicken" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-23T10:25:00" startTime="2005-07-23T10:00:00" title="Courage" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-23T10:55:00" startTime="2005-07-23T10:25:00" title="Dexter Laboratory" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-23T11:00:00" startTime="2005-07-23T10:55:00" title="Ed Edd e Eddy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-23T11:20:00" startTime="2005-07-23T11:00:00" title="Cow e Chicken" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-23T11:40:00" startTime="2005-07-23T11:20:00" title="Billy e Mandy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-23T12:05:00" startTime="2005-07-23T11:40:00" title="Foster Home for Imaginary Friends" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-23T12:30:00" startTime="2005-07-23T12:05:00" title="Courage" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-23T13:00:00" startTime="2005-07-23T12:30:00" title="Dexter Laboratory" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-23T13:25:00" startTime="2005-07-23T13:00:00" title="Johnny Bravo" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-23T14:00:00" startTime="2005-07-23T13:25:00" title="Ed Edd e Eddy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-23T14:25:00" startTime="2005-07-23T14:00:00" title="KND" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-23T15:00:00" startTime="2005-07-23T14:25:00" title="PPG" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-23T15:25:00" startTime="2005-07-23T15:00:00" title="Johnny Bravo" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-23T15:45:00" startTime="2005-07-23T15:25:00" title="Cow e Chicken" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-23T16:10:00" startTime="2005-07-23T15:45:00" title="Courage" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-23T16:40:00" startTime="2005-07-23T16:10:00" title="Dexter Laboratory" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-23T17:15:00" startTime="2005-07-23T16:40:00" title="Ed Edd e Eddy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-23T17:40:00" startTime="2005-07-23T17:15:00" title="KND" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-23T18:15:00" startTime="2005-07-23T17:40:00" title="PPG" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-23T18:35:00" startTime="2005-07-23T18:15:00" title="Cow e Chicken" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-23T18:45:00" startTime="2005-07-23T18:35:00" title="Billy e Mandy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-23T19:10:00" startTime="2005-07-23T18:45:00" title="Johnny Bravo" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-23T19:30:00" startTime="2005-07-23T19:10:00" title="Cow e Chicken" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-23T19:55:00" startTime="2005-07-23T19:30:00" title="Courage" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-23T20:25:00" startTime="2005-07-23T19:55:00" title="Dexter Laboratory" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-23T21:00:00" startTime="2005-07-23T20:25:00" title="Ed Edd e Eddy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-23T21:25:00" startTime="2005-07-23T21:00:00" title="KND" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-23T22:00:00" startTime="2005-07-23T21:25:00" title="PPG" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-23T22:20:00" startTime="2005-07-23T22:00:00" title="Cow e Chicken" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-23T22:40:00" startTime="2005-07-23T22:20:00" title="Billy e Mandy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-23T23:05:00" startTime="2005-07-23T22:40:00" title="Foster Home for Imaginary Friends" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-23T23:30:00" startTime="2005-07-23T23:05:00" title="Courage" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-24T00:00:00" startTime="2005-07-23T23:30:00" title="Dexter Laboratory" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-24T00:25:00" startTime="2005-07-24T00:00:00" title="Johnny Bravo" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-24T01:00:00" startTime="2005-07-24T00:25:00" title="Ed Edd e Eddy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-24T01:25:00" startTime="2005-07-24T01:00:00" title="KND" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-24T02:00:00" startTime="2005-07-24T01:25:00" title="PPG" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-24T02:25:00" startTime="2005-07-24T02:00:00" title="Johnny Bravo" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-24T02:45:00" startTime="2005-07-24T02:25:00" title="Cow e Chicken" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-24T03:10:00" startTime="2005-07-24T02:45:00" title="Courage" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-24T03:40:00" startTime="2005-07-24T03:10:00" title="Dexter Laboratory" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-24T04:15:00" startTime="2005-07-24T03:40:00" title="Ed Edd e Eddy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-24T04:40:00" startTime="2005-07-24T04:15:00" title="KND" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-24T05:15:00" startTime="2005-07-24T04:40:00" title="PPG" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-24T05:35:00" startTime="2005-07-24T05:15:00" title="Cow e Chicken" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-24T05:55:00" startTime="2005-07-24T05:35:00" title="Billy e Mandy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-24T06:20:00" startTime="2005-07-24T05:55:00" title="Foster Home for Imaginary Friends" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-24T06:45:00" startTime="2005-07-24T06:20:00" title="Courage" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-24T07:15:00" startTime="2005-07-24T06:45:00" title="Dexter Laboratory" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-24T07:40:00" startTime="2005-07-24T07:15:00" title="Johnny Bravo" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-24T08:15:00" startTime="2005-07-24T07:40:00" title="Ed Edd e Eddy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-24T08:40:00" startTime="2005-07-24T08:15:00" title="KND" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-24T09:15:00" startTime="2005-07-24T08:40:00" title="PPG" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-24T09:40:00" startTime="2005-07-24T09:15:00" title="Johnny Bravo" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-24T10:00:00" startTime="2005-07-24T09:40:00" title="Cow e Chicken" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-24T10:25:00" startTime="2005-07-24T10:00:00" title="Courage" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-24T10:55:00" startTime="2005-07-24T10:25:00" title="Dexter Laboratory" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-24T11:00:00" startTime="2005-07-24T10:55:00" title="Ed Edd e Eddy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-24T11:20:00" startTime="2005-07-24T11:00:00" title="Cow e Chicken" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-24T11:40:00" startTime="2005-07-24T11:20:00" title="Billy e Mandy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-24T12:05:00" startTime="2005-07-24T11:40:00" title="Foster Home for Imaginary Friends" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-24T12:30:00" startTime="2005-07-24T12:05:00" title="Courage" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-24T13:00:00" startTime="2005-07-24T12:30:00" title="Dexter Laboratory" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-24T13:25:00" startTime="2005-07-24T13:00:00" title="Johnny Bravo" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-24T14:00:00" startTime="2005-07-24T13:25:00" title="Ed Edd e Eddy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-24T14:25:00" startTime="2005-07-24T14:00:00" title="KND" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-24T15:00:00" startTime="2005-07-24T14:25:00" title="PPG" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-24T15:25:00" startTime="2005-07-24T15:00:00" title="Johnny Bravo" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-24T15:45:00" startTime="2005-07-24T15:25:00" title="Cow e Chicken" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-24T16:10:00" startTime="2005-07-24T15:45:00" title="Courage" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-24T16:40:00" startTime="2005-07-24T16:10:00" title="Dexter Laboratory" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-24T17:15:00" startTime="2005-07-24T16:40:00" title="Ed Edd e Eddy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-24T17:40:00" startTime="2005-07-24T17:15:00" title="KND" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-24T18:15:00" startTime="2005-07-24T17:40:00" title="PPG" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-24T18:35:00" startTime="2005-07-24T18:15:00" title="Cow e Chicken" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-24T18:45:00" startTime="2005-07-24T18:35:00" title="Billy e Mandy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-24T19:10:00" startTime="2005-07-24T18:45:00" title="Johnny Bravo" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-24T19:30:00" startTime="2005-07-24T19:10:00" title="Cow e Chicken" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-24T19:55:00" startTime="2005-07-24T19:30:00" title="Courage" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-24T20:25:00" startTime="2005-07-24T19:55:00" title="Dexter Laboratory" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-24T21:00:00" startTime="2005-07-24T20:25:00" title="Ed Edd e Eddy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-24T21:25:00" startTime="2005-07-24T21:00:00" title="KND" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-24T22:00:00" startTime="2005-07-24T21:25:00" title="PPG" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-24T22:20:00" startTime="2005-07-24T22:00:00" title="Cow e Chicken" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-24T22:40:00" startTime="2005-07-24T22:20:00" title="Billy e Mandy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-24T23:05:00" startTime="2005-07-24T22:40:00" title="Foster Home for Imaginary Friends" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-24T23:30:00" startTime="2005-07-24T23:05:00" title="Courage" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-25T00:00:00" startTime="2005-07-24T23:30:00" title="Dexter Laboratory" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-25T00:25:00" startTime="2005-07-25T00:00:00" title="Johnny Bravo" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-25T01:00:00" startTime="2005-07-25T00:25:00" title="Ed Edd e Eddy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-25T01:25:00" startTime="2005-07-25T01:00:00" title="KND" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-25T02:00:00" startTime="2005-07-25T01:25:00" title="PPG" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-25T02:25:00" startTime="2005-07-25T02:00:00" title="Johnny Bravo" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-25T02:45:00" startTime="2005-07-25T02:25:00" title="Cow e Chicken" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-25T03:10:00" startTime="2005-07-25T02:45:00" title="Courage" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-25T03:40:00" startTime="2005-07-25T03:10:00" title="Dexter Laboratory" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-25T04:15:00" startTime="2005-07-25T03:40:00" title="Ed Edd e Eddy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-25T04:40:00" startTime="2005-07-25T04:15:00" title="KND" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-25T05:15:00" startTime="2005-07-25T04:40:00" title="PPG" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-25T05:35:00" startTime="2005-07-25T05:15:00" title="Cow e Chicken" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-25T05:55:00" startTime="2005-07-25T05:35:00" title="Billy e Mandy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-25T06:20:00" startTime="2005-07-25T05:55:00" title="Foster Home for Imaginary Friends" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-25T06:45:00" startTime="2005-07-25T06:20:00" title="Courage" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-25T07:15:00" startTime="2005-07-25T06:45:00" title="Dexter Laboratory" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-25T07:40:00" startTime="2005-07-25T07:15:00" title="Johnny Bravo" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-25T08:15:00" startTime="2005-07-25T07:40:00" title="Ed Edd e Eddy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-25T08:40:00" startTime="2005-07-25T08:15:00" title="KND" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-25T09:15:00" startTime="2005-07-25T08:40:00" title="PPG" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-25T09:40:00" startTime="2005-07-25T09:15:00" title="Johnny Bravo" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-25T10:00:00" startTime="2005-07-25T09:40:00" title="Cow e Chicken" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-25T10:25:00" startTime="2005-07-25T10:00:00" title="Courage" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-25T10:55:00" startTime="2005-07-25T10:25:00" title="Dexter Laboratory" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-25T11:00:00" startTime="2005-07-25T10:55:00" title="Ed Edd e Eddy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-25T11:20:00" startTime="2005-07-25T11:00:00" title="Cow e Chicken" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-25T11:40:00" startTime="2005-07-25T11:20:00" title="Billy e Mandy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-25T12:05:00" startTime="2005-07-25T11:40:00" title="Foster Home for Imaginary Friends" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-25T12:30:00" startTime="2005-07-25T12:05:00" title="Courage" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-25T13:00:00" startTime="2005-07-25T12:30:00" title="Dexter Laboratory" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-25T13:25:00" startTime="2005-07-25T13:00:00" title="Johnny Bravo" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-25T14:00:00" startTime="2005-07-25T13:25:00" title="Ed Edd e Eddy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-25T14:25:00" startTime="2005-07-25T14:00:00" title="KND" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-25T15:00:00" startTime="2005-07-25T14:25:00" title="PPG" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-25T15:25:00" startTime="2005-07-25T15:00:00" title="Johnny Bravo" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-25T15:45:00" startTime="2005-07-25T15:25:00" title="Cow e Chicken" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-25T16:10:00" startTime="2005-07-25T15:45:00" title="Courage" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-25T16:40:00" startTime="2005-07-25T16:10:00" title="Dexter Laboratory" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-25T17:15:00" startTime="2005-07-25T16:40:00" title="Ed Edd e Eddy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-25T17:40:00" startTime="2005-07-25T17:15:00" title="KND" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-25T18:15:00" startTime="2005-07-25T17:40:00" title="PPG" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-25T18:35:00" startTime="2005-07-25T18:15:00" title="Cow e Chicken" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-25T18:45:00" startTime="2005-07-25T18:35:00" title="Billy e Mandy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-25T19:10:00" startTime="2005-07-25T18:45:00" title="Johnny Bravo" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-25T19:30:00" startTime="2005-07-25T19:10:00" title="Cow e Chicken" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-25T19:55:00" startTime="2005-07-25T19:30:00" title="Courage" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-25T20:25:00" startTime="2005-07-25T19:55:00" title="Dexter Laboratory" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-25T21:00:00" startTime="2005-07-25T20:25:00" title="Ed Edd e Eddy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-25T21:25:00" startTime="2005-07-25T21:00:00" title="KND" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-25T22:00:00" startTime="2005-07-25T21:25:00" title="PPG" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-25T22:20:00" startTime="2005-07-25T22:00:00" title="Cow e Chicken" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-25T22:40:00" startTime="2005-07-25T22:20:00" title="Billy e Mandy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-25T23:05:00" startTime="2005-07-25T22:40:00" title="Foster Home for Imaginary Friends" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-25T23:30:00" startTime="2005-07-25T23:05:00" title="Courage" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-26T00:00:00" startTime="2005-07-25T23:30:00" title="Dexter Laboratory" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-26T00:25:00" startTime="2005-07-26T00:00:00" title="Johnny Bravo" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-26T01:00:00" startTime="2005-07-26T00:25:00" title="Ed Edd e Eddy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-26T01:25:00" startTime="2005-07-26T01:00:00" title="KND" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-26T02:00:00" startTime="2005-07-26T01:25:00" title="PPG" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-26T02:25:00" startTime="2005-07-26T02:00:00" title="Johnny Bravo" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-26T02:45:00" startTime="2005-07-26T02:25:00" title="Cow e Chicken" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-26T03:10:00" startTime="2005-07-26T02:45:00" title="Courage" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-26T03:40:00" startTime="2005-07-26T03:10:00" title="Dexter Laboratory" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-26T04:15:00" startTime="2005-07-26T03:40:00" title="Ed Edd e Eddy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-26T04:40:00" startTime="2005-07-26T04:15:00" title="KND" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-26T05:15:00" startTime="2005-07-26T04:40:00" title="PPG" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-26T05:35:00" startTime="2005-07-26T05:15:00" title="Cow e Chicken" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-26T05:55:00" startTime="2005-07-26T05:35:00" title="Billy e Mandy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-26T06:20:00" startTime="2005-07-26T05:55:00" title="Foster Home for Imaginary Friends" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-26T06:45:00" startTime="2005-07-26T06:20:00" title="Courage" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-26T07:15:00" startTime="2005-07-26T06:45:00" title="Dexter Laboratory" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-26T07:40:00" startTime="2005-07-26T07:15:00" title="Johnny Bravo" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-26T08:15:00" startTime="2005-07-26T07:40:00" title="Ed Edd e Eddy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-26T08:40:00" startTime="2005-07-26T08:15:00" title="KND" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-26T09:15:00" startTime="2005-07-26T08:40:00" title="PPG" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-26T09:40:00" startTime="2005-07-26T09:15:00" title="Johnny Bravo" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-26T10:00:00" startTime="2005-07-26T09:40:00" title="Cow e Chicken" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-26T10:25:00" startTime="2005-07-26T10:00:00" title="Courage" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-26T10:55:00" startTime="2005-07-26T10:25:00" title="Dexter Laboratory" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-26T11:00:00" startTime="2005-07-26T10:55:00" title="Ed Edd e Eddy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-26T11:20:00" startTime="2005-07-26T11:00:00" title="Cow e Chicken" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-26T11:40:00" startTime="2005-07-26T11:20:00" title="Billy e Mandy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-26T12:05:00" startTime="2005-07-26T11:40:00" title="Foster Home for Imaginary Friends" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-26T12:30:00" startTime="2005-07-26T12:05:00" title="Courage" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-26T13:00:00" startTime="2005-07-26T12:30:00" title="Dexter Laboratory" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-26T13:25:00" startTime="2005-07-26T13:00:00" title="Johnny Bravo" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-26T14:00:00" startTime="2005-07-26T13:25:00" title="Ed Edd e Eddy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-26T14:25:00" startTime="2005-07-26T14:00:00" title="KND" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-26T15:00:00" startTime="2005-07-26T14:25:00" title="PPG" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-26T15:25:00" startTime="2005-07-26T15:00:00" title="Johnny Bravo" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-26T15:45:00" startTime="2005-07-26T15:25:00" title="Cow e Chicken" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-26T16:10:00" startTime="2005-07-26T15:45:00" title="Courage" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-26T16:40:00" startTime="2005-07-26T16:10:00" title="Dexter Laboratory" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-26T17:15:00" startTime="2005-07-26T16:40:00" title="Ed Edd e Eddy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-26T17:40:00" startTime="2005-07-26T17:15:00" title="KND" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-26T18:15:00" startTime="2005-07-26T17:40:00" title="PPG" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-26T18:35:00" startTime="2005-07-26T18:15:00" title="Cow e Chicken" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-26T18:45:00" startTime="2005-07-26T18:35:00" title="Billy e Mandy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-26T19:10:00" startTime="2005-07-26T18:45:00" title="Johnny Bravo" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-26T19:30:00" startTime="2005-07-26T19:10:00" title="Cow e Chicken" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-26T19:55:00" startTime="2005-07-26T19:30:00" title="Courage" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-26T20:25:00" startTime="2005-07-26T19:55:00" title="Dexter Laboratory" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-26T21:00:00" startTime="2005-07-26T20:25:00" title="Ed Edd e Eddy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-26T21:25:00" startTime="2005-07-26T21:00:00" title="KND" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-26T22:00:00" startTime="2005-07-26T21:25:00" title="PPG" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-26T22:20:00" startTime="2005-07-26T22:00:00" title="Cow e Chicken" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-26T22:40:00" startTime="2005-07-26T22:20:00" title="Billy e Mandy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-26T23:05:00" startTime="2005-07-26T22:40:00" title="Foster Home for Imaginary Friends" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-26T23:30:00" startTime="2005-07-26T23:05:00" title="Courage" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-27T00:00:00" startTime="2005-07-26T23:30:00" title="Dexter Laboratory" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-27T00:25:00" startTime="2005-07-27T00:00:00" title="Johnny Bravo" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-27T01:00:00" startTime="2005-07-27T00:25:00" title="Ed Edd e Eddy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-27T01:25:00" startTime="2005-07-27T01:00:00" title="KND" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-27T02:00:00" startTime="2005-07-27T01:25:00" title="PPG" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-27T02:25:00" startTime="2005-07-27T02:00:00" title="Johnny Bravo" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-27T02:45:00" startTime="2005-07-27T02:25:00" title="Cow e Chicken" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-27T03:10:00" startTime="2005-07-27T02:45:00" title="Courage" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-27T03:40:00" startTime="2005-07-27T03:10:00" title="Dexter Laboratory" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-27T04:15:00" startTime="2005-07-27T03:40:00" title="Ed Edd e Eddy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-27T04:40:00" startTime="2005-07-27T04:15:00" title="KND" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-27T05:15:00" startTime="2005-07-27T04:40:00" title="PPG" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-27T05:35:00" startTime="2005-07-27T05:15:00" title="Cow e Chicken" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-27T05:55:00" startTime="2005-07-27T05:35:00" title="Billy e Mandy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-27T06:20:00" startTime="2005-07-27T05:55:00" title="Foster Home for Imaginary Friends" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-27T06:45:00" startTime="2005-07-27T06:20:00" title="Courage" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-27T07:15:00" startTime="2005-07-27T06:45:00" title="Dexter Laboratory" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-27T07:40:00" startTime="2005-07-27T07:15:00" title="Johnny Bravo" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-27T08:15:00" startTime="2005-07-27T07:40:00" title="Ed Edd e Eddy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-27T08:40:00" startTime="2005-07-27T08:15:00" title="KND" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-27T09:15:00" startTime="2005-07-27T08:40:00" title="PPG" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-27T09:40:00" startTime="2005-07-27T09:15:00" title="Johnny Bravo" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-27T10:00:00" startTime="2005-07-27T09:40:00" title="Cow e Chicken" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-27T10:25:00" startTime="2005-07-27T10:00:00" title="Courage" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-27T10:55:00" startTime="2005-07-27T10:25:00" title="Dexter Laboratory" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-27T11:00:00" startTime="2005-07-27T10:55:00" title="Ed Edd e Eddy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-27T11:20:00" startTime="2005-07-27T11:00:00" title="Cow e Chicken" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-27T11:40:00" startTime="2005-07-27T11:20:00" title="Billy e Mandy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-27T12:05:00" startTime="2005-07-27T11:40:00" title="Foster Home for Imaginary Friends" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-27T12:30:00" startTime="2005-07-27T12:05:00" title="Courage" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-27T13:00:00" startTime="2005-07-27T12:30:00" title="Dexter Laboratory" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-27T13:25:00" startTime="2005-07-27T13:00:00" title="Johnny Bravo" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-27T14:00:00" startTime="2005-07-27T13:25:00" title="Ed Edd e Eddy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-27T14:25:00" startTime="2005-07-27T14:00:00" title="KND" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-27T15:00:00" startTime="2005-07-27T14:25:00" title="PPG" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-27T15:25:00" startTime="2005-07-27T15:00:00" title="Johnny Bravo" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-27T15:45:00" startTime="2005-07-27T15:25:00" title="Cow e Chicken" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-27T16:10:00" startTime="2005-07-27T15:45:00" title="Courage" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-27T16:40:00" startTime="2005-07-27T16:10:00" title="Dexter Laboratory" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-27T17:15:00" startTime="2005-07-27T16:40:00" title="Ed Edd e Eddy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-27T17:40:00" startTime="2005-07-27T17:15:00" title="KND" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-27T18:15:00" startTime="2005-07-27T17:40:00" title="PPG" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-27T18:35:00" startTime="2005-07-27T18:15:00" title="Cow e Chicken" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-27T18:45:00" startTime="2005-07-27T18:35:00" title="Billy e Mandy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-27T19:10:00" startTime="2005-07-27T18:45:00" title="Johnny Bravo" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-27T19:30:00" startTime="2005-07-27T19:10:00" title="Cow e Chicken" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-27T19:55:00" startTime="2005-07-27T19:30:00" title="Courage" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-27T20:25:00" startTime="2005-07-27T19:55:00" title="Dexter Laboratory" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-27T21:00:00" startTime="2005-07-27T20:25:00" title="Ed Edd e Eddy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-27T21:25:00" startTime="2005-07-27T21:00:00" title="KND" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-27T22:00:00" startTime="2005-07-27T21:25:00" title="PPG" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-27T22:20:00" startTime="2005-07-27T22:00:00" title="Cow e Chicken" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-27T22:40:00" startTime="2005-07-27T22:20:00" title="Billy e Mandy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-27T23:05:00" startTime="2005-07-27T22:40:00" title="Foster Home for Imaginary Friends" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-27T23:30:00" startTime="2005-07-27T23:05:00" title="Courage" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-28T00:00:00" startTime="2005-07-27T23:30:00" title="Dexter Laboratory" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-28T00:25:00" startTime="2005-07-28T00:00:00" title="Johnny Bravo" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-28T01:00:00" startTime="2005-07-28T00:25:00" title="Ed Edd e Eddy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-28T01:25:00" startTime="2005-07-28T01:00:00" title="KND" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-28T02:00:00" startTime="2005-07-28T01:25:00" title="PPG" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-28T02:25:00" startTime="2005-07-28T02:00:00" title="Johnny Bravo" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-28T02:45:00" startTime="2005-07-28T02:25:00" title="Cow e Chicken" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-28T03:10:00" startTime="2005-07-28T02:45:00" title="Courage" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-28T03:40:00" startTime="2005-07-28T03:10:00" title="Dexter Laboratory" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-28T04:15:00" startTime="2005-07-28T03:40:00" title="Ed Edd e Eddy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-28T04:40:00" startTime="2005-07-28T04:15:00" title="KND" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-28T05:15:00" startTime="2005-07-28T04:40:00" title="PPG" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-28T05:35:00" startTime="2005-07-28T05:15:00" title="Cow e Chicken" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-28T05:55:00" startTime="2005-07-28T05:35:00" title="Billy e Mandy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-28T06:20:00" startTime="2005-07-28T05:55:00" title="Foster Home for Imaginary Friends" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-28T06:45:00" startTime="2005-07-28T06:20:00" title="Courage" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-28T07:15:00" startTime="2005-07-28T06:45:00" title="Dexter Laboratory" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-28T07:40:00" startTime="2005-07-28T07:15:00" title="Johnny Bravo" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-28T08:15:00" startTime="2005-07-28T07:40:00" title="Ed Edd e Eddy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-28T08:40:00" startTime="2005-07-28T08:15:00" title="KND" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-28T09:15:00" startTime="2005-07-28T08:40:00" title="PPG" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-28T09:40:00" startTime="2005-07-28T09:15:00" title="Johnny Bravo" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-28T10:00:00" startTime="2005-07-28T09:40:00" title="Cow e Chicken" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-28T10:25:00" startTime="2005-07-28T10:00:00" title="Courage" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-28T10:55:00" startTime="2005-07-28T10:25:00" title="Dexter Laboratory" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-28T11:00:00" startTime="2005-07-28T10:55:00" title="Ed Edd e Eddy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-28T11:20:00" startTime="2005-07-28T11:00:00" title="Cow e Chicken" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-28T11:40:00" startTime="2005-07-28T11:20:00" title="Billy e Mandy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-28T12:05:00" startTime="2005-07-28T11:40:00" title="Foster Home for Imaginary Friends" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-28T12:30:00" startTime="2005-07-28T12:05:00" title="Courage" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-28T13:00:00" startTime="2005-07-28T12:30:00" title="Dexter Laboratory" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-28T13:25:00" startTime="2005-07-28T13:00:00" title="Johnny Bravo" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-28T14:00:00" startTime="2005-07-28T13:25:00" title="Ed Edd e Eddy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-28T14:25:00" startTime="2005-07-28T14:00:00" title="KND" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-28T15:00:00" startTime="2005-07-28T14:25:00" title="PPG" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-28T15:25:00" startTime="2005-07-28T15:00:00" title="Johnny Bravo" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-28T15:45:00" startTime="2005-07-28T15:25:00" title="Cow e Chicken" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-28T16:10:00" startTime="2005-07-28T15:45:00" title="Courage" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-28T16:40:00" startTime="2005-07-28T16:10:00" title="Dexter Laboratory" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-28T17:15:00" startTime="2005-07-28T16:40:00" title="Ed Edd e Eddy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-28T17:40:00" startTime="2005-07-28T17:15:00" title="KND" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-28T18:15:00" startTime="2005-07-28T17:40:00" title="PPG" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-28T18:35:00" startTime="2005-07-28T18:15:00" title="Cow e Chicken" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-28T18:45:00" startTime="2005-07-28T18:35:00" title="Billy e Mandy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-28T19:10:00" startTime="2005-07-28T18:45:00" title="Johnny Bravo" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-28T19:30:00" startTime="2005-07-28T19:10:00" title="Cow e Chicken" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-28T19:55:00" startTime="2005-07-28T19:30:00" title="Courage" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-28T20:25:00" startTime="2005-07-28T19:55:00" title="Dexter Laboratory" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-28T21:00:00" startTime="2005-07-28T20:25:00" title="Ed Edd e Eddy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-28T21:25:00" startTime="2005-07-28T21:00:00" title="KND" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-28T22:00:00" startTime="2005-07-28T21:25:00" title="PPG" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-28T22:20:00" startTime="2005-07-28T22:00:00" title="Cow e Chicken" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-28T22:40:00" startTime="2005-07-28T22:20:00" title="Billy e Mandy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-28T23:05:00" startTime="2005-07-28T22:40:00" title="Foster Home for Imaginary Friends" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-28T23:30:00" startTime="2005-07-28T23:05:00" title="Courage" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-29T00:00:00" startTime="2005-07-28T23:30:00" title="Dexter Laboratory" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-29T00:25:00" startTime="2005-07-29T00:00:00" title="Johnny Bravo" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-29T01:00:00" startTime="2005-07-29T00:25:00" title="Ed Edd e Eddy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-29T01:25:00" startTime="2005-07-29T01:00:00" title="KND" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-29T02:00:00" startTime="2005-07-29T01:25:00" title="PPG" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-29T02:25:00" startTime="2005-07-29T02:00:00" title="Johnny Bravo" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-29T02:45:00" startTime="2005-07-29T02:25:00" title="Cow e Chicken" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-29T03:10:00" startTime="2005-07-29T02:45:00" title="Courage" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-29T03:40:00" startTime="2005-07-29T03:10:00" title="Dexter Laboratory" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-29T04:15:00" startTime="2005-07-29T03:40:00" title="Ed Edd e Eddy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-29T04:40:00" startTime="2005-07-29T04:15:00" title="KND" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-29T05:15:00" startTime="2005-07-29T04:40:00" title="PPG" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-29T05:35:00" startTime="2005-07-29T05:15:00" title="Cow e Chicken" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-29T05:55:00" startTime="2005-07-29T05:35:00" title="Billy e Mandy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-29T06:20:00" startTime="2005-07-29T05:55:00" title="Foster Home for Imaginary Friends" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-29T06:45:00" startTime="2005-07-29T06:20:00" title="Courage" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-29T07:15:00" startTime="2005-07-29T06:45:00" title="Dexter Laboratory" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-29T07:40:00" startTime="2005-07-29T07:15:00" title="Johnny Bravo" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-29T08:15:00" startTime="2005-07-29T07:40:00" title="Ed Edd e Eddy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-29T08:40:00" startTime="2005-07-29T08:15:00" title="KND" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-29T09:15:00" startTime="2005-07-29T08:40:00" title="PPG" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-29T09:40:00" startTime="2005-07-29T09:15:00" title="Johnny Bravo" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-29T10:00:00" startTime="2005-07-29T09:40:00" title="Cow e Chicken" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-29T10:25:00" startTime="2005-07-29T10:00:00" title="Courage" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-29T10:55:00" startTime="2005-07-29T10:25:00" title="Dexter Laboratory" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-29T11:00:00" startTime="2005-07-29T10:55:00" title="Ed Edd e Eddy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-29T11:20:00" startTime="2005-07-29T11:00:00" title="Cow e Chicken" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-29T11:40:00" startTime="2005-07-29T11:20:00" title="Billy e Mandy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-29T12:05:00" startTime="2005-07-29T11:40:00" title="Foster Home for Imaginary Friends" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-29T12:30:00" startTime="2005-07-29T12:05:00" title="Courage" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-29T13:00:00" startTime="2005-07-29T12:30:00" title="Dexter Laboratory" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-29T13:25:00" startTime="2005-07-29T13:00:00" title="Johnny Bravo" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-29T14:00:00" startTime="2005-07-29T13:25:00" title="Ed Edd e Eddy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-29T14:25:00" startTime="2005-07-29T14:00:00" title="KND" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-29T15:00:00" startTime="2005-07-29T14:25:00" title="PPG" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-29T15:25:00" startTime="2005-07-29T15:00:00" title="Johnny Bravo" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-29T15:45:00" startTime="2005-07-29T15:25:00" title="Cow e Chicken" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-29T16:10:00" startTime="2005-07-29T15:45:00" title="Courage" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-29T16:40:00" startTime="2005-07-29T16:10:00" title="Dexter Laboratory" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-29T17:15:00" startTime="2005-07-29T16:40:00" title="Ed Edd e Eddy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-29T17:40:00" startTime="2005-07-29T17:15:00" title="KND" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-29T18:15:00" startTime="2005-07-29T17:40:00" title="PPG" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-29T18:35:00" startTime="2005-07-29T18:15:00" title="Cow e Chicken" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-29T18:45:00" startTime="2005-07-29T18:35:00" title="Billy e Mandy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-29T19:10:00" startTime="2005-07-29T18:45:00" title="Johnny Bravo" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-29T19:30:00" startTime="2005-07-29T19:10:00" title="Cow e Chicken" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-29T19:55:00" startTime="2005-07-29T19:30:00" title="Courage" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-29T20:25:00" startTime="2005-07-29T19:55:00" title="Dexter Laboratory" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-29T21:00:00" startTime="2005-07-29T20:25:00" title="Ed Edd e Eddy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-29T21:25:00" startTime="2005-07-29T21:00:00" title="KND" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-29T22:00:00" startTime="2005-07-29T21:25:00" title="PPG" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-29T22:20:00" startTime="2005-07-29T22:00:00" title="Cow e Chicken" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-29T22:40:00" startTime="2005-07-29T22:20:00" title="Billy e Mandy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-29T23:05:00" startTime="2005-07-29T22:40:00" title="Foster Home for Imaginary Friends" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-29T23:30:00" startTime="2005-07-29T23:05:00" title="Courage" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-30T00:00:00" startTime="2005-07-29T23:30:00" title="Dexter Laboratory" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-30T00:25:00" startTime="2005-07-30T00:00:00" title="Johnny Bravo" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-30T01:00:00" startTime="2005-07-30T00:25:00" title="Ed Edd e Eddy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-30T01:25:00" startTime="2005-07-30T01:00:00" title="KND" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-30T02:00:00" startTime="2005-07-30T01:25:00" title="PPG" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-30T02:25:00" startTime="2005-07-30T02:00:00" title="Johnny Bravo" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-30T02:45:00" startTime="2005-07-30T02:25:00" title="Cow e Chicken" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-30T03:10:00" startTime="2005-07-30T02:45:00" title="Courage" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-30T03:40:00" startTime="2005-07-30T03:10:00" title="Dexter Laboratory" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-30T04:15:00" startTime="2005-07-30T03:40:00" title="Ed Edd e Eddy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-30T04:40:00" startTime="2005-07-30T04:15:00" title="KND" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-30T05:15:00" startTime="2005-07-30T04:40:00" title="PPG" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-30T05:35:00" startTime="2005-07-30T05:15:00" title="Cow e Chicken" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-30T05:55:00" startTime="2005-07-30T05:35:00" title="Billy e Mandy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-30T06:20:00" startTime="2005-07-30T05:55:00" title="Foster Home for Imaginary Friends" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-30T06:45:00" startTime="2005-07-30T06:20:00" title="Courage" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-30T07:15:00" startTime="2005-07-30T06:45:00" title="Dexter Laboratory" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-30T07:40:00" startTime="2005-07-30T07:15:00" title="Johnny Bravo" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-30T08:15:00" startTime="2005-07-30T07:40:00" title="Ed Edd e Eddy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-30T08:40:00" startTime="2005-07-30T08:15:00" title="KND" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-30T09:15:00" startTime="2005-07-30T08:40:00" title="PPG" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-30T09:40:00" startTime="2005-07-30T09:15:00" title="Johnny Bravo" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-30T10:00:00" startTime="2005-07-30T09:40:00" title="Cow e Chicken" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-30T10:25:00" startTime="2005-07-30T10:00:00" title="Courage" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-30T10:55:00" startTime="2005-07-30T10:25:00" title="Dexter Laboratory" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-30T11:00:00" startTime="2005-07-30T10:55:00" title="Ed Edd e Eddy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-30T11:20:00" startTime="2005-07-30T11:00:00" title="Cow e Chicken" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-30T11:40:00" startTime="2005-07-30T11:20:00" title="Billy e Mandy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-30T12:05:00" startTime="2005-07-30T11:40:00" title="Foster Home for Imaginary Friends" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-30T12:30:00" startTime="2005-07-30T12:05:00" title="Courage" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-30T13:00:00" startTime="2005-07-30T12:30:00" title="Dexter Laboratory" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-30T13:25:00" startTime="2005-07-30T13:00:00" title="Johnny Bravo" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-30T14:00:00" startTime="2005-07-30T13:25:00" title="Ed Edd e Eddy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-30T14:25:00" startTime="2005-07-30T14:00:00" title="KND" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-30T15:00:00" startTime="2005-07-30T14:25:00" title="PPG" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-30T15:25:00" startTime="2005-07-30T15:00:00" title="Johnny Bravo" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-30T15:45:00" startTime="2005-07-30T15:25:00" title="Cow e Chicken" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-30T16:10:00" startTime="2005-07-30T15:45:00" title="Courage" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-30T16:40:00" startTime="2005-07-30T16:10:00" title="Dexter Laboratory" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-30T17:15:00" startTime="2005-07-30T16:40:00" title="Ed Edd e Eddy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-30T17:40:00" startTime="2005-07-30T17:15:00" title="KND" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-30T18:15:00" startTime="2005-07-30T17:40:00" title="PPG" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-30T18:35:00" startTime="2005-07-30T18:15:00" title="Cow e Chicken" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-30T18:45:00" startTime="2005-07-30T18:35:00" title="Billy e Mandy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-30T19:10:00" startTime="2005-07-30T18:45:00" title="Johnny Bravo" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-30T19:30:00" startTime="2005-07-30T19:10:00" title="Cow e Chicken" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-30T19:55:00" startTime="2005-07-30T19:30:00" title="Courage" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-30T20:25:00" startTime="2005-07-30T19:55:00" title="Dexter Laboratory" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-30T21:00:00" startTime="2005-07-30T20:25:00" title="Ed Edd e Eddy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-30T21:25:00" startTime="2005-07-30T21:00:00" title="KND" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-30T22:00:00" startTime="2005-07-30T21:25:00" title="PPG" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-30T22:20:00" startTime="2005-07-30T22:00:00" title="Cow e Chicken" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-30T22:40:00" startTime="2005-07-30T22:20:00" title="Billy e Mandy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-30T23:05:00" startTime="2005-07-30T22:40:00" title="Foster Home for Imaginary Friends" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-30T23:30:00" startTime="2005-07-30T23:05:00" title="Courage" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-31T00:00:00" startTime="2005-07-30T23:30:00" title="Dexter Laboratory" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-31T00:25:00" startTime="2005-07-31T00:00:00" title="Johnny Bravo" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-31T01:00:00" startTime="2005-07-31T00:25:00" title="Ed Edd e Eddy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-31T01:25:00" startTime="2005-07-31T01:00:00" title="KND" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-31T02:00:00" startTime="2005-07-31T01:25:00" title="PPG" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-31T02:25:00" startTime="2005-07-31T02:00:00" title="Johnny Bravo" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-31T02:45:00" startTime="2005-07-31T02:25:00" title="Cow e Chicken" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-31T03:10:00" startTime="2005-07-31T02:45:00" title="Courage" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-31T03:40:00" startTime="2005-07-31T03:10:00" title="Dexter Laboratory" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-31T04:15:00" startTime="2005-07-31T03:40:00" title="Ed Edd e Eddy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-31T04:40:00" startTime="2005-07-31T04:15:00" title="KND" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-31T05:15:00" startTime="2005-07-31T04:40:00" title="PPG" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-31T05:35:00" startTime="2005-07-31T05:15:00" title="Cow e Chicken" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-31T05:55:00" startTime="2005-07-31T05:35:00" title="Billy e Mandy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-31T06:20:00" startTime="2005-07-31T05:55:00" title="Foster Home for Imaginary Friends" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-31T06:45:00" startTime="2005-07-31T06:20:00" title="Courage" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-31T07:15:00" startTime="2005-07-31T06:45:00" title="Dexter Laboratory" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-31T07:40:00" startTime="2005-07-31T07:15:00" title="Johnny Bravo" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-31T08:15:00" startTime="2005-07-31T07:40:00" title="Ed Edd e Eddy" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-31T08:40:00" startTime="2005-07-31T08:15:00" title="KND" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-31T09:15:00" startTime="2005-07-31T08:40:00" title="PPG" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-31T09:40:00" startTime="2005-07-31T09:15:00" title="Johnny Bravo" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-31T10:00:00" startTime="2005-07-31T09:40:00" title="Cow e Chicken" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-31T10:25:00" startTime="2005-07-31T10:00:00" title="Courage" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2005-07-31T10:55:00" startTime="2005-07-31T10:25:00" title="Dexter Laboratory" /> 
+  <schedule category="Cartoon" chargeable="true" description="" endTime="2009-07-31T11:00:00" startTime="2005-07-31T10:55:00" title="Ed Edd e Eddy" /> 
+ <page type="schedule">
+  <text-line>Guarda le trasmissioni</text-line> 
+  </page>
+  </channel-schedule>
+  <event-list /> 
+  </channel>
+ <channel id="9" name="Crazy Channel" category="" isSecure="true" position="10" keyword="default" mode="text" price="2.00">
+  <online start="2005-01-01T14:01:00" end="2009-01-01T14:01:00" active="true" streaming="true" /> 
+  <link type="preview" label="Anteprima gratuita" position="01" url="rtsp://62.13.171.34/co/PapirazzoPreview" active="false" /> 
+  <link type="guarda" label="Guarda" position="02" url="rtsp://62.13.171.34/co/Papirazzo" active="true" /> 
+  <link type="msite" label="" position="03" url="" active="false" /> 
+  <link type="help" label="Come funziona" position="04" url="http://" active="true" /> 
+  <link type="tuatv" label="La Tua TV" position="05" url="http://" active="true" /> 
+  <logo rap="rap://CrazyChannel_bannerTV" /> 
+  <hb-logo rap="rap://CrazyChannel_banner3V" /> 
+ <page type="warning">
+ <text-line>XeX Channel contiene materiale a sfondo sessuale esplicito,l'accesso e' riservato ad un pubblico adulto. Se siete maggiorenni e Consapevoli cliccate per accedere.
+
+La visione del materiale e' riservata ai clienti 3. Ogni utilizzo diverso dalla visione privata ed in particolar modo la redistribuzione tramite altri canali e' espressamente vietata e sara' perseguita legalmente.</text-line>
+  </page>
+ <page type="disable">
+  <text-line>Siamo spiacenti il servizio non e' momentaneamente disponibile.</text-line> 
+  </page>
+ <charging-metadata>
+  <data name="SupplierId">139</data> 
+  <tariff refid="CANALE11" /> 
+  </charging-metadata>
+ <channel-schedule>
+  <schedule title="Papirazzo" category="Papirazzo" description="programmazione" startTime="2005-01-01T00:00:00" endTime="2009-01-01T00:00:00" chargeable="true" /> 
+ <page type="schedule">
+  <text-line /> 
+  </page>
+  </channel-schedule>
+  <event-list /> 
+  </channel>
+</channels>
+
+2006/01/16 17:54:09:845||10.214.138.3:12001-649|10.63.62.98|DEBUG|it.h3g.telecomando.LogicBusiness|retrieveChannels|Parsing XML
+2006/01/16 17:54:09:858||10.214.138.3:12001-649|10.63.62.98|DEBUG|it.h3g.telecomando.LogicBusiness|retrieveChannels|XML Parsed
+2006/01/16 17:54:09:905||10.214.138.3:12001-649|10.63.62.98|DEBUG|it.h3g.telecomando.LogicBusiness|isChannelPalinsestoExpired|current schedule not defined
+2006/01/16 17:54:09:906||10.214.138.3:12001-649|10.63.62.98|DEBUG|it.h3g.telecomando.LogicBusiness|updateChannelsPalinsesto|channel palinsesto 0 expired
+2006/01/16 17:54:09:907||10.214.138.3:12001-649|10.63.62.98|DEBUG|it.h3g.telecomando.LogicBusiness|retrieveChannelPalinsesto|current schedule=604
+2006/01/16 17:54:09:908||10.214.138.3:12001-649|10.63.62.98|WARN|it.h3g.telecomando.LogicBusiness|retrieveChannelPalinsesto|Next Schedules not defined at current time!
+2006/01/16 17:54:09:908||10.214.138.3:12001-649|10.63.62.98|INFO|it.h3g.telecomando.entity.MenuItem|dump|Menu Item: id=3,title=Cartoon Network,bodyMessage=Ora in onda: Ed Edd e Eddy
+Inizio: 10:55,menuname=,disclaimer=,price=0.90,warning=false
+2006/01/16 17:54:09:909||10.214.138.3:12001-649|10.63.62.98|DEBUG|it.h3g.telecomando.LogicBusiness|isChannelPalinsestoExpired|current schedule not defined
+2006/01/16 17:54:09:910||10.214.138.3:12001-649|10.63.62.98|DEBUG|it.h3g.telecomando.LogicBusiness|updateChannelsPalinsesto|channel palinsesto 1 expired
+2006/01/16 17:54:09:910||10.214.138.3:12001-649|10.63.62.98|DEBUG|it.h3g.telecomando.LogicBusiness|retrieveChannelPalinsesto|current schedule=0
+2006/01/16 17:54:09:911||10.214.138.3:12001-649|10.63.62.98|WARN|it.h3g.telecomando.LogicBusiness|retrieveChannelPalinsesto|Next Schedules not defined at current time!
+2006/01/16 17:54:09:912||10.214.138.3:12001-649|10.63.62.98|INFO|it.h3g.telecomando.entity.MenuItem|dump|Menu Item: id=9,title=Crazy Channel,bodyMessage=Ora in onda: Papirazzo
+Inizio: 00:00,menuname=,disclaimer=XeX Channel contiene materiale a sfondo sessuale esplicito,l'accesso e' riservato ad un pubblico adulto. Se siete maggiorenni e Consapevoli cliccate per accedere.
+
+La visione del materiale e' riservata ai clienti 3. Ogni utilizzo diverso dalla visione privata ed in particolar modo la redistribuzione tramite altri canali e' espressamente vietata e sara' perseguita legalmente.,price=2.00,warning=true
+2006/01/16 17:54:09:912||10.214.138.3:12001-649|10.63.62.98|INFO|it.h3g.telecomando.LogicBusiness|getPalinsesto|Channels-palinsesto loaded
+2006/01/16 17:54:09:913||10.214.138.3:12001-649|10.63.62.98|INFO|it.h3g.telecomando.StzLogic|retrieveChannelArray|Number Of Channels loaded: 2
+2006/01/16 17:54:09:914||10.214.138.3:12001-649|10.63.62.98|DEBUG|it.h3g.telecomando.StzLogic|retrieveSkin|screenWidth=176
+2006/01/16 17:54:09:914||10.214.138.3:12001-649|10.63.62.98|DEBUG|it.h3g.telecomando.StzLogic|retrieveSkin|screenHeight=220
+2006/01/16 17:54:09:915||10.214.138.3:12001-649|10.63.62.98|INFO|it.h3g.telecomando.StzLogic|retrieveSkin|Device skin used: LG880
+2006/01/16 17:54:09:916||10.214.138.3:12001-649|10.63.62.98|DEBUG|com.streamezzo.rsp.main$brsp|_handleIncludeRequest|error=false
+2006/01/16 17:54:09:987||10.214.138.3:12001-649|10.63.62.98|INFO|com.streamezzo.rsp.main$brsp|_handleIncludeRequest|End Scene
+2006/01/16 18:06:08:616||10.214.138.3:12001-650|10.63.62.98|DEBUG|it.h3g.telecomando.StzLogic|initLoggerSessionInfo|Logger session information inited
+2006/01/16 18:06:08:617||10.214.138.3:12001-650|10.63.62.98|INFO|com.streamezzo.rsp.main$brsp|_handleIncludeRequest|Begin Scene
+2006/01/16 18:06:08:617||10.214.138.3:12001-650|10.63.62.98|DEBUG|com.streamezzo.rsp.main$brsp|_handleIncludeRequest|stzSession ID: 08F432CA709986A806B479DEA866F59C
+2006/01/16 18:06:08:618||10.214.138.3:12001-650|10.63.62.98|INFO|it.h3g.telecomando.LogicBusiness|getInstance|Loading LogicBusiness
+2006/01/16 18:06:08:619||10.214.138.3:12001-650|10.63.62.98|INFO|it.h3g.telecomando.LogicBusiness|getInstance|LogicBusiness already created
+2006/01/16 18:06:08:619||10.214.138.3:12001-650|10.63.62.98|DEBUG|it.h3g.telecomando.LogicBusiness|isEnabled|true
+2006/01/16 18:06:08:620||10.214.138.3:12001-650|10.63.62.98|INFO|it.h3g.telecomando.LogicBusiness|checkNetworkStatus|check Network Status
+2006/01/16 18:06:08:620||10.214.138.3:12001-650|10.63.62.98|INFO|it.h3g.telecomando.LogicBusiness|checkNetworkStatus|Network status = 3G
+2006/01/16 18:06:08:621||10.214.138.3:12001-650|10.63.62.98|INFO|it.h3g.telecomando.StzLogic|retrieveChannelList|Midlet version=1.0.1
+2006/01/16 18:06:08:622||10.214.138.3:12001-650|10.63.62.98|DEBUG|it.h3g.telecomando.LogicBusiness|getLastVersion|getting the last midlet version: 1.0.1
+2006/01/16 18:06:08:622||10.214.138.3:12001-650|10.63.62.98|INFO|it.h3g.telecomando.LogicBusiness|getPalinsesto|Retrieving channels-palinsesto
+2006/01/16 18:06:08:623||10.214.138.3:12001-650|10.63.62.98|DEBUG|it.h3g.telecomando.LogicBusiness|getPalinsesto|Channels-palinsesto not expired!
+2006/01/16 18:06:08:624||10.214.138.3:12001-650|10.63.62.98|DEBUG|it.h3g.telecomando.LogicBusiness|updateChannelsPalinsesto|channel palinsesto 0 not expired
+2006/01/16 18:06:08:624||10.214.138.3:12001-650|10.63.62.98|DEBUG|it.h3g.telecomando.LogicBusiness|updateChannelsPalinsesto|channel palinsesto 1 not expired
+2006/01/16 18:06:08:625||10.214.138.3:12001-650|10.63.62.98|INFO|it.h3g.telecomando.LogicBusiness|getPalinsesto|Channels-palinsesto loaded
+2006/01/16 18:06:08:626||10.214.138.3:12001-650|10.63.62.98|INFO|it.h3g.telecomando.StzLogic|retrieveChannelArray|Number Of Channels loaded: 2
+2006/01/16 18:06:08:626||10.214.138.3:12001-650|10.63.62.98|DEBUG|it.h3g.telecomando.StzLogic|retrieveSkin|screenWidth=176
+2006/01/16 18:06:08:627||10.214.138.3:12001-650|10.63.62.98|DEBUG|it.h3g.telecomando.StzLogic|retrieveSkin|screenHeight=220
+2006/01/16 18:06:08:627||10.214.138.3:12001-650|10.63.62.98|INFO|it.h3g.telecomando.StzLogic|retrieveSkin|Device skin used: LG880
+2006/01/16 18:06:08:628||10.214.138.3:12001-650|10.63.62.98|DEBUG|com.streamezzo.rsp.main$brsp|_handleIncludeRequest|error=false
+2006/01/16 18:06:08:720||10.214.138.3:12001-650|10.63.62.98|INFO|com.streamezzo.rsp.main$brsp|_handleIncludeRequest|End Scene

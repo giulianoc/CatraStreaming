@@ -1,0 +1,2 @@
+RTSP client session (1..1),Describe request time (YYYY-MM-DD HH:MI:SS:MilliSec),Describe response time (milliseconds),Time between DESCRIBE and first RTP packet (milliseconds),Error
+1,2005-06-20 00:16:03:132,1158,2520,---

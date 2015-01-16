@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Entity Identifier="Monitors" Label="Monitors" Icon="Monitors.gif"
+	DisabledFunctionalitiesList="" DisabledFunctionalitiesListSeparator=",">
+	<RefreshFunctionality Identifier="Refresh" Label="Refresh..." Icon="Refresh.gif" ToBeShownInTheToolbar="yes">
+	</RefreshFunctionality>
+	<ChoiceFromValues Identifier="GlobalRefreshTime" Label="Global refresh time" Icon="GlobalRefresh.gif" ValueIcon="GlobalRefreshValue.gif" Mandatory="yes"
+		ValuesSeparator="," Value1="5 secs,5" Value2="10 secs,10" Value3="30 secs,30" SelectionMode="SINGLE"
+		DisabledFunctionalitiesList="" DisabledFunctionalitiesListSeparator=",">
+		<UserInput Label="5" Icon="UserInput.gif" OutputParameter="5">
+		</UserInput>
+	</ChoiceFromValues>
+	<AllSites Identifier="AllSites" Label="All sites" Icon="AllSites.gif"
+		DisabledFunctionalitiesList="" DisabledFunctionalitiesListSeparator=",">
+		<Monitor Identifier="GlobalConnectedUsers" Label="Global Connected Users" Icon="GlobalConnectedUsers.gif"
+			DisabledFunctionalitiesList="" DisabledFunctionalitiesListSeparator=",">
+		</Monitor>
+	</AllSites>
+	<Site Identifier="Milano" Label="Milano" Icon="Site.gif"
+		DisabledFunctionalitiesList="" DisabledFunctionalitiesListSeparator=",">
+		<ChoiceFromValues Identifier="SiteRefreshTime" Label="Site refresh time" Icon="SiteRefreshTime.gif" ValueIcon="SiteRefreshTimeValue.gif" Mandatory="yes"
+			ValuesSeparator="," Value1="5 secs,5" Value2="10 secs,10" Value3="30 secs,30" SelectionMode="SINGLE"
+			DisabledFunctionalitiesList="" DisabledFunctionalitiesListSeparator=",">
+		</ChoiceFromValues>
+		<Monitor Identifier="SiteConnectedUsers" Label="Site Connected Users" Icon="SiteConnectedUsers.gif"
+			DisabledFunctionalitiesList="" DisabledFunctionalitiesListSeparator=",">
+		</Monitor>
+		<Server Identifier="Server1" Label="Server1" Icon="Server.gif"
+			DisabledFunctionalitiesList="" DisabledFunctionalitiesListSeparator=",">
+			<ChoiceFromValues Identifier="ServerRefreshTime" Label="Server refresh time" Icon="ServerRefreshTime.gif" ValueIcon="ServerRefreshTimeValue.gif" Mandatory="yes"
+				ValuesSeparator="," Value1="5 secs,5" Value2="10 secs,10" Value3="30 secs,30" SelectionMode="SINGLE"
+				DisabledFunctionalitiesList="" DisabledFunctionalitiesListSeparator=",">
+			</ChoiceFromValues>
+			<Monitor Identifier="ServerConnectedUsers" Label="Server Connected Users" Icon="ServerConnectedUsers.gif"
+				DisabledFunctionalitiesList="" DisabledFunctionalitiesListSeparator=",">
+			</Monitor>
+		</Server>
+	</Site>
+</Entity>

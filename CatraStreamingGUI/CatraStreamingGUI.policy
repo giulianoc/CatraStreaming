@@ -1,0 +1,7 @@
+/* AUTOMATICALLY GENERATED ON Tue Feb 01 13:13:52 GMT+01:00 2000*/
+/* DO NOT EDIT */
+
+grant {
+  permission java.security.AllPermission;
+};
+

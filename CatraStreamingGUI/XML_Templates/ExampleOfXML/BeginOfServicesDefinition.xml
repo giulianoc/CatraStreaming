@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Services Identifier="Services" Label="Services" Icon="Hammer.gif" DisabledFunctionalitiesList="AddResourceType,DelResourceType" DisabledFunctionalitiesListSeparator=",">
+	<CreateServiceDefinitionFunctionality Identifier="CreateServiceDefinition" Label="Create service definition..." Icon="new.gif" ToBeShownInTheToolbar="yes">
+	</CreateServiceDefinitionFunctionality>
+	<AddResourceTypeFunctionality Identifier="AddResourceType" Label="Add component type..." Icon="new.gif" ToBeShownInTheToolbar="yes">
+	</AddResourceTypeFunctionality>
+	<DelResourceTypeFunctionality Identifier="DelResourceType" Label="Del component type..." Icon="cut.gif" ToBeShownInTheToolbar="yes">
+	</DelResourceTypeFunctionality>
+	<SaveXMLFunctionality Identifier="SaveXML" Label="Save XML..." Icon="save.gif" ToBeShownInTheToolbar="yes">
+	</SaveXMLFunctionality>
+</Services>

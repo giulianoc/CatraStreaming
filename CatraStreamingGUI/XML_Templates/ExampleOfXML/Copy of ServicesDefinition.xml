@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Services Identifier="Services" Label="Services" Icon="Hammer.gif" DisabledFunctionalitiesList="AddResourceType,DelResourceType" DisabledFunctionalitiesListSeparator=",">
+	<CreateServiceDefinitionFunctionality Identifier="CreateServiceDefinition" Label="Create service definition..." Icon="new.gif" ToBeShownInTheToolbar="yes">
+	</CreateServiceDefinitionFunctionality>
+	<AddResourceTypeFunctionality Identifier="AddResourceType" Label="Add component type..." Icon="new.gif" ToBeShownInTheToolbar="yes">
+	</AddResourceTypeFunctionality>
+	<DelResourceTypeFunctionality Identifier="DelResourceType" Label="Del component type..." Icon="cut.gif" ToBeShownInTheToolbar="yes">
+	</DelResourceTypeFunctionality>
+	<SaveXMLFunctionality Identifier="SaveXML" Label="Save XML..." Icon="save.gif" ToBeShownInTheToolbar="yes">
+	</SaveXMLFunctionality>
+	<Entity Identifier="Integra" Label="Integra" Icon="Hammer.gif" DisabledFunctionalitiesList="CreateServiceDefinition" DisabledFunctionalitiesListSeparator=",">
+		<ResourceType Identifier="Sede" Label="Sede" Icon="sede.gif" DisabledFunctionalitiesList="CreateServiceDefinition" DisabledFunctionalitiesListSeparator=",">
+			<ChoiceFromTextInput Identifier="Sedenumber" Label="Number of Sede" Icon="number.gif" ValueIcon="number.gif" Mandatory="yes" DisabledFunctionalitiesList="CreateServiceDefinition,AddResourceType,DelResourceType" DisabledFunctionalitiesListSeparator=",">
+				<UserInput Label="1..5" Icon="number.gif" OutputParameter="1..5">
+				</UserInput>
+			</ChoiceFromTextInput>
+			<ResourceType Identifier="CDN" Label="CDN" Icon="cdn.gif" DisabledFunctionalitiesList="CreateServiceDefinition" DisabledFunctionalitiesListSeparator=",">
+				<ChoiceFromTextInput Identifier="CDNnumber" Label="Number of CDN" Icon="number.gif" ValueIcon="number.gif" Mandatory="yes" DisabledFunctionalitiesList="CreateServiceDefinition,AddResourceType,DelResourceType" DisabledFunctionalitiesListSeparator=",">
+					<UserInput Label="1..5" Icon="number.gif" OutputParameter="1..5">
+					</UserInput>
+				</ChoiceFromTextInput>
+				<ResourceType Identifier="Router" Label="Router" Icon="router.gif" DisabledFunctionalitiesList="CreateServiceDefinition" DisabledFunctionalitiesListSeparator=",">
+					<ChoiceFromTextInput Identifier="Routernumber" Label="Number of Router" Icon="number.gif" ValueIcon="number.gif" Mandatory="yes" DisabledFunctionalitiesList="CreateServiceDefinition,AddResourceType,DelResourceType" DisabledFunctionalitiesListSeparator=",">
+						<UserInput Label="2..2" Icon="number.gif" OutputParameter="2..2">
+						</UserInput>
+					</ChoiceFromTextInput>
+				</ResourceType>
+			</ResourceType>
+		</ResourceType>
+		<ResourceType Identifier="MailServer" Label="Mail server" Icon="mailserver.gif" DisabledFunctionalitiesList="CreateServiceDefinition" DisabledFunctionalitiesListSeparator=",">
+			<ChoiceFromTextInput Identifier="MailServernumber" Label="Number of Mail server" Icon="number.gif" ValueIcon="number.gif" Mandatory="yes" DisabledFunctionalitiesList="CreateServiceDefinition,AddResourceType,DelResourceType" DisabledFunctionalitiesListSeparator=",">
+				<UserInput Label="1..1" Icon="number.gif" OutputParameter="1..1">
+				</UserInput>
+			</ChoiceFromTextInput>
+			<ResourceType Identifier="mail" Label="Mail" Icon="mail.gif" DisabledFunctionalitiesList="CreateServiceDefinition" DisabledFunctionalitiesListSeparator=",">
+				<ChoiceFromTextInput Identifier="mailnumber" Label="Number of Mail" Icon="number.gif" ValueIcon="number.gif" Mandatory="yes" DisabledFunctionalitiesList="CreateServiceDefinition,AddResourceType,DelResourceType" DisabledFunctionalitiesListSeparator=",">
+					<UserInput Label="1..20" Icon="number.gif" OutputParameter="1..20">
+					</UserInput>
+				</ChoiceFromTextInput>
+			</ResourceType>
+		</ResourceType>
+	</Entity>
+	<Entity Identifier="Ospita" Label="Ospita" Icon="Hammer.gif" DisabledFunctionalitiesList="CreateServiceDefinition" DisabledFunctionalitiesListSeparator=",">
+	</Entity>
+</Services>

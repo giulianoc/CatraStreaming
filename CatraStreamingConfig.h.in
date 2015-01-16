@@ -1,0 +1,4 @@
+
+#define CatraStreaming_VERSION_MAJOR @CatraStreaming_VERSION_MAJOR@
+#define CatraStreaming_VERSION_MINOR @CatraStreaming_VERSION_MINOR@
+

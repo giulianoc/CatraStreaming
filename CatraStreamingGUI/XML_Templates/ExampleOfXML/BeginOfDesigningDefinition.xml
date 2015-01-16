@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Designing Identifier="Designing" Label="Designing" Icon="Hammer.gif" DisabledFunctionalitiesList="DestroyServiceDesign,AddResource,DelResource" DisabledFunctionalitiesListSeparator=",">
+	<CreateServiceDesignFunctionality Identifier="CreateServiceDesign" Label="Create Service design..." Icon="left.gif" ToBeShownInTheToolbar="yes">
+	</CreateServiceDesignFunctionality>
+	<DestroyServiceDesignFunctionality Identifier="DestroyServiceDesign" Label="Destroy Service design..." Icon="left.gif" ToBeShownInTheToolbar="yes">
+	</DestroyServiceDesignFunctionality>
+	<AddResourceFunctionality Identifier="AddResource" Label="Add resource..." Icon="left.gif" ToBeShownInTheToolbar="yes">
+	</AddResourceFunctionality>
+	<DelResourceFunctionality Identifier="DelResource" Label="Del resource..." Icon="left.gif" ToBeShownInTheToolbar="yes">
+	</DelResourceFunctionality>
+	<SaveXMLFunctionality Identifier="SaveXML" Label="Save XML..." Icon="save.gif" ToBeShownInTheToolbar="yes">
+	</SaveXMLFunctionality>
+</Designing>

@@ -1,0 +1,739 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  ms/call  ms/call  name    
+ 27.78      0.05     0.05       50     1.00     1.67  RTSPSession::init(unsigned long, MP4Atom::Standard, StreamingServerEventsSet*, StreamingServerSocketsPool*, Scheduler*, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, char const*, char const*, char const*, unsigned long, double, unsigned long, long, unsigned long, unsigned long, unsigned long, float, char const*, PMutex*, LiveSource*, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, long, long, char const*, MP4FileFactory*, long, char const*, char const*, unsigned long, char const*, unsigned long, long, char const*, char const*, unsigned long, char const*, unsigned long, long, Tracer*, Tracer*)
+ 16.67      0.08     0.03                             StreamingServerService::onInit()
+  5.56      0.09     0.01    15200     0.00     0.00  std::vector<RTPPacket*, std::allocator<RTPPacket*> >::reserve(unsigned int)
+  5.56      0.10     0.01      200     0.05     0.05  __gnu_cxx::__mt_alloc<RTPPacket*, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> >::allocate(unsigned int, void const*)
+  5.56      0.11     0.01      150     0.07     0.07  RTPOverBufferWindow2::checkTransmitTime(long long const&, long long const&, unsigned long)
+  5.56      0.12     0.01      100     0.10     0.10  RTSPSession::TrackInfo::~TrackInfo()
+  5.56      0.13     0.01       50     0.20     0.20  RTSPSession::getPauseTimes(PauseTimes**)
+  5.56      0.14     0.01       50     0.20     0.20  RTSPSession::finish()
+  5.56      0.15     0.01       50     0.20     0.20  CheckReceivedRTCPPacketsTimes::init(unsigned long, unsigned long, StreamingServerEventsSet*, Tracer*)
+  5.56      0.16     0.01        3     3.33     3.33  StreamingServerService::startTracer(ConfigurationFile*, Tracer*, char*)
+  5.56      0.17     0.01                             RTSPConnectionEvent::RTSPConnectionEvent(RTSPConnectionEvent const&)
+  5.56      0.18     0.01                             CheckServerSocketTimes::~CheckServerSocketTimes()
+  0.00      0.18     0.00      810     0.00     0.00  RTPErrors::duplicate(ErrMsgBase**) const
+  0.00      0.18     0.00      800     0.00     0.00  RTSPErrors::duplicate(ErrMsgBase**) const
+  0.00      0.18     0.00      501     0.00     0.00  StreamingServerProcessor::StreamingServerProcessor()
+  0.00      0.18     0.00      500     0.00     0.00  RTSPConnectionEvent::RTSPConnectionEvent(RTSPConnectionEvent const&)
+  0.00      0.18     0.00      500     0.00     0.00  __tcf_0
+  0.00      0.18     0.00      300     0.00     0.00  RTSPSession::TrackInfo::TrackInfo()
+  0.00      0.18     0.00      200     0.00     0.00  __gnu_cxx::__mt_alloc<double, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> >::allocate(unsigned int, void const*)
+  0.00      0.18     0.00      151     0.00     0.00  PauseTimes::finish()
+  0.00      0.18     0.00      151     0.00     0.00  RTSP_RTCPTimes::finish()
+  0.00      0.18     0.00      151     0.00     0.00  SendRTCPPacketsTimes::finish()
+  0.00      0.18     0.00      151     0.00     0.00  CheckReceivedRTCPPacketsTimes::finish()
+  0.00      0.18     0.00      101     0.00     0.00  StreamingSessionTimes::finish()
+  0.00      0.18     0.00      100     0.00     0.00  __gnu_cxx::__mt_alloc<double, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> >::deallocate(double*, unsigned int)
+  0.00      0.18     0.00      100     0.00     0.00  std::vector<double, std::allocator<double> >::reserve(unsigned int)
+  0.00      0.18     0.00       51     0.00     0.26  RTSPSession::~RTSPSession()
+  0.00      0.18     0.00       51     0.00     0.00  StreamingServerService::finish()
+  0.00      0.18     0.00       50     0.00     0.00  PauseTimes::init(unsigned long, unsigned long, StreamingServerEventsSet*, Tracer*)
+  0.00      0.18     0.00       50     0.00     0.00  RTSPSession::getRTSP_RTCPTimes(RTSP_RTCPTimes**)
+  0.00      0.18     0.00       50     0.00     0.00  RTSPSession::getSendRTCPPacketsTimes(SendRTCPPacketsTimes**)
+  0.00      0.18     0.00       50     0.00     0.00  RTSPSession::getCheckReceivedRTCPPacketsTimes(CheckReceivedRTCPPacketsTimes**)
+  0.00      0.18     0.00       50     0.00     0.07  RTSPSession::RTSPSession()
+  0.00      0.18     0.00       50     0.00     0.00  RTSP_RTCPTimes::init(unsigned long, unsigned long, StreamingServerEventsSet*, Tracer*)
+  0.00      0.18     0.00       50     0.00     0.00  SendRTCPPacketsTimes::init(unsigned long, unsigned long, StreamingServerEventsSet*, Tracer*)
+  0.00      0.18     0.00       10     0.00     0.00  LiveSource::LiveSource()
+  0.00      0.18     0.00       10     0.00     0.00  LiveSource::~LiveSource()
+  0.00      0.18     0.00        7     0.00     0.00  WebToolsErrors::duplicate(ErrMsgBase**) const
+  0.00      0.18     0.00        4     0.00     0.00  CheckSocketsPoolTimes::finish()
+  0.00      0.18     0.00        4     0.00     0.00  CheckServerSocketTimes::finish()
+  0.00      0.18     0.00        4     0.00     0.00  StreamingServerProcessor::getIsShutdown(long*)
+  0.00      0.18     0.00        4     0.00     0.00  StreamingServerSocketsPool::finish()
+  0.00      0.18     0.00        4     0.00     0.00  __gnu_cxx::__mt_alloc<Event*, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> >::allocate(unsigned int, void const*)
+  0.00      0.18     0.00        3     0.00     0.00  RTSPSession::getRTSPStatus(RTSPSession::RTSPStatus*)
+  0.00      0.18     0.00        3     0.00     0.00  RTSPSession::acceptRTSPConnection(ServerSocket*)
+  0.00      0.18     0.00        3     0.00     0.00  SubscriberTracer::performTrace(long, long, char const*, char const*, long, unsigned long, long)
+  0.00      0.18     0.00        3     0.00     0.00  HttpStreamingServer::init(char const*, long, char const*, MP4FileFactory*, MP4Atom::Standard, ConfigurationFile*, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, RTSPSession*, CheckServerSocketTimes*, PMutex*, std::vector<RTSPSession*, std::allocator<RTSPSession*> >*, PMutex*, unsigned long long*, unsigned long long*, unsigned long long*, Tracer*)
+  0.00      0.18     0.00        3     0.00     0.00  RTSPConnectionEvent::init(char const*, long, unsigned long, Tracer*, long, unsigned long long, Buffer*)
+  0.00      0.18     0.00        3     0.00     0.00  RTSPConnectionEvent::finish()
+  0.00      0.18     0.00        3     0.00     0.00  StreamingServerEventsSet::deleteAllocatedEvents(unsigned long, std::vector<Event*, std::allocator<Event*> >*)
+  0.00      0.18     0.00        3     0.00     0.00  StreamingServerProcessor::processEvent(Event*)
+  0.00      0.18     0.00        3     0.00     0.00  StreamingServerProcessor::handleNewRTSPConnectionEvent(RTSPConnectionEvent*)
+  0.00      0.18     0.00        3     0.00     0.00  StreamingServerProcessor::init(unsigned long, MP4Atom::Standard, StreamingServerEventsSet*, ServerSocket*, SocketsPool*, RTSPSession*, unsigned long, PMutex*, std::vector<RTSPSession*, std::allocator<RTSPSession*> >*, char const*, PMutex*, PMutex*, unsigned long long*, unsigned long long*, unsigned long long*, ConfigurationFile*, Tracer*, Tracer*)
+  0.00      0.18     0.00        3     0.00     0.00  std::vector<RTSPSession*, std::allocator<RTSPSession*> >::reserve(unsigned int)
+  0.00      0.18     0.00        2     0.00     0.00  ConfigurationErrors::ConfigurationErrors(char const*, unsigned long, long, long, ...)
+  0.00      0.18     0.00        2     0.00     0.00  StreamingServerService::stopTracer(Tracer*)
+  0.00      0.18     0.00        2     0.00     0.00  StreamingServerProcessor::setIsShutdown(long)
+  0.00      0.18     0.00        2     0.00     0.00  __gnu_cxx::__mt_alloc<RTSPSession*, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> >::allocate(unsigned int, void const*)
+  0.00      0.18     0.00        2     0.00     0.00  TracerErrors::duplicate(ErrMsgBase**) const
+  0.00      0.18     0.00        2     0.00     0.00  std::vector<SocketImpl::IPAddress, std::allocator<SocketImpl::IPAddress> >::erase(__gnu_cxx::__normal_iterator<SocketImpl::IPAddress*, std::vector<SocketImpl::IPAddress, std::allocator<SocketImpl::IPAddress> > >, __gnu_cxx::__normal_iterator<SocketImpl::IPAddress*, std::vector<SocketImpl::IPAddress, std::allocator<SocketImpl::IPAddress> > >)
+  0.00      0.18     0.00        1     0.00     0.00  global constructors keyed to _ZN24StreamingServerEventsSetC2Ev
+  0.00      0.18     0.00        1     0.00     0.00  __static_initialization_and_destruction_0(int, int)
+  0.00      0.18     0.00        1     0.00     0.00  LiveSource::LiveSource(LiveSource const&)
+  0.00      0.18     0.00        1     0.00     0.00  HttpStreamingServer::finish()
+  0.00      0.18     0.00        1     0.00     0.00  RTPOverBufferWindow::markBeginningOfWriteBurst()
+  0.00      0.18     0.00        1     0.00     0.00  RTPOverBufferWindow::init(unsigned long, unsigned long, unsigned long, Tracer*)
+  0.00      0.18     0.00        1     0.00     0.00  RTSPConnectionEvent::getBuffer(Buffer*)
+  0.00      0.18     0.00        1     0.00     0.00  CheckSocketsPoolTimes::init(unsigned long, StreamingServerSocketsPool*, Tracer*)
+  0.00      0.18     0.00        1     0.00     0.00  CheckServerSocketTimes::init(unsigned long, StreamingServerEventsSet*, Tracer*)
+  0.00      0.18     0.00        1     0.00     0.00  StreamingServerService::appendStartScriptCommand(Buffer*)
+  0.00      0.18     0.00        1     0.00     0.00  StreamingServerService::appendStatusScriptCommand(Buffer*)
+  0.00      0.18     0.00        1     0.00     0.00  StreamingServerService::cancel()
+  0.00      0.18     0.00        1     0.00     0.00  StreamingServerService::initNICs(std::vector<SocketImpl::IPAddress, std::allocator<SocketImpl::IPAddress> >*)
+  0.00      0.18     0.00        1     0.00     0.00  StreamingServerService::StreamingServerService()
+  0.00      0.18     0.00        1     0.00     0.00  StreamingServerService::~StreamingServerService()
+  0.00      0.18     0.00        1     0.00     0.00  StreamingServerEventsSet::operator=(StreamingServerEventsSet const&)
+  0.00      0.18     0.00        1     0.00     0.00  StreamingServerProcessor::cancel()
+  0.00      0.18     0.00        1     0.00     0.00  StreamingServerProcessor::finish()
+  0.00      0.18     0.00        1     0.00     0.00  StreamingServerProcessor::~StreamingServerProcessor()
+  0.00      0.18     0.00        1     0.00     0.00  StreamingServerProcessor::~StreamingServerProcessor()
+  0.00      0.18     0.00        1     0.00     0.00  StreamingServerProcessor::~StreamingServerProcessor()
+  0.00      0.18     0.00        1     0.00     0.00  BeginningHookHttpGetThread::init(unsigned long, char const*, unsigned long, char const*, Buffer*, Buffer*, unsigned long, StreamingServerEventsSet*, Tracer*, unsigned long)
+  0.00      0.18     0.00        1     0.00     0.00  StreamingServerSocketsPool::init(StreamingServerEventsSet*, Tracer*)
+  0.00      0.18     0.00        1     0.00     0.00  LiveEvent::init(char const*, long, Socket*, void*, Tracer*)
+  0.00      0.18     0.00        1     0.00     0.00  __gnu_cxx::__mt_alloc<RTSPSession*, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> >::deallocate(RTSPSession**, unsigned int)
+  0.00      0.18     0.00        1     0.00     0.00  std::vector<Event*, std::allocator<Event*> >::_M_insert_aux(__gnu_cxx::__normal_iterator<Event**, std::vector<Event*, std::allocator<Event*> > >, Event* const&)
+  0.00      0.18     0.00        1     0.00     0.00  std::vector<Event*, std::allocator<Event*> >::reserve(unsigned int)
+  0.00      0.18     0.00        1     0.00     0.00  __tcf_0
+  0.00      0.18     0.00        1     0.00     0.00  main
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+ 
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this 
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+		     Call graph (explanation follows)
+
+
+granularity: each sample hit covers 4 byte(s) for 5.56% of 0.18 seconds
+
+index % time    self  children    called     name
+                                                 <spontaneous>
+[1]     68.5    0.03    0.09                 StreamingServerService::onInit() [1]
+                0.05    0.03      50/50          RTSPSession::init(unsigned long, MP4Atom::Standard, StreamingServerEventsSet*, StreamingServerSocketsPool*, Scheduler*, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, char const*, char const*, char const*, unsigned long, double, unsigned long, long, unsigned long, unsigned long, unsigned long, float, char const*, PMutex*, LiveSource*, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, long, long, char const*, MP4FileFactory*, long, char const*, char const*, unsigned long, char const*, unsigned long, long, char const*, char const*, unsigned long, char const*, unsigned long, long, Tracer*, Tracer*) [2]
+                0.01    0.00       2/3           StreamingServerService::startTracer(ConfigurationFile*, Tracer*, char*) [12]
+                0.00    0.00      50/50          RTSPSession::RTSPSession() [17]
+                0.00    0.00      50/51          StreamingServerService::finish() [39]
+                0.00    0.00      10/10          LiveSource::LiveSource() [46]
+                0.00    0.00       1/3           std::vector<RTSPSession*, std::allocator<RTSPSession*> >::reserve(unsigned int) [64]
+                0.00    0.00       1/3           StreamingServerEventsSet::deleteAllocatedEvents(unsigned long, std::vector<Event*, std::allocator<Event*> >*) [60]
+                0.00    0.00       1/1           StreamingServerSocketsPool::init(StreamingServerEventsSet*, Tracer*) [93]
+                0.00    0.00       1/1           StreamingServerProcessor::~StreamingServerProcessor() [89]
+                0.00    0.00       1/3           StreamingServerProcessor::init(unsigned long, MP4Atom::Standard, StreamingServerEventsSet*, ServerSocket*, SocketsPool*, RTSPSession*, unsigned long, PMutex*, std::vector<RTSPSession*, std::allocator<RTSPSession*> >*, char const*, PMutex*, PMutex*, unsigned long long*, unsigned long long*, unsigned long long*, ConfigurationFile*, Tracer*, Tracer*) [63]
+                0.00    0.00       1/1           CheckSocketsPoolTimes::init(unsigned long, StreamingServerSocketsPool*, Tracer*) [78]
+                0.00    0.00       1/1           CheckServerSocketTimes::init(unsigned long, StreamingServerEventsSet*, Tracer*) [79]
+                0.00    0.00       1/3           HttpStreamingServer::init(char const*, long, char const*, MP4FileFactory*, MP4Atom::Standard, ConfigurationFile*, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, RTSPSession*, CheckServerSocketTimes*, PMutex*, std::vector<RTSPSession*, std::allocator<RTSPSession*> >*, PMutex*, unsigned long long*, unsigned long long*, unsigned long long*, Tracer*) [57]
+                0.00    0.00       1/1           StreamingServerService::initNICs(std::vector<SocketImpl::IPAddress, std::allocator<SocketImpl::IPAddress> >*) [83]
+-----------------------------------------------
+                0.05    0.03      50/50          StreamingServerService::onInit() [1]
+[2]     46.3    0.05    0.03      50         RTSPSession::init(unsigned long, MP4Atom::Standard, StreamingServerEventsSet*, StreamingServerSocketsPool*, Scheduler*, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, char const*, char const*, char const*, unsigned long, double, unsigned long, long, unsigned long, unsigned long, unsigned long, float, char const*, PMutex*, LiveSource*, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, long, long, char const*, MP4FileFactory*, long, char const*, char const*, unsigned long, char const*, unsigned long, long, char const*, char const*, unsigned long, char const*, unsigned long, long, Tracer*, Tracer*) [2]
+                0.01    0.01   15200/15200       std::vector<RTPPacket*, std::allocator<RTPPacket*> >::reserve(unsigned int) [4]
+                0.01    0.00      50/50          CheckReceivedRTCPPacketsTimes::init(unsigned long, unsigned long, StreamingServerEventsSet*, Tracer*) [11]
+                0.00    0.00      50/150         RTPOverBufferWindow2::checkTransmitTime(long long const&, long long const&, unsigned long) [7]
+                0.00    0.00     100/100         std::vector<double, std::allocator<double> >::reserve(unsigned int) [38]
+                0.00    0.00      50/50          RTSP_RTCPTimes::init(unsigned long, unsigned long, StreamingServerEventsSet*, Tracer*) [44]
+                0.00    0.00      50/50          PauseTimes::init(unsigned long, unsigned long, StreamingServerEventsSet*, Tracer*) [40]
+                0.00    0.00      50/50          SendRTCPPacketsTimes::init(unsigned long, unsigned long, StreamingServerEventsSet*, Tracer*) [45]
+-----------------------------------------------
+                                                 <spontaneous>
+[3]     12.8    0.00    0.02                 StreamingServerService::onStop() [3]
+                0.00    0.01      50/51          RTSPSession::~RTSPSession() [5]
+                0.01    0.00      50/50          RTSPSession::finish() [10]
+                0.00    0.00      10/10          LiveSource::~LiveSource() [47]
+                0.00    0.00       2/2           StreamingServerService::stopTracer(Tracer*) [66]
+                0.00    0.00       1/1           StreamingServerService::appendStartScriptCommand(Buffer*) [80]
+                0.00    0.00       1/1           HttpStreamingServer::finish() [74]
+                0.00    0.00       1/4           CheckServerSocketTimes::finish() [50]
+                0.00    0.00       1/4           CheckSocketsPoolTimes::finish() [49]
+                0.00    0.00       1/3           StreamingServerProcessor::init(unsigned long, MP4Atom::Standard, StreamingServerEventsSet*, ServerSocket*, SocketsPool*, RTSPSession*, unsigned long, PMutex*, std::vector<RTSPSession*, std::allocator<RTSPSession*> >*, char const*, PMutex*, PMutex*, unsigned long long*, unsigned long long*, unsigned long long*, ConfigurationFile*, Tracer*, Tracer*) [63]
+                0.00    0.00       1/2           std::vector<SocketImpl::IPAddress, std::allocator<SocketImpl::IPAddress> >::erase(__gnu_cxx::__normal_iterator<SocketImpl::IPAddress*, std::vector<SocketImpl::IPAddress, std::allocator<SocketImpl::IPAddress> > >, __gnu_cxx::__normal_iterator<SocketImpl::IPAddress*, std::vector<SocketImpl::IPAddress, std::allocator<SocketImpl::IPAddress> > >) [70]
+                0.00    0.00       1/4           StreamingServerSocketsPool::finish() [52]
+                0.00    0.00       1/1           StreamingServerProcessor::finish() [88]
+-----------------------------------------------
+                0.01    0.01   15200/15200       RTSPSession::init(unsigned long, MP4Atom::Standard, StreamingServerEventsSet*, StreamingServerSocketsPool*, Scheduler*, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, char const*, char const*, char const*, unsigned long, double, unsigned long, long, unsigned long, unsigned long, unsigned long, float, char const*, PMutex*, LiveSource*, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, long, long, char const*, MP4FileFactory*, long, char const*, char const*, unsigned long, char const*, unsigned long, long, char const*, char const*, unsigned long, char const*, unsigned long, long, Tracer*, Tracer*) [2]
+[4]     11.1    0.01    0.01   15200         std::vector<RTPPacket*, std::allocator<RTPPacket*> >::reserve(unsigned int) [4]
+                0.01    0.00     200/200         __gnu_cxx::__mt_alloc<RTPPacket*, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> >::allocate(unsigned int, void const*) [6]
+                0.00    0.00     200/800         RTSPErrors::duplicate(ErrMsgBase**) const [26]
+-----------------------------------------------
+                                   1             RTSPSession::~RTSPSession() [5]
+                0.00    0.00       1/51          _fini [16]
+                0.00    0.01      50/51          StreamingServerService::onStop() [3]
+[5]      7.4    0.00    0.01      51+1       RTSPSession::~RTSPSession() [5]
+                0.01    0.00     100/100         RTSPSession::TrackInfo::~TrackInfo() [8]
+                0.00    0.00      50/150         RTPOverBufferWindow2::checkTransmitTime(long long const&, long long const&, unsigned long) [7]
+                0.00    0.00      50/151         SendRTCPPacketsTimes::finish() [34]
+                0.00    0.00      50/151         CheckReceivedRTCPPacketsTimes::finish() [35]
+                0.00    0.00      50/101         StreamingSessionTimes::finish() [36]
+                0.00    0.00      50/151         PauseTimes::finish() [32]
+                0.00    0.00      50/151         RTSP_RTCPTimes::finish() [33]
+                                   1             RTSPSession::~RTSPSession() [5]
+-----------------------------------------------
+                0.01    0.00     200/200         std::vector<RTPPacket*, std::allocator<RTPPacket*> >::reserve(unsigned int) [4]
+[6]      5.6    0.01    0.00     200         __gnu_cxx::__mt_alloc<RTPPacket*, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> >::allocate(unsigned int, void const*) [6]
+-----------------------------------------------
+                0.00    0.00      50/150         RTSPSession::~RTSPSession() [5]
+                0.00    0.00      50/150         RTSPSession::RTSPSession() [17]
+                0.00    0.00      50/150         RTSPSession::init(unsigned long, MP4Atom::Standard, StreamingServerEventsSet*, StreamingServerSocketsPool*, Scheduler*, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, char const*, char const*, char const*, unsigned long, double, unsigned long, long, unsigned long, unsigned long, unsigned long, float, char const*, PMutex*, LiveSource*, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, long, long, char const*, MP4FileFactory*, long, char const*, char const*, unsigned long, char const*, unsigned long, long, char const*, char const*, unsigned long, char const*, unsigned long, long, Tracer*, Tracer*) [2]
+[7]      5.6    0.01    0.00     150         RTPOverBufferWindow2::checkTransmitTime(long long const&, long long const&, unsigned long) [7]
+-----------------------------------------------
+                0.01    0.00     100/100         RTSPSession::~RTSPSession() [5]
+[8]      5.6    0.01    0.00     100         RTSPSession::TrackInfo::~TrackInfo() [8]
+                0.00    0.00     400/800         RTSPErrors::duplicate(ErrMsgBase**) const [26]
+                0.00    0.00     300/810         RTPErrors::duplicate(ErrMsgBase**) const [25]
+                0.00    0.00     200/300         RTSPSession::TrackInfo::TrackInfo() [30]
+                0.00    0.00     100/200         __gnu_cxx::__mt_alloc<double, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> >::allocate(unsigned int, void const*) [31]
+-----------------------------------------------
+                0.01    0.00      50/50          StreamingServerService::onStart() [15]
+[9]      5.6    0.01    0.00      50         RTSPSession::getPauseTimes(PauseTimes**) [9]
+-----------------------------------------------
+                0.01    0.00      50/50          StreamingServerService::onStop() [3]
+[10]     5.6    0.01    0.00      50         RTSPSession::finish() [10]
+                0.00    0.00     100/100         __gnu_cxx::__mt_alloc<double, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> >::deallocate(double*, unsigned int) [37]
+                0.00    0.00      50/151         SendRTCPPacketsTimes::finish() [34]
+                0.00    0.00      50/151         CheckReceivedRTCPPacketsTimes::finish() [35]
+                0.00    0.00      50/151         PauseTimes::finish() [32]
+                0.00    0.00      50/151         RTSP_RTCPTimes::finish() [33]
+-----------------------------------------------
+                0.01    0.00      50/50          RTSPSession::init(unsigned long, MP4Atom::Standard, StreamingServerEventsSet*, StreamingServerSocketsPool*, Scheduler*, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, char const*, char const*, char const*, unsigned long, double, unsigned long, long, unsigned long, unsigned long, unsigned long, float, char const*, PMutex*, LiveSource*, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, long, long, char const*, MP4FileFactory*, long, char const*, char const*, unsigned long, char const*, unsigned long, long, char const*, char const*, unsigned long, char const*, unsigned long, long, Tracer*, Tracer*) [2]
+[11]     5.6    0.01    0.00      50         CheckReceivedRTCPPacketsTimes::init(unsigned long, unsigned long, StreamingServerEventsSet*, Tracer*) [11]
+-----------------------------------------------
+                                   1             StreamingServerService::startTracer(ConfigurationFile*, Tracer*, char*) [12]
+                0.00    0.00       1/3           _fini [16]
+                0.01    0.00       2/3           StreamingServerService::onInit() [1]
+[12]     5.6    0.01    0.00       3+1       StreamingServerService::startTracer(ConfigurationFile*, Tracer*, char*) [12]
+                                   1             StreamingServerService::startTracer(ConfigurationFile*, Tracer*, char*) [12]
+-----------------------------------------------
+                                                 <spontaneous>
+[13]     5.6    0.01    0.00                 RTSPConnectionEvent::RTSPConnectionEvent(RTSPConnectionEvent const&) [13]
+-----------------------------------------------
+                                                 <spontaneous>
+[14]     5.6    0.01    0.00                 CheckServerSocketTimes::~CheckServerSocketTimes() [14]
+-----------------------------------------------
+                                                 <spontaneous>
+[15]     5.6    0.00    0.01                 StreamingServerService::onStart() [15]
+                0.01    0.00      50/50          RTSPSession::getPauseTimes(PauseTimes**) [9]
+                0.00    0.00      50/50          RTSPSession::getRTSP_RTCPTimes(RTSP_RTCPTimes**) [41]
+                0.00    0.00      50/50          RTSPSession::getSendRTCPPacketsTimes(SendRTCPPacketsTimes**) [42]
+                0.00    0.00      50/50          RTSPSession::getCheckReceivedRTCPPacketsTimes(CheckReceivedRTCPPacketsTimes**) [43]
+                0.00    0.00       1/7           WebToolsErrors::duplicate(ErrMsgBase**) const [48]
+                0.00    0.00       1/1           StreamingServerService::cancel() [82]
+-----------------------------------------------
+                                                 <spontaneous>
+[16]     2.0    0.00    0.00                 _fini [16]
+                0.00    0.00       1/3           StreamingServerService::startTracer(ConfigurationFile*, Tracer*, char*) [12]
+                0.00    0.00       1/51          RTSPSession::~RTSPSession() [5]
+                0.00    0.00       1/1           BeginningHookHttpGetThread::init(unsigned long, char const*, unsigned long, char const*, Buffer*, Buffer*, unsigned long, StreamingServerEventsSet*, Tracer*, unsigned long) [92]
+                0.00    0.00       1/1           main [18]
+                0.00    0.00       1/151         CheckReceivedRTCPPacketsTimes::finish() [35]
+                0.00    0.00       1/4           CheckServerSocketTimes::finish() [50]
+                0.00    0.00       1/4           CheckSocketsPoolTimes::finish() [49]
+                0.00    0.00       1/3           HttpStreamingServer::init(char const*, long, char const*, MP4FileFactory*, MP4Atom::Standard, ConfigurationFile*, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, RTSPSession*, CheckServerSocketTimes*, PMutex*, std::vector<RTSPSession*, std::allocator<RTSPSession*> >*, PMutex*, unsigned long long*, unsigned long long*, unsigned long long*, Tracer*) [57]
+                0.00    0.00       1/1           LiveEvent::init(char const*, long, Socket*, void*, Tracer*) [94]
+                0.00    0.00       1/1           LiveSource::LiveSource(LiveSource const&) [73]
+                0.00    0.00       1/151         PauseTimes::finish() [32]
+                0.00    0.00       1/1           RTPOverBufferWindow::markBeginningOfWriteBurst() [75]
+                0.00    0.00       1/1           RTPOverBufferWindow::init(unsigned long, unsigned long, unsigned long, Tracer*) [76]
+                0.00    0.00       1/1           RTSPConnectionEvent::getBuffer(Buffer*) [77]
+                0.00    0.00       1/151         RTSP_RTCPTimes::finish() [33]
+                0.00    0.00       1/151         SendRTCPPacketsTimes::finish() [34]
+                0.00    0.00       1/1           __tcf_0 [98]
+                0.00    0.00       1/3           StreamingServerEventsSet::deleteAllocatedEvents(unsigned long, std::vector<Event*, std::allocator<Event*> >*) [60]
+                0.00    0.00       1/1           StreamingServerProcessor::~StreamingServerProcessor() [90]
+                0.00    0.00       1/3           StreamingServerProcessor::init(unsigned long, MP4Atom::Standard, StreamingServerEventsSet*, ServerSocket*, SocketsPool*, RTSPSession*, unsigned long, PMutex*, std::vector<RTSPSession*, std::allocator<RTSPSession*> >*, char const*, PMutex*, PMutex*, unsigned long long*, unsigned long long*, unsigned long long*, ConfigurationFile*, Tracer*, Tracer*) [63]
+                0.00    0.00       1/4           StreamingServerSocketsPool::finish() [52]
+                0.00    0.00       1/101         StreamingSessionTimes::finish() [36]
+                0.00    0.00       1/3           SubscriberTracer::performTrace(long, long, char const*, char const*, long, unsigned long, long) [56]
+-----------------------------------------------
+                0.00    0.00      50/50          StreamingServerService::onInit() [1]
+[17]     1.9    0.00    0.00      50         RTSPSession::RTSPSession() [17]
+                0.00    0.00      50/150         RTPOverBufferWindow2::checkTransmitTime(long long const&, long long const&, unsigned long) [7]
+                0.00    0.00     100/300         RTSPSession::TrackInfo::TrackInfo() [30]
+                0.00    0.00      50/151         RTSP_RTCPTimes::finish() [33]
+                0.00    0.00      50/151         PauseTimes::finish() [32]
+                0.00    0.00      50/101         StreamingSessionTimes::finish() [36]
+                0.00    0.00      50/151         CheckReceivedRTCPPacketsTimes::finish() [35]
+                0.00    0.00      50/151         SendRTCPPacketsTimes::finish() [34]
+-----------------------------------------------
+                                   1             main [18]
+                0.00    0.00       1/1           _fini [16]
+[18]     0.0    0.00    0.00       1+1       main [18]
+                0.00    0.00       1/1           StreamingServerService::StreamingServerService() [84]
+                0.00    0.00       1/51          StreamingServerService::finish() [39]
+                0.00    0.00       1/1           StreamingServerService::~StreamingServerService() [85]
+                0.00    0.00       1/1           StreamingServerService::appendStatusScriptCommand(Buffer*) [81]
+                                   1             main [18]
+-----------------------------------------------
+                0.00    0.00      10/810         LiveSource::LiveSource(LiveSource const&) [157]
+                0.00    0.00     300/810         RTSPSession::TrackInfo::~TrackInfo() [8]
+                0.00    0.00     500/810         RTSPSession::TrackInfo::TrackInfo() [30]
+[25]     0.0    0.00    0.00     810         RTPErrors::duplicate(ErrMsgBase**) const [25]
+-----------------------------------------------
+                0.00    0.00     100/800         __gnu_cxx::__mt_alloc<double, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> >::deallocate(double*, unsigned int) [37]
+                0.00    0.00     100/800         std::vector<double, std::allocator<double> >::reserve(unsigned int) [38]
+                0.00    0.00     200/800         std::vector<RTPPacket*, std::allocator<RTPPacket*> >::reserve(unsigned int) [4]
+                0.00    0.00     400/800         RTSPSession::TrackInfo::~TrackInfo() [8]
+[26]     0.0    0.00    0.00     800         RTSPErrors::duplicate(ErrMsgBase**) const [26]
+-----------------------------------------------
+                0.00    0.00     501/501         StreamingServerEventsSet::allocateMoreFreeUserEvents(unsigned long, unsigned long*, std::vector<Event*, std::allocator<Event*> >*, std::vector<Event*, std::allocator<Event*> >*) [343]
+[27]     0.0    0.00    0.00     501         StreamingServerProcessor::StreamingServerProcessor() [27]
+                0.00    0.00       1/1           std::vector<Event*, std::allocator<Event*> >::_M_insert_aux(__gnu_cxx::__normal_iterator<Event**, std::vector<Event*, std::allocator<Event*> > >, Event* const&) [96]
+-----------------------------------------------
+                0.00    0.00     500/500         StreamingServerEventsSet::allocateMoreFreeUserEvents(unsigned long, unsigned long*, std::vector<Event*, std::allocator<Event*> >*, std::vector<Event*, std::allocator<Event*> >*) [343]
+[28]     0.0    0.00    0.00     500         RTSPConnectionEvent::RTSPConnectionEvent(RTSPConnectionEvent const&) [28]
+-----------------------------------------------
+                0.00    0.00     500/500         StreamingServerEventsSet::allocateMoreFreeUserEvents(unsigned long, unsigned long*, std::vector<Event*, std::allocator<Event*> >*, std::vector<Event*, std::allocator<Event*> >*) [343]
+[29]     0.0    0.00    0.00     500         __tcf_0 [29]
+-----------------------------------------------
+                0.00    0.00     100/300         RTSPSession::RTSPSession() [17]
+                0.00    0.00     200/300         RTSPSession::TrackInfo::~TrackInfo() [8]
+[30]     0.0    0.00    0.00     300         RTSPSession::TrackInfo::TrackInfo() [30]
+                0.00    0.00     500/810         RTPErrors::duplicate(ErrMsgBase**) const [25]
+-----------------------------------------------
+                0.00    0.00     100/200         std::vector<double, std::allocator<double> >::reserve(unsigned int) [38]
+                0.00    0.00     100/200         RTSPSession::TrackInfo::~TrackInfo() [8]
+[31]     0.0    0.00    0.00     200         __gnu_cxx::__mt_alloc<double, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> >::allocate(unsigned int, void const*) [31]
+-----------------------------------------------
+                                   1             PauseTimes::finish() [32]
+                0.00    0.00       1/151         _fini [16]
+                0.00    0.00      50/151         RTSPSession::~RTSPSession() [5]
+                0.00    0.00      50/151         RTSPSession::RTSPSession() [17]
+                0.00    0.00      50/151         RTSPSession::finish() [10]
+[32]     0.0    0.00    0.00     151+1       PauseTimes::finish() [32]
+                                   1             PauseTimes::finish() [32]
+-----------------------------------------------
+                                   1             RTSP_RTCPTimes::finish() [33]
+                0.00    0.00       1/151         _fini [16]
+                0.00    0.00      50/151         RTSPSession::~RTSPSession() [5]
+                0.00    0.00      50/151         RTSPSession::RTSPSession() [17]
+                0.00    0.00      50/151         RTSPSession::finish() [10]
+[33]     0.0    0.00    0.00     151+1       RTSP_RTCPTimes::finish() [33]
+                                   1             RTSP_RTCPTimes::finish() [33]
+-----------------------------------------------
+                                   1             SendRTCPPacketsTimes::finish() [34]
+                0.00    0.00       1/151         _fini [16]
+                0.00    0.00      50/151         RTSPSession::~RTSPSession() [5]
+                0.00    0.00      50/151         RTSPSession::RTSPSession() [17]
+                0.00    0.00      50/151         RTSPSession::finish() [10]
+[34]     0.0    0.00    0.00     151+1       SendRTCPPacketsTimes::finish() [34]
+                                   1             SendRTCPPacketsTimes::finish() [34]
+-----------------------------------------------
+                                   1             CheckReceivedRTCPPacketsTimes::finish() [35]
+                0.00    0.00       1/151         _fini [16]
+                0.00    0.00      50/151         RTSPSession::~RTSPSession() [5]
+                0.00    0.00      50/151         RTSPSession::RTSPSession() [17]
+                0.00    0.00      50/151         RTSPSession::finish() [10]
+[35]     0.0    0.00    0.00     151+1       CheckReceivedRTCPPacketsTimes::finish() [35]
+                                   1             CheckReceivedRTCPPacketsTimes::finish() [35]
+-----------------------------------------------
+                                   1             StreamingSessionTimes::finish() [36]
+                0.00    0.00       1/101         _fini [16]
+                0.00    0.00      50/101         RTSPSession::~RTSPSession() [5]
+                0.00    0.00      50/101         RTSPSession::RTSPSession() [17]
+[36]     0.0    0.00    0.00     101+1       StreamingSessionTimes::finish() [36]
+                                   1             StreamingSessionTimes::finish() [36]
+-----------------------------------------------
+                0.00    0.00     100/100         RTSPSession::finish() [10]
+[37]     0.0    0.00    0.00     100         __gnu_cxx::__mt_alloc<double, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> >::deallocate(double*, unsigned int) [37]
+                0.00    0.00     100/800         RTSPErrors::duplicate(ErrMsgBase**) const [26]
+-----------------------------------------------
+                0.00    0.00     100/100         RTSPSession::init(unsigned long, MP4Atom::Standard, StreamingServerEventsSet*, StreamingServerSocketsPool*, Scheduler*, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, char const*, char const*, char const*, unsigned long, double, unsigned long, long, unsigned long, unsigned long, unsigned long, float, char const*, PMutex*, LiveSource*, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, long, long, char const*, MP4FileFactory*, long, char const*, char const*, unsigned long, char const*, unsigned long, long, char const*, char const*, unsigned long, char const*, unsigned long, long, Tracer*, Tracer*) [2]
+[38]     0.0    0.00    0.00     100         std::vector<double, std::allocator<double> >::reserve(unsigned int) [38]
+                0.00    0.00     100/200         __gnu_cxx::__mt_alloc<double, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> >::allocate(unsigned int, void const*) [31]
+                0.00    0.00     100/800         RTSPErrors::duplicate(ErrMsgBase**) const [26]
+-----------------------------------------------
+                0.00    0.00       1/51          main [18]
+                0.00    0.00      50/51          StreamingServerService::onInit() [1]
+[39]     0.0    0.00    0.00      51         StreamingServerService::finish() [39]
+-----------------------------------------------
+                0.00    0.00      50/50          RTSPSession::init(unsigned long, MP4Atom::Standard, StreamingServerEventsSet*, StreamingServerSocketsPool*, Scheduler*, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, char const*, char const*, char const*, unsigned long, double, unsigned long, long, unsigned long, unsigned long, unsigned long, float, char const*, PMutex*, LiveSource*, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, long, long, char const*, MP4FileFactory*, long, char const*, char const*, unsigned long, char const*, unsigned long, long, char const*, char const*, unsigned long, char const*, unsigned long, long, Tracer*, Tracer*) [2]
+[40]     0.0    0.00    0.00      50         PauseTimes::init(unsigned long, unsigned long, StreamingServerEventsSet*, Tracer*) [40]
+-----------------------------------------------
+                0.00    0.00      50/50          StreamingServerService::onStart() [15]
+[41]     0.0    0.00    0.00      50         RTSPSession::getRTSP_RTCPTimes(RTSP_RTCPTimes**) [41]
+-----------------------------------------------
+                0.00    0.00      50/50          StreamingServerService::onStart() [15]
+[42]     0.0    0.00    0.00      50         RTSPSession::getSendRTCPPacketsTimes(SendRTCPPacketsTimes**) [42]
+-----------------------------------------------
+                0.00    0.00      50/50          StreamingServerService::onStart() [15]
+[43]     0.0    0.00    0.00      50         RTSPSession::getCheckReceivedRTCPPacketsTimes(CheckReceivedRTCPPacketsTimes**) [43]
+-----------------------------------------------
+                0.00    0.00      50/50          RTSPSession::init(unsigned long, MP4Atom::Standard, StreamingServerEventsSet*, StreamingServerSocketsPool*, Scheduler*, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, char const*, char const*, char const*, unsigned long, double, unsigned long, long, unsigned long, unsigned long, unsigned long, float, char const*, PMutex*, LiveSource*, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, long, long, char const*, MP4FileFactory*, long, char const*, char const*, unsigned long, char const*, unsigned long, long, char const*, char const*, unsigned long, char const*, unsigned long, long, Tracer*, Tracer*) [2]
+[44]     0.0    0.00    0.00      50         RTSP_RTCPTimes::init(unsigned long, unsigned long, StreamingServerEventsSet*, Tracer*) [44]
+-----------------------------------------------
+                0.00    0.00      50/50          RTSPSession::init(unsigned long, MP4Atom::Standard, StreamingServerEventsSet*, StreamingServerSocketsPool*, Scheduler*, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, char const*, char const*, char const*, unsigned long, double, unsigned long, long, unsigned long, unsigned long, unsigned long, float, char const*, PMutex*, LiveSource*, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, long, long, char const*, MP4FileFactory*, long, char const*, char const*, unsigned long, char const*, unsigned long, long, char const*, char const*, unsigned long, char const*, unsigned long, long, Tracer*, Tracer*) [2]
+[45]     0.0    0.00    0.00      50         SendRTCPPacketsTimes::init(unsigned long, unsigned long, StreamingServerEventsSet*, Tracer*) [45]
+-----------------------------------------------
+                0.00    0.00      10/10          StreamingServerService::onInit() [1]
+[46]     0.0    0.00    0.00      10         LiveSource::LiveSource() [46]
+-----------------------------------------------
+                0.00    0.00      10/10          StreamingServerService::onStop() [3]
+[47]     0.0    0.00    0.00      10         LiveSource::~LiveSource() [47]
+-----------------------------------------------
+                0.00    0.00       1/7           StreamingServerEventsSet::allocateMoreFreeUserEvents(unsigned long, unsigned long*, std::vector<Event*, std::allocator<Event*> >*, std::vector<Event*, std::allocator<Event*> >*) [343]
+                0.00    0.00       1/7           StreamingServerService::onStart() [15]
+                0.00    0.00       2/7           HttpStreamingServer::httpGetReceived(char const*, long, Buffer*, Buffer*, SocketImpl*) [261]
+                0.00    0.00       3/7           StreamingServerProcessor::handleNewRTSPConnectionEvent(RTSPConnectionEvent*) [62]
+[48]     0.0    0.00    0.00       7         WebToolsErrors::duplicate(ErrMsgBase**) const [48]
+-----------------------------------------------
+                                   1             CheckSocketsPoolTimes::finish() [49]
+                0.00    0.00       1/4           StreamingServerService::~StreamingServerService() [85]
+                0.00    0.00       1/4           StreamingServerService::StreamingServerService() [84]
+                0.00    0.00       1/4           StreamingServerService::onStop() [3]
+                0.00    0.00       1/4           _fini [16]
+[49]     0.0    0.00    0.00       4+1       CheckSocketsPoolTimes::finish() [49]
+                                   1             CheckSocketsPoolTimes::finish() [49]
+-----------------------------------------------
+                                   1             CheckServerSocketTimes::finish() [50]
+                0.00    0.00       1/4           StreamingServerService::~StreamingServerService() [85]
+                0.00    0.00       1/4           StreamingServerService::StreamingServerService() [84]
+                0.00    0.00       1/4           StreamingServerService::onStop() [3]
+                0.00    0.00       1/4           _fini [16]
+[50]     0.0    0.00    0.00       4+1       CheckServerSocketTimes::finish() [50]
+                                   1             CheckServerSocketTimes::finish() [50]
+-----------------------------------------------
+                0.00    0.00       4/4           StreamingServerProcessor::run() [363]
+[51]     0.0    0.00    0.00       4         StreamingServerProcessor::getIsShutdown(long*) [51]
+-----------------------------------------------
+                                   1             StreamingServerSocketsPool::finish() [52]
+                0.00    0.00       1/4           StreamingServerService::~StreamingServerService() [85]
+                0.00    0.00       1/4           StreamingServerService::StreamingServerService() [84]
+                0.00    0.00       1/4           StreamingServerService::onStop() [3]
+                0.00    0.00       1/4           _fini [16]
+[52]     0.0    0.00    0.00       4+1       StreamingServerSocketsPool::finish() [52]
+                                   1             StreamingServerSocketsPool::finish() [52]
+-----------------------------------------------
+                0.00    0.00       2/4           std::vector<Event*, std::allocator<Event*> >::reserve(unsigned int) [97]
+                0.00    0.00       2/4           std::vector<Event*, std::allocator<Event*> >::_M_insert_aux(__gnu_cxx::__normal_iterator<Event**, std::vector<Event*, std::allocator<Event*> > >, Event* const&) [96]
+[53]     0.0    0.00    0.00       4         __gnu_cxx::__mt_alloc<Event*, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> >::allocate(unsigned int, void const*) [53]
+-----------------------------------------------
+                0.00    0.00       3/3           RTSPSession::acceptRTSPConnection(ServerSocket*) [55]
+[54]     0.0    0.00    0.00       3         RTSPSession::getRTSPStatus(RTSPSession::RTSPStatus*) [54]
+-----------------------------------------------
+                0.00    0.00       3/3           StreamingServerProcessor::handleNewRTSPConnectionEvent(RTSPConnectionEvent*) [62]
+[55]     0.0    0.00    0.00       3         RTSPSession::acceptRTSPConnection(ServerSocket*) [55]
+                0.00    0.00       3/3           RTSPSession::getRTSPStatus(RTSPSession::RTSPStatus*) [54]
+-----------------------------------------------
+                                   1             SubscriberTracer::performTrace(long, long, char const*, char const*, long, unsigned long, long) [56]
+                0.00    0.00       1/3           StreamingServerService::~StreamingServerService() [85]
+                0.00    0.00       1/3           StreamingServerService::StreamingServerService() [84]
+                0.00    0.00       1/3           _fini [16]
+[56]     0.0    0.00    0.00       3+1       SubscriberTracer::performTrace(long, long, char const*, char const*, long, unsigned long, long) [56]
+                                   1             SubscriberTracer::performTrace(long, long, char const*, char const*, long, unsigned long, long) [56]
+-----------------------------------------------
+                                   1             HttpStreamingServer::init(char const*, long, char const*, MP4FileFactory*, MP4Atom::Standard, ConfigurationFile*, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, RTSPSession*, CheckServerSocketTimes*, PMutex*, std::vector<RTSPSession*, std::allocator<RTSPSession*> >*, PMutex*, unsigned long long*, unsigned long long*, unsigned long long*, Tracer*) [57]
+                0.00    0.00       1/3           StreamingServerService::~StreamingServerService() [85]
+                0.00    0.00       1/3           StreamingServerService::onInit() [1]
+                0.00    0.00       1/3           _fini [16]
+[57]     0.0    0.00    0.00       3+1       HttpStreamingServer::init(char const*, long, char const*, MP4FileFactory*, MP4Atom::Standard, ConfigurationFile*, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, RTSPSession*, CheckServerSocketTimes*, PMutex*, std::vector<RTSPSession*, std::allocator<RTSPSession*> >*, PMutex*, unsigned long long*, unsigned long long*, unsigned long long*, Tracer*) [57]
+                                   1             HttpStreamingServer::init(char const*, long, char const*, MP4FileFactory*, MP4Atom::Standard, ConfigurationFile*, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, RTSPSession*, CheckServerSocketTimes*, PMutex*, std::vector<RTSPSession*, std::allocator<RTSPSession*> >*, PMutex*, unsigned long long*, unsigned long long*, unsigned long long*, Tracer*) [57]
+-----------------------------------------------
+                0.00    0.00       3/3           CheckServerSocketTimes::handleTimeOut() [327]
+[58]     0.0    0.00    0.00       3         RTSPConnectionEvent::init(char const*, long, unsigned long, Tracer*, long, unsigned long long, Buffer*) [58]
+-----------------------------------------------
+                0.00    0.00       3/3           StreamingServerProcessor::processEvent(Event*) [61]
+[59]     0.0    0.00    0.00       3         RTSPConnectionEvent::finish() [59]
+-----------------------------------------------
+                                   1             StreamingServerEventsSet::deleteAllocatedEvents(unsigned long, std::vector<Event*, std::allocator<Event*> >*) [60]
+                0.00    0.00       1/3           StreamingServerService::~StreamingServerService() [85]
+                0.00    0.00       1/3           StreamingServerService::onInit() [1]
+                0.00    0.00       1/3           _fini [16]
+[60]     0.0    0.00    0.00       3+1       StreamingServerEventsSet::deleteAllocatedEvents(unsigned long, std::vector<Event*, std::allocator<Event*> >*) [60]
+                                   1             StreamingServerEventsSet::deleteAllocatedEvents(unsigned long, std::vector<Event*, std::allocator<Event*> >*) [60]
+-----------------------------------------------
+                0.00    0.00       3/3           StreamingServerProcessor::run() [363]
+[61]     0.0    0.00    0.00       3         StreamingServerProcessor::processEvent(Event*) [61]
+                0.00    0.00       3/3           StreamingServerProcessor::handleNewRTSPConnectionEvent(RTSPConnectionEvent*) [62]
+                0.00    0.00       3/3           RTSPConnectionEvent::finish() [59]
+-----------------------------------------------
+                0.00    0.00       3/3           StreamingServerProcessor::processEvent(Event*) [61]
+[62]     0.0    0.00    0.00       3         StreamingServerProcessor::handleNewRTSPConnectionEvent(RTSPConnectionEvent*) [62]
+                0.00    0.00       3/7           WebToolsErrors::duplicate(ErrMsgBase**) const [48]
+                0.00    0.00       3/3           RTSPSession::acceptRTSPConnection(ServerSocket*) [55]
+-----------------------------------------------
+                                   1             StreamingServerProcessor::init(unsigned long, MP4Atom::Standard, StreamingServerEventsSet*, ServerSocket*, SocketsPool*, RTSPSession*, unsigned long, PMutex*, std::vector<RTSPSession*, std::allocator<RTSPSession*> >*, char const*, PMutex*, PMutex*, unsigned long long*, unsigned long long*, unsigned long long*, ConfigurationFile*, Tracer*, Tracer*) [63]
+                0.00    0.00       1/3           StreamingServerService::onInit() [1]
+                0.00    0.00       1/3           StreamingServerService::onStop() [3]
+                0.00    0.00       1/3           _fini [16]
+[63]     0.0    0.00    0.00       3+1       StreamingServerProcessor::init(unsigned long, MP4Atom::Standard, StreamingServerEventsSet*, ServerSocket*, SocketsPool*, RTSPSession*, unsigned long, PMutex*, std::vector<RTSPSession*, std::allocator<RTSPSession*> >*, char const*, PMutex*, PMutex*, unsigned long long*, unsigned long long*, unsigned long long*, ConfigurationFile*, Tracer*, Tracer*) [63]
+                                   1             StreamingServerProcessor::init(unsigned long, MP4Atom::Standard, StreamingServerEventsSet*, ServerSocket*, SocketsPool*, RTSPSession*, unsigned long, PMutex*, std::vector<RTSPSession*, std::allocator<RTSPSession*> >*, char const*, PMutex*, PMutex*, unsigned long long*, unsigned long long*, unsigned long long*, ConfigurationFile*, Tracer*, Tracer*) [63]
+-----------------------------------------------
+                0.00    0.00       1/3           StreamingServerService::onInit() [1]
+                0.00    0.00       2/3           StreamingServerService::~StreamingServerService() [85]
+[64]     0.0    0.00    0.00       3         std::vector<RTSPSession*, std::allocator<RTSPSession*> >::reserve(unsigned int) [64]
+                0.00    0.00       1/2           __gnu_cxx::__mt_alloc<RTSPSession*, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> >::allocate(unsigned int, void const*) [68]
+                0.00    0.00       1/2           ConfigurationErrors::ConfigurationErrors(char const*, unsigned long, long, long, ...) [65]
+-----------------------------------------------
+                0.00    0.00       1/2           StreamingServerService::~StreamingServerService() [85]
+                0.00    0.00       1/2           std::vector<RTSPSession*, std::allocator<RTSPSession*> >::reserve(unsigned int) [64]
+[65]     0.0    0.00    0.00       2         ConfigurationErrors::ConfigurationErrors(char const*, unsigned long, long, long, ...) [65]
+-----------------------------------------------
+                0.00    0.00       2/2           StreamingServerService::onStop() [3]
+[66]     0.0    0.00    0.00       2         StreamingServerService::stopTracer(Tracer*) [66]
+-----------------------------------------------
+                0.00    0.00       1/2           StreamingServerProcessor::cancel() [87]
+                0.00    0.00       1/2           StreamingServerProcessor::run() [363]
+[67]     0.0    0.00    0.00       2         StreamingServerProcessor::setIsShutdown(long) [67]
+-----------------------------------------------
+                0.00    0.00       1/2           StreamingServerService::~StreamingServerService() [85]
+                0.00    0.00       1/2           std::vector<RTSPSession*, std::allocator<RTSPSession*> >::reserve(unsigned int) [64]
+[68]     0.0    0.00    0.00       2         __gnu_cxx::__mt_alloc<RTSPSession*, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> >::allocate(unsigned int, void const*) [68]
+-----------------------------------------------
+                0.00    0.00       2/2           StreamingServerSocketsPool::~StreamingServerSocketsPool() [376]
+[69]     0.0    0.00    0.00       2         TracerErrors::duplicate(ErrMsgBase**) const [69]
+-----------------------------------------------
+                0.00    0.00       1/2           StreamingServerService::appendStartScriptCommand(Buffer*) [80]
+                0.00    0.00       1/2           StreamingServerService::onStop() [3]
+[70]     0.0    0.00    0.00       2         std::vector<SocketImpl::IPAddress, std::allocator<SocketImpl::IPAddress> >::erase(__gnu_cxx::__normal_iterator<SocketImpl::IPAddress*, std::vector<SocketImpl::IPAddress, std::allocator<SocketImpl::IPAddress> > >, __gnu_cxx::__normal_iterator<SocketImpl::IPAddress*, std::vector<SocketImpl::IPAddress, std::allocator<SocketImpl::IPAddress> > >) [70]
+                0.00    0.00       1/1           __gnu_cxx::__mt_alloc<RTSPSession*, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> >::deallocate(RTSPSession**, unsigned int) [95]
+-----------------------------------------------
+                0.00    0.00       1/1           StreamingServerService::StreamingServerService() [84]
+[71]     0.0    0.00    0.00       1         global constructors keyed to _ZN24StreamingServerEventsSetC2Ev [71]
+-----------------------------------------------
+                0.00    0.00       1/1           StreamingServerService::StreamingServerService() [84]
+[72]     0.0    0.00    0.00       1         __static_initialization_and_destruction_0(int, int) [72]
+-----------------------------------------------
+                                   1             LiveSource::LiveSource(LiveSource const&) [73]
+                0.00    0.00       1/1           _fini [16]
+[73]     0.0    0.00    0.00       1+1       LiveSource::LiveSource(LiveSource const&) [73]
+                                   1             LiveSource::LiveSource(LiveSource const&) [73]
+-----------------------------------------------
+                0.00    0.00       1/1           StreamingServerService::onStop() [3]
+[74]     0.0    0.00    0.00       1         HttpStreamingServer::finish() [74]
+-----------------------------------------------
+                                   1             RTPOverBufferWindow::markBeginningOfWriteBurst() [75]
+                0.00    0.00       1/1           _fini [16]
+[75]     0.0    0.00    0.00       1+1       RTPOverBufferWindow::markBeginningOfWriteBurst() [75]
+                                   1             RTPOverBufferWindow::markBeginningOfWriteBurst() [75]
+-----------------------------------------------
+                                   1             RTPOverBufferWindow::init(unsigned long, unsigned long, unsigned long, Tracer*) [76]
+                0.00    0.00       1/1           _fini [16]
+[76]     0.0    0.00    0.00       1+1       RTPOverBufferWindow::init(unsigned long, unsigned long, unsigned long, Tracer*) [76]
+                                   1             RTPOverBufferWindow::init(unsigned long, unsigned long, unsigned long, Tracer*) [76]
+-----------------------------------------------
+                                   1             RTSPConnectionEvent::getBuffer(Buffer*) [77]
+                0.00    0.00       1/1           _fini [16]
+[77]     0.0    0.00    0.00       1+1       RTSPConnectionEvent::getBuffer(Buffer*) [77]
+                                   1             RTSPConnectionEvent::getBuffer(Buffer*) [77]
+-----------------------------------------------
+                0.00    0.00       1/1           StreamingServerService::onInit() [1]
+[78]     0.0    0.00    0.00       1         CheckSocketsPoolTimes::init(unsigned long, StreamingServerSocketsPool*, Tracer*) [78]
+-----------------------------------------------
+                0.00    0.00       1/1           StreamingServerService::onInit() [1]
+[79]     0.0    0.00    0.00       1         CheckServerSocketTimes::init(unsigned long, StreamingServerEventsSet*, Tracer*) [79]
+-----------------------------------------------
+                0.00    0.00       1/1           StreamingServerService::onStop() [3]
+[80]     0.0    0.00    0.00       1         StreamingServerService::appendStartScriptCommand(Buffer*) [80]
+                0.00    0.00       1/2           std::vector<SocketImpl::IPAddress, std::allocator<SocketImpl::IPAddress> >::erase(__gnu_cxx::__normal_iterator<SocketImpl::IPAddress*, std::vector<SocketImpl::IPAddress, std::allocator<SocketImpl::IPAddress> > >, __gnu_cxx::__normal_iterator<SocketImpl::IPAddress*, std::vector<SocketImpl::IPAddress, std::allocator<SocketImpl::IPAddress> > >) [70]
+-----------------------------------------------
+                0.00    0.00       1/1           main [18]
+[81]     0.0    0.00    0.00       1         StreamingServerService::appendStatusScriptCommand(Buffer*) [81]
+-----------------------------------------------
+                0.00    0.00       1/1           StreamingServerService::onStart() [15]
+[82]     0.0    0.00    0.00       1         StreamingServerService::cancel() [82]
+                0.00    0.00       1/1           StreamingServerProcessor::cancel() [87]
+-----------------------------------------------
+                0.00    0.00       1/1           StreamingServerService::onInit() [1]
+[83]     0.0    0.00    0.00       1         StreamingServerService::initNICs(std::vector<SocketImpl::IPAddress, std::allocator<SocketImpl::IPAddress> >*) [83]
+-----------------------------------------------
+                0.00    0.00       1/1           main [18]
+[84]     0.0    0.00    0.00       1         StreamingServerService::StreamingServerService() [84]
+                0.00    0.00       1/3           SubscriberTracer::performTrace(long, long, char const*, char const*, long, unsigned long, long) [56]
+                0.00    0.00       1/1           global constructors keyed to _ZN24StreamingServerEventsSetC2Ev [71]
+                0.00    0.00       1/4           StreamingServerSocketsPool::finish() [52]
+                0.00    0.00       1/4           CheckServerSocketTimes::finish() [50]
+                0.00    0.00       1/4           CheckSocketsPoolTimes::finish() [49]
+                0.00    0.00       1/1           __static_initialization_and_destruction_0(int, int) [72]
+-----------------------------------------------
+                0.00    0.00       1/1           main [18]
+[85]     0.0    0.00    0.00       1         StreamingServerService::~StreamingServerService() [85]
+                0.00    0.00       2/3           std::vector<RTSPSession*, std::allocator<RTSPSession*> >::reserve(unsigned int) [64]
+                0.00    0.00       1/3           HttpStreamingServer::init(char const*, long, char const*, MP4FileFactory*, MP4Atom::Standard, ConfigurationFile*, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, RTSPSession*, CheckServerSocketTimes*, PMutex*, std::vector<RTSPSession*, std::allocator<RTSPSession*> >*, PMutex*, unsigned long long*, unsigned long long*, unsigned long long*, Tracer*) [57]
+                0.00    0.00       1/4           CheckSocketsPoolTimes::finish() [49]
+                0.00    0.00       1/4           CheckServerSocketTimes::finish() [50]
+                0.00    0.00       1/4           StreamingServerSocketsPool::finish() [52]
+                0.00    0.00       1/3           StreamingServerEventsSet::deleteAllocatedEvents(unsigned long, std::vector<Event*, std::allocator<Event*> >*) [60]
+                0.00    0.00       1/2           ConfigurationErrors::ConfigurationErrors(char const*, unsigned long, long, long, ...) [65]
+                0.00    0.00       1/2           __gnu_cxx::__mt_alloc<RTSPSession*, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> >::allocate(unsigned int, void const*) [68]
+                0.00    0.00       1/3           SubscriberTracer::performTrace(long, long, char const*, char const*, long, unsigned long, long) [56]
+-----------------------------------------------
+                0.00    0.00       1/1           __static_initialization_and_destruction_0(int, int) [142]
+[86]     0.0    0.00    0.00       1         StreamingServerEventsSet::operator=(StreamingServerEventsSet const&) [86]
+-----------------------------------------------
+                0.00    0.00       1/1           StreamingServerService::cancel() [82]
+[87]     0.0    0.00    0.00       1         StreamingServerProcessor::cancel() [87]
+                0.00    0.00       1/2           StreamingServerProcessor::setIsShutdown(long) [67]
+-----------------------------------------------
+                0.00    0.00       1/1           StreamingServerService::onStop() [3]
+[88]     0.0    0.00    0.00       1         StreamingServerProcessor::finish() [88]
+-----------------------------------------------
+                0.00    0.00       1/1           StreamingServerService::onInit() [1]
+[89]     0.0    0.00    0.00       1         StreamingServerProcessor::~StreamingServerProcessor() [89]
+-----------------------------------------------
+                0.00    0.00       1/1           _fini [16]
+[90]     0.0    0.00    0.00       1         StreamingServerProcessor::~StreamingServerProcessor() [90]
+                0.00    0.00       1/1           StreamingServerProcessor::~StreamingServerProcessor() [91]
+-----------------------------------------------
+                0.00    0.00       1/1           StreamingServerProcessor::~StreamingServerProcessor() [90]
+[91]     0.0    0.00    0.00       1         StreamingServerProcessor::~StreamingServerProcessor() [91]
+-----------------------------------------------
+                                   1             BeginningHookHttpGetThread::init(unsigned long, char const*, unsigned long, char const*, Buffer*, Buffer*, unsigned long, StreamingServerEventsSet*, Tracer*, unsigned long) [92]
+                0.00    0.00       1/1           _fini [16]
+[92]     0.0    0.00    0.00       1+1       BeginningHookHttpGetThread::init(unsigned long, char const*, unsigned long, char const*, Buffer*, Buffer*, unsigned long, StreamingServerEventsSet*, Tracer*, unsigned long) [92]
+                                   1             BeginningHookHttpGetThread::init(unsigned long, char const*, unsigned long, char const*, Buffer*, Buffer*, unsigned long, StreamingServerEventsSet*, Tracer*, unsigned long) [92]
+-----------------------------------------------
+                0.00    0.00       1/1           StreamingServerService::onInit() [1]
+[93]     0.0    0.00    0.00       1         StreamingServerSocketsPool::init(StreamingServerEventsSet*, Tracer*) [93]
+-----------------------------------------------
+                                   1             LiveEvent::init(char const*, long, Socket*, void*, Tracer*) [94]
+                0.00    0.00       1/1           _fini [16]
+[94]     0.0    0.00    0.00       1+1       LiveEvent::init(char const*, long, Socket*, void*, Tracer*) [94]
+                                   1             LiveEvent::init(char const*, long, Socket*, void*, Tracer*) [94]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<SocketImpl::IPAddress, std::allocator<SocketImpl::IPAddress> >::erase(__gnu_cxx::__normal_iterator<SocketImpl::IPAddress*, std::vector<SocketImpl::IPAddress, std::allocator<SocketImpl::IPAddress> > >, __gnu_cxx::__normal_iterator<SocketImpl::IPAddress*, std::vector<SocketImpl::IPAddress, std::allocator<SocketImpl::IPAddress> > >) [70]
+[95]     0.0    0.00    0.00       1         __gnu_cxx::__mt_alloc<RTSPSession*, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> >::deallocate(RTSPSession**, unsigned int) [95]
+-----------------------------------------------
+                0.00    0.00       1/1           StreamingServerProcessor::StreamingServerProcessor() [27]
+[96]     0.0    0.00    0.00       1         std::vector<Event*, std::allocator<Event*> >::_M_insert_aux(__gnu_cxx::__normal_iterator<Event**, std::vector<Event*, std::allocator<Event*> > >, Event* const&) [96]
+                0.00    0.00       2/4           __gnu_cxx::__mt_alloc<Event*, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> >::allocate(unsigned int, void const*) [53]
+-----------------------------------------------
+                0.00    0.00       1/1           StreamingServerEventsSet::allocateMoreFreeUserEvents(unsigned long, unsigned long*, std::vector<Event*, std::allocator<Event*> >*, std::vector<Event*, std::allocator<Event*> >*) [343]
+[97]     0.0    0.00    0.00       1         std::vector<Event*, std::allocator<Event*> >::reserve(unsigned int) [97]
+                0.00    0.00       2/4           __gnu_cxx::__mt_alloc<Event*, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> >::allocate(unsigned int, void const*) [53]
+-----------------------------------------------
+                0.00    0.00       1/1           _fini [16]
+[98]     0.0    0.00    0.00       1         __tcf_0 [98]
+-----------------------------------------------
+
+ This table describes the call tree of the program, and was sorted by
+ the total amount of time spent in each function and its children.
+
+ Each entry in this table consists of several lines.  The line with the
+ index number at the left hand margin lists the current function.
+ The lines above it list the functions that called this function,
+ and the lines below it list the functions this one called.
+ This line lists:
+     index	A unique number given to each element of the table.
+		Index numbers are sorted numerically.
+		The index number is printed next to every function name so
+		it is easier to look up where the function in the table.
+
+     % time	This is the percentage of the `total' time that was spent
+		in this function and its children.  Note that due to
+		different viewpoints, functions excluded by options, etc,
+		these numbers will NOT add up to 100%.
+
+     self	This is the total amount of time spent in this function.
+
+     children	This is the total amount of time propagated into this
+		function by its children.
+
+     called	This is the number of times the function was called.
+		If the function called itself recursively, the number
+		only includes non-recursive calls, and is followed by
+		a `+' and the number of recursive calls.
+
+     name	The name of the current function.  The index number is
+		printed after it.  If the function is a member of a
+		cycle, the cycle number is printed between the
+		function's name and the index number.
+
+
+ For the function's parents, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the function into this parent.
+
+     children	This is the amount of time that was propagated from
+		the function's children into this parent.
+
+     called	This is the number of times this parent called the
+		function `/' the total number of times the function
+		was called.  Recursive calls to the function are not
+		included in the number after the `/'.
+
+     name	This is the name of the parent.  The parent's index
+		number is printed after it.  If the parent is a
+		member of a cycle, the cycle number is printed between
+		the name and the index number.
+
+ If the parents of the function cannot be determined, the word
+ `<spontaneous>' is printed in the `name' field, and all the other
+ fields are blank.
+
+ For the function's children, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the child into the function.
+
+     children	This is the amount of time that was propagated from the
+		child's children to the function.
+
+     called	This is the number of times the function called
+		this child `/' the total number of times the child
+		was called.  Recursive calls by the child are not
+		listed in the number after the `/'.
+
+     name	This is the name of the child.  The child's index
+		number is printed after it.  If the child is a
+		member of a cycle, the cycle number is printed
+		between the name and the index number.
+
+ If there are any cycles (circles) in the call graph, there is an
+ entry for the cycle-as-a-whole.  This entry shows who called the
+ cycle (as parents) and the members of the cycle (as children.)
+ The `+' recursive calls entry shows the number of function calls that
+ were internal to the cycle, and the calls entry for each member shows,
+ for that member, how many times it was called from other members of
+ the cycle.
+
+
+Index by function name
+
+  [71] global constructors keyed to _ZN24StreamingServerEventsSetC2Ev (StreamingServerEventsSet.cpp) [13] RTSPConnectionEvent::RTSPConnectionEvent(RTSPConnectionEvent const&) [27] StreamingServerProcessor::StreamingServerProcessor()
+  [72] __static_initialization_and_destruction_0(int, int) (HttpStreamingServer.cpp) [28] RTSPConnectionEvent::RTSPConnectionEvent(RTSPConnectionEvent const&) [89] StreamingServerProcessor::~StreamingServerProcessor()
+  [73] LiveSource::LiveSource(LiveSource const&) [7] RTPOverBufferWindow2::checkTransmitTime(long long const&, long long const&, unsigned long) [90] StreamingServerProcessor::~StreamingServerProcessor()
+  [46] LiveSource::LiveSource() [45] SendRTCPPacketsTimes::init(unsigned long, unsigned long, StreamingServerEventsSet*, Tracer*) [91] StreamingServerProcessor::~StreamingServerProcessor()
+  [47] LiveSource::~LiveSource() [34] SendRTCPPacketsTimes::finish() [92] BeginningHookHttpGetThread::init(unsigned long, char const*, unsigned long, char const*, Buffer*, Buffer*, unsigned long, StreamingServerEventsSet*, Tracer*, unsigned long)
+  [40] PauseTimes::init(unsigned long, unsigned long, StreamingServerEventsSet*, Tracer*) [78] CheckSocketsPoolTimes::init(unsigned long, StreamingServerSocketsPool*, Tracer*) [93] StreamingServerSocketsPool::init(StreamingServerEventsSet*, Tracer*)
+  [32] PauseTimes::finish()   [49] CheckSocketsPoolTimes::finish() [52] StreamingServerSocketsPool::finish()
+   [9] RTSPSession::getPauseTimes(PauseTimes**) [36] StreamingSessionTimes::finish() [11] CheckReceivedRTCPPacketsTimes::init(unsigned long, unsigned long, StreamingServerEventsSet*, Tracer*)
+  [54] RTSPSession::getRTSPStatus(RTSPSession::RTSPStatus*) [79] CheckServerSocketTimes::init(unsigned long, StreamingServerEventsSet*, Tracer*) [35] CheckReceivedRTCPPacketsTimes::finish()
+  [41] RTSPSession::getRTSP_RTCPTimes(RTSP_RTCPTimes**) [50] CheckServerSocketTimes::finish() [94] LiveEvent::init(char const*, long, Socket*, void*, Tracer*)
+  [55] RTSPSession::acceptRTSPConnection(ServerSocket*) [14] CheckServerSocketTimes::~CheckServerSocketTimes() [95] __gnu_cxx::__mt_alloc<RTSPSession*, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> >::deallocate(RTSPSession**, unsigned int)
+  [42] RTSPSession::getSendRTCPPacketsTimes(SendRTCPPacketsTimes**) [66] StreamingServerService::stopTracer(Tracer*) [68] __gnu_cxx::__mt_alloc<RTSPSession*, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> >::allocate(unsigned int, void const*)
+  [43] RTSPSession::getCheckReceivedRTCPPacketsTimes(CheckReceivedRTCPPacketsTimes**) [12] StreamingServerService::startTracer(ConfigurationFile*, Tracer*, char*) [53] __gnu_cxx::__mt_alloc<Event*, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> >::allocate(unsigned int, void const*)
+   [2] RTSPSession::init(unsigned long, MP4Atom::Standard, StreamingServerEventsSet*, StreamingServerSocketsPool*, Scheduler*, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, char const*, char const*, char const*, unsigned long, double, unsigned long, long, unsigned long, unsigned long, unsigned long, float, char const*, PMutex*, LiveSource*, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, long, long, char const*, MP4FileFactory*, long, char const*, char const*, unsigned long, char const*, unsigned long, long, char const*, char const*, unsigned long, char const*, unsigned long, long, Tracer*, Tracer*) [80] StreamingServerService::appendStartScriptCommand(Buffer*) [6] __gnu_cxx::__mt_alloc<RTPPacket*, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> >::allocate(unsigned int, void const*)
+  [10] RTSPSession::finish()  [81] StreamingServerService::appendStatusScriptCommand(Buffer*) [37] __gnu_cxx::__mt_alloc<double, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> >::deallocate(double*, unsigned int)
+  [30] RTSPSession::TrackInfo::TrackInfo() [82] StreamingServerService::cancel() [31] __gnu_cxx::__mt_alloc<double, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> >::allocate(unsigned int, void const*)
+   [8] RTSPSession::TrackInfo::~TrackInfo() [39] StreamingServerService::finish() [26] RTSPErrors::duplicate(ErrMsgBase**) const
+  [17] RTSPSession::RTSPSession() [1] StreamingServerService::onInit() [69] TracerErrors::duplicate(ErrMsgBase**) const
+   [5] RTSPSession::~RTSPSession() [83] StreamingServerService::initNICs(std::vector<SocketImpl::IPAddress, std::allocator<SocketImpl::IPAddress> >*) [48] WebToolsErrors::duplicate(ErrMsgBase**) const
+  [44] RTSP_RTCPTimes::init(unsigned long, unsigned long, StreamingServerEventsSet*, Tracer*) [84] StreamingServerService::StreamingServerService() [25] RTPErrors::duplicate(ErrMsgBase**) const
+  [33] RTSP_RTCPTimes::finish() [85] StreamingServerService::~StreamingServerService() [70] std::vector<SocketImpl::IPAddress, std::allocator<SocketImpl::IPAddress> >::erase(__gnu_cxx::__normal_iterator<SocketImpl::IPAddress*, std::vector<SocketImpl::IPAddress, std::allocator<SocketImpl::IPAddress> > >, __gnu_cxx::__normal_iterator<SocketImpl::IPAddress*, std::vector<SocketImpl::IPAddress, std::allocator<SocketImpl::IPAddress> > >)
+  [56] SubscriberTracer::performTrace(long, long, char const*, char const*, long, unsigned long, long) [60] StreamingServerEventsSet::deleteAllocatedEvents(unsigned long, std::vector<Event*, std::allocator<Event*> >*) [64] std::vector<RTSPSession*, std::allocator<RTSPSession*> >::reserve(unsigned int)
+  [65] ConfigurationErrors::ConfigurationErrors(char const*, unsigned long, long, long, ...) [86] StreamingServerEventsSet::operator=(StreamingServerEventsSet const&) [96] std::vector<Event*, std::allocator<Event*> >::_M_insert_aux(__gnu_cxx::__normal_iterator<Event**, std::vector<Event*, std::allocator<Event*> > >, Event* const&)
+  [57] HttpStreamingServer::init(char const*, long, char const*, MP4FileFactory*, MP4Atom::Standard, ConfigurationFile*, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, RTSPSession*, CheckServerSocketTimes*, PMutex*, std::vector<RTSPSession*, std::allocator<RTSPSession*> >*, PMutex*, unsigned long long*, unsigned long long*, unsigned long long*, Tracer*) [61] StreamingServerProcessor::processEvent(Event*) [97] std::vector<Event*, std::allocator<Event*> >::reserve(unsigned int)
+  [74] HttpStreamingServer::finish() [51] StreamingServerProcessor::getIsShutdown(long*) [4] std::vector<RTPPacket*, std::allocator<RTPPacket*> >::reserve(unsigned int)
+  [75] RTPOverBufferWindow::markBeginningOfWriteBurst() [67] StreamingServerProcessor::setIsShutdown(long) [38] std::vector<double, std::allocator<double> >::reserve(unsigned int)
+  [76] RTPOverBufferWindow::init(unsigned long, unsigned long, unsigned long, Tracer*) [62] StreamingServerProcessor::handleNewRTSPConnectionEvent(RTSPConnectionEvent*) [29] __tcf_0 (iostream)
+  [58] RTSPConnectionEvent::init(char const*, long, unsigned long, Tracer*, long, unsigned long long, Buffer*) [63] StreamingServerProcessor::init(unsigned long, MP4Atom::Standard, StreamingServerEventsSet*, ServerSocket*, SocketsPool*, RTSPSession*, unsigned long, PMutex*, std::vector<RTSPSession*, std::allocator<RTSPSession*> >*, char const*, PMutex*, PMutex*, unsigned long long*, unsigned long long*, unsigned long long*, ConfigurationFile*, Tracer*, Tracer*) [98] __tcf_0 (iostream)
+  [59] RTSPConnectionEvent::finish() [87] StreamingServerProcessor::cancel() [18] main
+  [77] RTSPConnectionEvent::getBuffer(Buffer*) [88] StreamingServerProcessor::finish()

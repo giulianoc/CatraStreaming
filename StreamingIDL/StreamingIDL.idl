@@ -1,0 +1,196 @@
+
+module StreamingIDL
+{
+
+	exception StreamingExc
+	{
+		string pError;
+	};
+
+	typedef sequence<string>				StringsList;
+
+	enum ItemType
+	{
+		ENUMERATIVE,
+		NUMBER,
+		TEXT
+	} ;
+
+	struct ConfigurationItem
+	{
+		string		pSectionName;
+		string		pItemComment;
+		string		pItemName;
+		string		pItemValue;
+	} ;
+
+	struct ConfigurationItemWithInfo
+	{
+		ConfigurationItem	ciConfigurationItem;
+
+		ItemType	itItemType;
+
+		// initialized only if itItemType is ENUMERATIVE
+		StringsList	pValues;
+		string		pSelectionMode;	// MULTIPLE | SINGLE
+	} ;
+
+
+	typedef sequence<ConfigurationItem>			ConfigurationItemsList;
+	typedef sequence<ConfigurationItemWithInfo>		ConfigurationItemsWithInfoList;
+
+	typedef sequence<octet>					BytesList;
+
+	struct ServerConnectedUser
+	{
+		string				pClientIPAddress;
+		string				pURLWithoutParameters;
+		string				pURLParameters;
+		string				pStandardUsed;
+		unsigned long		ulConnectionLive;
+		double				dMovieDuration;
+
+		string				pVideoCodec;
+		unsigned long		ulVideoPacketsNumberSent;
+		unsigned long long  ullVideoBytesSent;
+		unsigned long		ulVideoPacketsNumberLost;
+		unsigned long		ulVideoAverageBitRate;
+		unsigned long		ulVideoRTCPPacketsNumberReceived;
+		unsigned long long	ullVideoRTCPBytesReceived;
+		unsigned long		ulVideoJitter;
+
+		string				pAudioCodec;
+		unsigned long		ulAudioPacketsNumberSent;
+		unsigned long long	ullAudioBytesSent;
+		unsigned long		ulAudioPacketsNumberLost;
+		unsigned long		ulAudioAverageBitRate;
+		unsigned long		ulAudioRTCPPacketsNumberReceived;
+		unsigned long long	ullAudioRTCPBytesReceived;
+		unsigned long		ulAudioJitter;
+
+		unsigned long long	ullConnectedTimeInSeconds;
+
+		// unsigned long		ulTimesNumberStreamed;
+	} ;
+
+	typedef sequence<ServerConnectedUser>		ServerConnectedUsersList;
+
+	enum ServerStatus
+	{
+		ACTIVE,
+		INACTIVE
+	} ;
+
+	struct ServerInfo
+	{
+		ServerStatus		ssStatus;
+		unsigned long		ulUpTimeInMinutes;
+		string				pServerVersion;
+		unsigned long		ulCPUUsage;
+		unsigned long		ulMemoryUsage;
+		unsigned long		ulPlayersNumberConnected;
+		unsigned long		ulBandWidthUsageInbps;
+		unsigned long long	ullTotalBytesServed;		// from when he started
+		unsigned long long	ullTotalLostPacketsNumber;	// from when he started
+		unsigned long long	ullTotalSentPacketsNumber;	// from when he started
+	} ;
+
+	typedef sequence<ServerInfo>		ServerInfoList;
+
+	interface StreamingServer
+	{
+		long prova ()
+			raises (StreamingExc);
+
+		long activate ()
+			raises (StreamingExc);
+		long deactivate ()
+			raises (StreamingExc);
+		long shutdown ()
+			raises (StreamingExc);
+
+		long isRequestInCache (in string pAssetPath,
+			out unsigned long bIsInCache, out unsigned long ulConnectedUsers,
+			out unsigned long ulBandWidthUsageInbps)
+			raises (StreamingExc);
+		long getServerConnectedUsers (out ServerConnectedUsersList scuServerConnectedUsersList)
+			raises (StreamingExc);
+		long getServerInfo (out ServerInfo siServerInfo)
+			raises (StreamingExc);
+
+		long setChangedConfiguration (in ConfigurationItemsList cilConfigurationItemsList)
+			raises (StreamingExc);
+		long getConfiguration (out ConfigurationItemsWithInfoList cilConfigurationItemsWithInfoList)
+			raises (StreamingExc);
+
+		long getHostName (out string pHostName)
+			raises (StreamingExc);
+
+		// long getNICs (out StringsList lsNICs)
+		//	raises (StreamingExc);
+
+		long getContents (in string pDirectory,
+			out StringsList lsFileNames, out StringsList lsDirectories)
+			raises (StreamingExc);
+
+		long addDirectory (in string pDirectoryName)
+			raises (StreamingExc);
+		long deleteDirectory (in string pDirectoryName)
+			raises (StreamingExc);
+		long addContent (in string pContentName, in BytesList blContent)
+			raises (StreamingExc);
+		long deleteContent (in string pContentName)
+			raises (StreamingExc);
+		long dumpContent (in string pContentName, out string pDump)
+			raises (StreamingExc);
+		long getTracksInfo (in string pContentName, out string pTracksInfo)
+			raises (StreamingExc);
+	} ;
+
+	/*
+	interface StreamingServersManager
+	{
+		long prova ()
+			raises (StreamingExc);
+
+		long activate ()
+			raises (StreamingExc);
+		long deactivate ()
+			raises (StreamingExc);
+		long shutdown ()
+			raises (StreamingExc);
+
+		long setChangedConfiguration (in ConfigurationItemsList cilConfigurationItemsList)
+			raises (StreamingExc);
+		long getConfiguration (out ConfigurationItemsWithInfoList cilConfigurationItemsWithInfoList)
+			raises (StreamingExc);
+
+		long getHostName (out string pHostName)
+			raises (StreamingExc);
+
+		// long getNICs (out StringsList lsNICs)
+		//	raises (StreamingExc);
+
+		long getContents (in string pDirectory,
+			out StringsList lsFileNames, out StringsList lsDirectories)
+			raises (StreamingExc);
+
+		long addDirectory (in string pDirectoryName)
+			raises (StreamingExc);
+		long deleteDirectory (in string pDirectoryName)
+			raises (StreamingExc);
+		long addContent (in string pContentName, in BytesList blContent)
+			raises (StreamingExc);
+		long deleteContent (in string pContentName)
+			raises (StreamingExc);
+		long dumpContent (in string pContentName, out string pDump)
+			raises (StreamingExc);
+		long getTracksInfo (in string pContentName, out string pTracksInfo)
+			raises (StreamingExc);
+		long getServerConnectedUsers (out ServerConnectedUsersList scuServerConnectedUsersList)
+			raises (StreamingExc);
+		long getServerInfo (out ServerInfo siServerInfo)
+			raises (StreamingExc);
+	} ;
+	*/
+};

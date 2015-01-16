@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configurations Identifier="Configurations" Label="Configurations" Icon="Configurations.gif" ToolTip="Configurations" DisabledFunctionalitiesList="DeleteSite,AddServers,DeleteServer,ActivateServer,DeactivateServer,ShutdownServer,ActivateServerConfiguration,ChangeInEverySiteServer,ChangeInEveryServer" DisabledFunctionalitiesListSeparator=",">
+	<AddSiteFunctionality Identifier="AddSite" Label="Add site..." Icon="AddSite.gif" ToBeShownInTheToolbar="yes">
+	</AddSiteFunctionality>
+	<DeleteSiteFunctionality Identifier="DeleteSite" Label="Delete site" Icon="DeleteSite.gif" ToBeShownInTheToolbar="yes">
+	</DeleteSiteFunctionality>
+	<AddServersFunctionality Identifier="AddServers" Label="Add servers..." Icon="AddServer.gif" ToBeShownInTheToolbar="yes">
+	</AddServersFunctionality>
+	<DeleteServerFunctionality Identifier="DeleteServer" Label="Delete server" Icon="DeleteServer.gif" ToBeShownInTheToolbar="yes">
+	</DeleteServerFunctionality>
+	<ActivateServerFunctionality Identifier="ActivateServer" Label="Activate server" Icon="ActivateServer.gif" ToBeShownInTheToolbar="yes">
+	</ActivateServerFunctionality>
+	<DeactivateServerFunctionality Identifier="DeactivateServer" Label="Deactivate server" Icon="DeactivateServer.gif" ToBeShownInTheToolbar="yes">
+	</DeactivateServerFunctionality>
+	<ShutdownServerFunctionality Identifier="ShutdownServer" Label="Shutdown server" Icon="ShutdownServer.gif" ToBeShownInTheToolbar="yes">
+	</ShutdownServerFunctionality>
+	<ActivateServerConfigurationFunctionality Identifier="ActivateServerConfiguration" Label="Activate server configuration" Icon="ActivateServerConfiguration.gif" ToBeShownInTheToolbar="yes">
+	</ActivateServerConfigurationFunctionality>
+	<ChangeInEverySiteServerFunctionality Identifier="ChangeInEverySiteServer" Label="Change in every site server" Icon="ChangeInEverySiteServer.gif" ToBeShownInTheToolbar="yes">
+	</ChangeInEverySiteServerFunctionality>
+	<ChangeInEveryServerFunctionality Identifier="ChangeInEveryServer" Label="Change in every server" Icon="ChangeInEveryServer.gif" ToBeShownInTheToolbar="yes">
+	</ChangeInEveryServerFunctionality>
+</Configurations>

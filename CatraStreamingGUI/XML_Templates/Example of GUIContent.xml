@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Contents Identifier="Contents" Label="Contents" Icon="Contents.gif"
+	DisabledFunctionalitiesList="AddDirectory,DeleteDirectory,AddContent,DeleteContent,DuplicateContent,SaveContentLocally,DumpContent,GetTracksInfo,AddHintTrack,AddHintTracks,DeleteTrack,PropagationRules" DisabledFunctionalitiesListSeparator=",">
+	<AddDirectoryFunctionality Identifier="AddDirectory" Label="Add directory..." Icon="AddDirectory.gif" ToBeShownInTheToolbar="yes">
+	</AddDirectoryFunctionality>
+	<DeleteDirectoryFunctionality Identifier="DeleteDirectory" Label="Delete directory..." Icon="DeleteDirectory.gif" ToBeShownInTheToolbar="yes">
+	</DeleteDirectoryFunctionality>
+	<AddContentFunctionality Identifier="AddContent" Label="Add content..." Icon="AddContent.gif" ToBeShownInTheToolbar="yes">
+	</AddContentFunctionality>
+	<DeleteContentFunctionality Identifier="DeleteContent" Label="Delete content..." Icon="DeleteContent.gif" ToBeShownInTheToolbar="yes">
+	</DeleteContentFunctionality>
+	<DuplicateContentFunctionality Identifier="DuplicateContent" Label="Duplicate content..." Icon="DuplicateContent.gif" ToBeShownInTheToolbar="yes">
+	</DuplicateContentFunctionality>
+	<SaveContentLocallyFunctionality Identifier="SaveContentLocally" Label="Save content locally..." Icon="SaveContent.gif" ToBeShownInTheToolbar="yes">
+	</SaveContentLocallyFunctionality>
+	<DumpContentFunctionality Identifier="DumpContent" Label="Dump content" Icon="DumpContent.gif" ToBeShownInTheToolbar="yes">
+	</DumpContentFunctionality>	
+	<GetTracksInfoFunctionality Identifier="GetTracksInfo" Label="Get tracks info" Icon="GetTracksInfo.gif" ToBeShownInTheToolbar="yes">
+	</GetTracksInfoFunctionality>	
+	<AddHintTrackFunctionality Identifier="AddHintTrack" Label="Add hint track..." Icon="AddHintTrack.gif" ToBeShownInTheToolbar="yes">
+	</AddHintTrackFunctionality>	
+	<AddHintTracksFunctionality Identifier="AddHintTracks" Label="Add hint tracks" Icon="AddHintTracks.gif" ToBeShownInTheToolbar="yes">
+	</AddHintTracksFunctionality>	
+	<DeleteTrackFunctionality Identifier="DeleteTrack" Label="Delete track" Icon="DeleteTrack.gif" ToBeShownInTheToolbar="yes">
+	</DeleteTrackFunctionality>
+	<PropagationRulesFunctionality Identifier="PropagationRules" Label="Propagation rules" Icon="PropagationRules.gif" ToBeShownInTheToolbar="yes">
+	</PropagationRulesFunctionality>
+	<Site Identifier="Milano" Label="Milano" Icon="Site.gif"
+		DisabledFunctionalitiesList="AddDirectory,DeleteDirectory,AddContent,DeleteContent,DuplicateContent,SaveContentLocally,DumpContent,GetTracksInfo,AddHintTrack,AddHintTracks,DeleteTrack" DisabledFunctionalitiesListSeparator=",">
+		<Entity Identifier="Server1" Label="Server1" Icon="Server.gif"
+			DisabledFunctionalitiesList="AddDirectory,DeleteDirectory,AddContent,DeleteContent,DuplicateContent,SaveContentLocally,DumpContent,GetTracksInfo,AddHintTrack,AddHintTracks,DeleteTrack,PropagationRules" DisabledFunctionalitiesListSeparator=",">
+			<ContentRoot Identifier="ContentRoot" Label="ContentRoot" Icon="ContentRoot.gif"
+				DisabledFunctionalitiesList="DeleteDirectory,DeleteContent,DuplicateContent,SaveContentLocally,DumpContent,GetTracksInfo,AddHintTrack,AddHintTracks,DeleteTrack,PropagationRules" DisabledFunctionalitiesListSeparator=",">
+				<Content Identifier="pippo.mp4" Label="pippo.mp4" Icon="Content.gif"
+					DisabledFunctionalitiesList="AddDirectory,DeleteDirectory,AddContent,PropagationRules" DisabledFunctionalitiesListSeparator=",">
+				</Content>
+				<Directory Identifier="co" Label="co" Icon="Directory.gif"
+					DisabledFunctionalitiesList="DeleteContent,DuplicateContent,SaveContentLocally,DumpContent,GetTracksInfo,AddHintTrack,AddHintTracks,DeleteTrack,PropagationRules" DisabledFunctionalitiesListSeparator=",">
+					<Content Identifier="pippo2.mp4" Label="pippo2.mp4" Icon="Content.gif"
+						DisabledFunctionalitiesList="AddDirectory,DeleteDirectory,AddContent,PropagationRules" DisabledFunctionalitiesListSeparator=",">
+					</Content>
+				</Directory>
+			</ContentRoot>
+		</Entity>
+	</Site>
+</Contents>
