@@ -1,4 +1,5 @@
 
+THIS README IS OBSOLETE AND HAS TO BE UPDATED
 
 CatraStreaming
 ==============
