@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Entity Identifier="Monitors" Label="Monitors" Icon="Monitors.gif" ToolTip="Monitors"
+	DisabledFunctionalitiesList="" DisabledFunctionalitiesListSeparator=",">
+	<RefreshFunctionality Identifier="Refresh" Label="Refresh..." Icon="Refresh.gif" ToBeShownInTheToolbar="yes">
+	</RefreshFunctionality>
+	<AllSites Identifier="AllSites" Label="All sites" Icon="AllSites.gif" ToolTip="Monitor of all sites"
+		DisabledFunctionalitiesList="" DisabledFunctionalitiesListSeparator=",">
+		<Monitor Identifier="GlobalConnectedUsers" Label="Global Connected Users" Icon="GlobalConnectedUsers.gif" ToolTip="Monitor of all users"
+			DisabledFunctionalitiesList="" DisabledFunctionalitiesListSeparator=",">
+		</Monitor>
+	</AllSites>
+</Entity>
