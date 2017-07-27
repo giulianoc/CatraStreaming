@@ -68,9 +68,12 @@ add_compile_options(-D_REENTRANT)
 
 add_library (RTP SHARED ${SOURCES} ${HEADERS})
 
-#if (APPLE)
-#	target_link_libraries (SDP ${CATRALIBRARIES_LIBRARIES})
-#endif()
+if (APPLE)
+	target_link_libraries (RTP ${ERRMSG_LIBRARY})
+	target_link_libraries (RTP ${TOOLS_LIBRARY})
+	target_link_libraries (RTP MP4File)
+	target_link_libraries (RTP SDP)
+endif()
 
 install (TARGETS RTP DESTINATION lib)
 install (FILES ${HEADERS} DESTINATION include)

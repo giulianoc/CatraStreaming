@@ -37,9 +37,12 @@ add_compile_options(-D_REENTRANT)
 
 add_library (RTSP SHARED ${SOURCES} ${HEADERS})
 
-#if (APPLE)
-#	target_link_libraries (RTSP ${CATRALIBRARIES_LIBRARIES})
-#endif()
+if (APPLE)
+	target_link_libraries (RTSP ${ERRMSG_LIBRARY})
+	target_link_libraries (RTSP ${TOOLS_LIBRARY})
+	target_link_libraries (RTSP ${WEBTOOLS_LIBRARY})
+	target_link_libraries (RTSP SDP)
+endif()
 
 install (TARGETS RTSP DESTINATION lib)
 install (FILES ${HEADERS} DESTINATION include)

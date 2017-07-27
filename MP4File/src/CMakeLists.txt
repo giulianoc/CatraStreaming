@@ -258,9 +258,12 @@ add_compile_options(-D_REENTRANT)
 
 add_library (MP4File SHARED ${SOURCES} ${HEADERS})
 
-#if (APPLE)
-#	target_link_libraries (MP4File ${CATRALIBRARIES_LIBRARIES})
-#endif()
+if (APPLE)
+	target_link_libraries (MP4File ${ERRMSG_LIBRARY})
+	target_link_libraries (MP4File ${TOOLS_LIBRARY})
+	target_link_libraries (MP4File ${PTHREAD_LIBRARY})
+	target_link_libraries (MP4File ${TRACER_LIBRARY})
+endif()
 
 install (TARGETS MP4File DESTINATION lib)
 install (FILES ${HEADERS} DESTINATION include)

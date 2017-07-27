@@ -59,4 +59,5 @@ add_subdirectory(RTP/src)
 add_subdirectory(RTSP/src)
 add_subdirectory(catraStreamingServer/src)
 add_subdirectory(catraMonitoringPlayer/src)
+add_subdirectory(catraMP4FileDump/src)
 

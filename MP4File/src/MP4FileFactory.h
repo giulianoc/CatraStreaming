@@ -30,6 +30,8 @@
 	#include "PMutex.h"
 	#if defined(__CYGWIN__) || defined (WIN32)
 		#define MAXLONG			0x7fffffff
+	#elif defined(__APPLE__)
+		#include <limits.h>
 	#else
 		#include <values.h>
 	#endif

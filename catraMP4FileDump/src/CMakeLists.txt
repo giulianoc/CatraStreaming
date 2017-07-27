@@ -21,45 +21,47 @@
 # with the authors.
 
 SET (SOURCES
-	SDP.cpp
-	SDPErrors.cpp
-	SDPFor3GPP.cpp
-	SDPForRTSP.cpp
-	SDPMedia.cpp
-	SDPMediaFor3GPP.cpp
-	SDPMediaForRTSP.cpp
-	SDPTimeBase.cpp
-	SDPTimeNpt.cpp
-	SDPTimeSmpte.cpp
-	SDPTimeUtc.cpp
+	mp4FileDump.cpp
 )
+
 SET (HEADERS
-	SDPAttribute.h
-	SDPErrors.h
-	SDPFor3GPP.h
-	SDPForRTSP.h
-	SDP.h
-	SDPMediaFor3GPP.h
-	SDPMediaForRTSP.h
-	SDPMedia.h
-	SDPTimeBase.h
-	SDPTimeNpt.h
-	SDPTimeSmpte.h
-	SDPTimeUtc.h
 )
 
 include_directories ("${CATRALIBRARIES_INCLUDE_DIR}")
+include_directories ("${PROJECT_SOURCE_DIR}/RTSP/src")
+include_directories ("${PROJECT_SOURCE_DIR}/RTP/src")
+include_directories ("${PROJECT_SOURCE_DIR}/SDP/src")
 include_directories ("${PROJECT_SOURCE_DIR}/MP4File/src")
-add_compile_options(-D_REENTRANT)
-
-add_library (SDP SHARED ${SOURCES} ${HEADERS})
-
-if (APPLE)
-	target_link_libraries (SDP ${ERRMSG_LIBRARY})
-	target_link_libraries (SDP ${TOOLS_LIBRARY})
-	target_link_libraries (SDP MP4File)
+if(CRYPTO_FOUND)
+	include_directories(${CRYPTO_INCLUDE_DIR})
+endif()
+if (ZLIB_FOUND)
+	include_directories(${ZLIB_INCLUDE_DIRS})
 endif()
 
-install (TARGETS SDP DESTINATION lib)
-install (FILES ${HEADERS} DESTINATION include)
+add_compile_options(-D_REENTRANT)
+
+add_executable(mp4FileDump ${SOURCES})
+
+#target_link_libraries (mp4FileDump RTSP)
+#target_link_libraries (mp4FileDump RTP)
+#target_link_libraries (mp4FileDump SDP)
+target_link_libraries (mp4FileDump MP4File)
+#target_link_libraries (mp4FileDump Tracer)
+#target_link_libraries (mp4FileDump Socket)
+#target_link_libraries (mp4FileDump Tools)
+#target_link_libraries (mp4FileDump WebTools)
+#target_link_libraries (mp4FileDump PThread)
+#target_link_libraries (mp4FileDump ErrMsg)
+if(CRYPTO_FOUND)
+	if (APPLE)
+		target_link_libraries (mp4FileDump ${CRYPTO_LIBRARIES})
+	else()
+		target_link_libraries (mp4FileDump crypt)
+	endif()
+endif()
+if (ZLIB_FOUND)
+	target_link_libraries(mp4FileDump ${ZLIB_LIBRARIES})
+endif()
+target_link_libraries (mp4FileDump pthread)
 
